@@ -12,7 +12,7 @@ Mở `index.html` bằng trình duyệt hiện đại. Không cần cài thư vi
 - `css/style.css` — thiết kế responsive và chế độ in.
 - `js/app.js` — lộ trình, thư viện prompt, sinh prompt, sao chép/tải/in, tiến độ cục bộ.
 - `data/lessons.json` — dữ liệu tham chiếu 06 buổi.
-- `data/prompts.json` — danh mục 30 prompt mẫu.
+- `data/prompts.json` — danh mục 36 prompt mẫu.
 
 ## Deploy GitHub Pages
 
