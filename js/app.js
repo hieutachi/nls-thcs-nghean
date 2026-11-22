@@ -251,6 +251,10 @@ function updateMissionUI() {
   const fEl = $('#progress-fill');
   if (pEl) pEl.textContent = percent + '%';
   if (fEl) fEl.style.width = percent + '%';
+
+  const incompCount = MISSION_KEYS.filter(k => !completed.includes(k)).length;
+  const incompBadge = $('#mfilter-count-incomplete');
+  if (incompBadge) incompBadge.textContent = incompCount;
 }
 
 function setupMissionCheckboxes() {
@@ -300,10 +304,12 @@ function setupMissionCheckboxes() {
       const cards = $$('.mission-card');
       const compList = getCompletedMissions();
 
+      let visibleCount = 0;
       cards.forEach((c, idx) => {
         const day = c.dataset.missionDay;
         const role = c.dataset.missionRole;
-        const mKey = 'mission' + (idx + 1);
+        const num = c.id.replace('mission-card-', '') || (idx + 1);
+        const mKey = 'mission' + num;
         const isDone = compList.includes(mKey);
 
         let show = true;
@@ -314,8 +320,14 @@ function setupMissionCheckboxes() {
         else if (filter === 'cbql') show = role === 'cbql' || role === 'all';
         else if (filter === 'incomplete') show = !isDone;
 
-        c.style.display = show ? 'block' : 'none';
+        c.style.display = show ? '' : 'none';
+        if (show) visibleCount++;
       });
+
+      const emptyEl = $('#mission-empty-state');
+      if (emptyEl) {
+        emptyEl.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
     });
   });
 

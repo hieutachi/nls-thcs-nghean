@@ -240,18 +240,25 @@
           <h2>Khung chương trình bồi dưỡng</h2>
           <p>Mỗi buổi học gắn liền với 01 sản phẩm thực hành cụ thể, tích hợp vào môn học hiện hành — không phát sinh tiết học mới.</p>
         </div>
-      
+        <span class="section-index">01 / LỘ TRÌNH</span>
+      </div>
+
       <!-- Spotlight Core Missions Showcase -->
       <div class="missions-showcase">
         <div class="mission-filter-bar">
-          <span style="font-size:12px;font-weight:750;color:var(--navy);display:flex;align-items:center;padding:0 8px;">LỌC NHIỆM VỤ:</span>
-          <button type="button" class="mission-filter-btn active" data-mfilter="all">Tất cả 6 Buổi (Mọi vai trò)</button>
-          <button type="button" class="mission-filter-btn" data-mfilter="day1">Ngày 1 (Buổi 1 & 2)</button>
-          <button type="button" class="mission-filter-btn" data-mfilter="day2">Ngày 2 (Buổi 3 & 4)</button>
-          <button type="button" class="mission-filter-btn" data-mfilter="day3">Ngày 3 (Buổi 5 & 6)</button>
-          <button type="button" class="mission-filter-btn" data-mfilter="gv">Dành cho Giáo viên</button>
-          <button type="button" class="mission-filter-btn" data-mfilter="cbql">Dành cho CBQL</button>
-          <button type="button" class="mission-filter-btn" data-mfilter="incomplete">Chưa hoàn thành</button>
+          <div class="mission-filter-label">
+            <span class="filter-icon">🎯</span>
+            <span>BỘ LỌC 6 NHIỆM VỤ:</span>
+          </div>
+          <div class="mission-filter-buttons">
+            <button type="button" class="mission-filter-btn active" data-mfilter="all">Tất cả 6 Buổi <span class="filter-badge" id="mfilter-count-all">6</span></button>
+            <button type="button" class="mission-filter-btn" data-mfilter="day1">Ngày 1 (Buổi 1 & 2) <span class="filter-badge">2</span></button>
+            <button type="button" class="mission-filter-btn" data-mfilter="day2">Ngày 2 (Buổi 3 & 4) <span class="filter-badge">2</span></button>
+            <button type="button" class="mission-filter-btn" data-mfilter="day3">Ngày 3 (Buổi 5 & 6) <span class="filter-badge">2</span></button>
+            <button type="button" class="mission-filter-btn" data-mfilter="gv">Dành cho Giáo viên <span class="filter-badge">5</span></button>
+            <button type="button" class="mission-filter-btn" data-mfilter="cbql">Dành cho CBQL <span class="filter-badge">3</span></button>
+            <button type="button" class="mission-filter-btn" data-mfilter="incomplete">Chưa hoàn thành <span class="filter-badge" id="mfilter-count-incomplete">6</span></button>
+          </div>
         </div>
 
         <div class="mission-cards-list">
@@ -584,7 +591,11 @@
         </a>
       </div>
     </article>
-
+          <div id="mission-empty-state" class="mission-empty-state" style="display:none;">
+            <div style="font-size:32px;margin-bottom:8px;">🎉</div>
+            <div style="font-weight:750;font-size:16px;color:var(--navy);margin-bottom:4px;">Không có nhiệm vụ nào trong bộ lọc này</div>
+            <div style="font-size:13px;color:var(--text-muted);">Bạn đã hoàn thành tất cả hoặc không có nhiệm vụ thỏa mãn tiêu chí lựa chọn.</div>
+          </div>
         </div>
       </div>
 
