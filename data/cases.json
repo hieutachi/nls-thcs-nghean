@@ -1,0 +1,178 @@
+[
+  {
+    "id": "KHXH-01",
+    "category": "khxh",
+    "category_name": "Khối KHXH",
+    "subject": "Lịch sử & Địa lí 7",
+    "grade": "7",
+    "topic": "Bài 5: Vị trí địa lí, đặc điểm tự nhiên và tài nguyên thiên nhiên Châu Âu (Liên hệ hệ sinh thái rừng Pù Mát - Nghệ An)",
+    "outcomes": "Trình bày được đặc điểm vị trí địa lí, hình dạng và kích thước châu Âu; phân tích được các đặc điểm tự nhiên (địa hình, khí hậu, sông ngòi); liên hệ so sánh với đặc điểm khí hậu nhiệt đới gió mùa và hệ sinh thái rừng tại Nghệ An; rèn luyện kĩ năng đọc bản đồ số.",
+    "tc": "TC1 (lớp 6–7)",
+    "atm": "ATM1",
+    "atm_title": "ATM1 · Bản quyền số & kiểm chứng nguồn (SIFT)",
+    "ai_strand": "NLa (Tư duy lấy con người làm trung tâm)",
+    "devices": "Phòng máy tính kết nối Internet; Phương án Offline Kit: Bản đồ giấy Ao in màu, phiếu học tập in sẵn theo bàn.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Xem video bản đồ số, điền vào chỗ trống trên phiếu học tập có sẵn từ khóa gợi ý; làm việc theo cặp đôi số.",
+      "group_b": "Khai thác Google Earth / Bản đồ số để đo khoảng cách và xác định tọa độ các đới khí hậu châu Âu; so sánh với Nghệ An.",
+      "group_c": "Đóng vai chuyên gia khí hậu, sử dụng AI kiểm chứng dữ liệu nhiệt độ lượng mưa, thuyết trình trước lớp về biến đổi khí hậu."
+    },
+    "offline_kit": "04 Bản đồ khí hậu in màu khổ Ao dán 4 góc lớp; Bộ thẻ trắc nghiệm 'Cờ địa lí' bằng bìa cứng chơi theo bàn; Phiếu học tập in sẵn hướng dẫn chi tiết.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: LỊCH SỬ VÀ ĐỊA LÍ 7 · PHÂN MÔN: ĐỊA LÍ\nBÀI 5: VỊ TRÍ ĐỊA LÍ VÀ ĐẶC ĐIỂM TỰ NHIÊN CHÂU ÂU (45 PHÚT)\n(Tích hợp Năng lực số TC1 · An toàn mạng ATM1 · Mạch AI: NLa)\n\nI. MỤC TIÊU BÀI HỌC\n1. Về kiến thức:\n- Nêu được đặc điểm vị trí địa lí, hình dạng và kích thước của châu Âu.\n- Phân tích được đặc điểm các khu vực địa hình chính và các đới khí hậu ở châu Âu.\n- Liên hệ so sánh điểm tương đồng và khác biệt với đặc điểm tự nhiên, hệ sinh thái rừng tại miền Tây Nghệ An (Vườn quốc gia Pù Mát).\n\n2. Về năng lực:\na) Năng lực chung: Tự chủ và tự học qua khai thác học liệu số; Giao tiếp và hợp tác nhóm.\nb) Năng lực đặc thù: Đọc và khai thác bản đồ địa lí số; Phân tích biểu đồ khí hậu.\nc) Năng lực số (Chuẩn TC1 - Công văn 3456):\n- TC1.1: Sử dụng công cụ bản đồ số (Google Earth/Atlas số) để tra cứu thông tin địa lí có chỉ dẫn.\n- TC1.3: Thu thập và lưu trữ thông tin học tập an toàn vào thư mục nhóm trên Google Drive.\n\n3. Về phẩm chất & An toàn mạng (Chuẩn ATM1 - Công văn 6206):\n- Tôn trọng bản quyền học liệu số, ghi rõ nguồn trích dẫn hình ảnh và bản đồ theo giấy phép Creative Commons.\n- Rèn luyện tư duy kiểm chứng nguồn thông tin địa lí theo quy tắc SIFT trước khi sử dụng.\n- Giáo dục AI (Mạch NLa - QĐ 2422): Nhận thức AI là công cụ hỗ trợ trực quan hóa bản đồ, con người quyết định việc phân tích và đánh giá khoa học.\n\nII. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU SỐ\n1. Phương án trực tuyến (Phòng máy / Có kết nối mạng):\n- Máy tính giáo viên, máy chiếu, đường truyền Internet ổn định.\n- Bản đồ số châu Âu trên Google Earth / ArcGIS Online; Link Google Forms khảo sát đầu giờ; Thư mục Google Drive lưu trữ bài tập nhóm.\n2. Phương án ngoại tuyến dự phòng (Offline Kit - Vùng khó khăn / Mất mạng):\n- 04 Bản đồ tự nhiên châu Âu in màu khổ Ao dán tại 4 góc lớp.\n- Bộ Phiếu học tập số 01 và 02 in sẵn phát tận tay từng nhóm bàn.\n- Bộ thẻ câu hỏi 'Cờ tri thức địa lí' in bìa cứng thay thế trò chơi trực tuyến.\n\nIII. TIẾN TRÌNH DẠY HỌC 4C (45 PHÚT)\n\n1. HOẠT ĐỘNG 1: MỞ ĐẦU / KHỞI ĐỘNG (CONTEXT - 7 PHÚT)\na) Mục tiêu: Kích hoạt trải nghiệm trực quan, kết nối kiến thức châu Âu với bối cảnh địa phương Nghệ An.\nb) Tổ chức thực hiện:\n- GV chiếu hình ảnh dãy Alps phủ tuyết trắng và hình ảnh rừng nguyên sinh Pù Mát (Nghệ An), đặt câu hỏi thách thức: 'Tại sao cùng ở bán cầu Bắc nhưng thiên nhiên châu Âu và thiên nhiên quê hương Nghệ An lại có sự khác biệt sâu sắc về thảm thực vật?'\n- HS quét mã QR trả lời nhanh trên Google Forms (hoặc giơ thẻ màu A/B/C với phương án Offline Kit).\nc) Sản phẩm: Bảng câu trả lời dự đoán ban đầu của các nhóm học sinh.\nd) Đánh giá: GV nhận xét nhanh, dẫn dắt vào bài mới.\n\n2. HOẠT ĐỘNG 2: HÌNH THÀNH KIẾN THỨC MỚI (CHALLENGE - 18 PHÚT)\na) Mục tiêu: Xác định vị trí địa lí và phân tích đặc điểm địa hình, khí hậu châu Âu; phân hóa nhiệm vụ 3 tầng.\nb) Tổ chức thực hiện:\n- GV chia lớp thành 4 nhóm theo cơ chế 'Cặp đôi số' (1 HS thành thạo kèm 1 HS cần hỗ trợ).\n- Phân hóa nhiệm vụ theo 3 tầng:\n  + Tầng A (Cơ bản): Mở bản đồ số, xác định tọa độ các điểm cực Bắc, Nam, Đông, Tây của châu Âu và ghi tên 3 dãy núi lớn vào Phiếu học tập số 01.\n  + Tầng B (Thành thạo): So sánh đặc điểm khí hậu ôn đới hải dương và ôn đới lục địa; chỉ ra nguyên nhân sông ngòi châu Âu không bị đóng băng ở phía Tây.\n  + Tầng C (Nâng cao): Đóng vai chuyên gia môi trường, liên hệ tác động của dòng biển nóng Bắc Đại Tây Dương với hiện tượng gió phơn Tây Nam (gió Lào) tại Nghệ An.\n- Hướng dẫn ATM1: Khi tìm ảnh minh họa, HS phải chọn bộ lọc 'Giấy phép Creative Commons' và ghi nguồn URL dưới ảnh.\nc) Sản phẩm: Báo cáo số trên Google Slides nhóm hoặc Bản trình bày trên giấy Ao dán bảng lớp.\nd) Đánh giá: Đánh giá đồng đẳng giữa các nhóm theo Rubric 4 tiêu chí.\n\n3. HOẠT ĐỘNG 3: LUYỆN TẬP (CONCEPT - 12 PHÚT)\na) Mục tiêu: Củng cố kiến thức vị trí địa lí, địa hình và khí hậu châu Âu qua trò chơi tương tác có phản hồi sư phạm.\nb) Tổ chức thực hiện:\n- Phương án Online: HS tham gia trò chơi tương tác 10 câu hỏi trên Quizizz / Google Forms. Mỗi câu hỏi khi trả lời sai đều hiển thị phản hồi giải thích kiến thức nguyên nhân.\n- Phương án Offline Kit: Các nhóm chơi trò 'Ghép thẻ địa lí': ghép tên dãy núi/đồng bằng vào đúng vị trí trên bản đồ câm in bạt.\nc) Sản phẩm: Kết quả điểm số hiển thị trên bảng xếp hạng và các câu trả lời giải thích đúng.\nd) Đánh giá: Tuyên dương nhóm có điểm số cao nhất và nhóm có tiến bộ vượt bậc (đặc biệt khen ngợi các Cặp đôi số hỗ trợ hiệu quả).\n\n4. HOẠT ĐỘNG 4: VẬN DỤNG & KẾT LUẬN (CONCLUSION - 8 PHÚT)\na) Mục tiêu: Vận dụng kiến thức bài học giải thích hiện tượng thực tế; dặn dò an toàn số và tự đánh giá.\nb) Tổ chức thực hiện:\n- Nhiệm vụ về nhà: Tìm kiếm 01 bài báo khoa học về biến đổi khí hậu ảnh hưởng đến sông ngòi châu Âu, áp dụng quy tắc SIFT (Stop - Investigate - Find - Trace) để kiểm chứng nguồn tin.\n- GV tóm tắt sơ đồ tư duy bài học, chiếu thông điệp bảo vệ môi trường và bản quyền số.\nc) Sản phẩm: Phiếu tự phản tư nộp qua Google Classroom hoặc nộp bản in vào buổi học sau.\nd) Đánh giá: Nhận xét tổng kết tiết dạy, ghi nhận tiến độ học tập số của lớp.\n\nIV. HỆ THỐNG RUBRIC ĐÁNH GIÁ THƯỜNG XUYÊN\n- Mức Tốt (9-10đ): Xác định chính xác 100% tọa độ, phân tích sâu sắc mối liên hệ tự nhiên; sản phẩm số có trích dẫn nguồn bản quyền đầy đủ; cặp đôi số hỗ trợ tích cực.\n- Mức Khá (7-8đ): Xác định đúng vị trí và địa hình; nêu được sự khác biệt khí hậu; có trích dẫn nguồn học liệu số.\n- Mức Đạt (5-6đ): Đọc được bản đồ cơ bản theo gợi ý của bạn cùng nhóm; điền đủ phiếu học tập.\n- Mức Chưa đạt (<5đ): Chưa xác định được vị trí địa lí; không tham gia hoạt động nhóm bàn."
+  },
+  {
+    "id": "KHTN-01",
+    "category": "khtn",
+    "category_name": "Khối KHTN",
+    "subject": "Khoa học tự nhiên 7",
+    "grade": "7",
+    "topic": "Bài 22: Vai trò của trao đổi chất và chuyển hóa năng lượng ở sinh vật (Thực nghiệm sinh thái Vườn quốc gia Pù Mát)",
+    "outcomes": "Nêu được vai trò của trao đổi chất và chuyển hóa năng lượng đối với sự sinh trưởng và phát triển của sinh vật; lấy được ví dụ thực tế về các loài động thực vật quý hiếm tại Vườn quốc gia Pù Mát (sao la, vượn đen má trắng, pơ mu); thiết kế bảng so sánh nhu cầu năng lượng.",
+    "tc": "TC1 (lớp 6–7)",
+    "atm": "ATM2",
+    "atm_title": "ATM2 · Bảo vệ danh tính & dữ liệu cá nhân",
+    "ai_strand": "NLc (Kỹ thuật & Ứng dụng AI)",
+    "devices": "Máy tính bảng nhóm / phòng máy; Phương án Offline Kit: Bộ thẻ phân loại sinh vật in màu, phiếu ghi chép nhóm bàn.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Hoàn thành bảng phân loại nhu cầu năng lượng của sinh vật theo bảng mẫu có sẵn từ khóa; thực hành cùng bạn hỗ trợ.",
+      "group_b": "Khai thác phần mềm bảng tính Google Sheets để vẽ biểu đồ so sánh lượng nhiệt năng tiêu hao giữa động vật biến nhiệt và đẳng nhiệt.",
+      "group_c": "Sử dụng công cụ AI (Google Lens / Bio-AI) nhận diện đặc điểm thích nghi của sao la Pù Mát, đề xuất mô hình tháp sinh thái số."
+    },
+    "offline_kit": "Bộ 20 thẻ bài hình ảnh động thực vật Pù Mát in bìa cứng; Sơ đồ chuỗi thức ăn in khổ Ao dán tường; Phiếu học tập in sẵn có thang tiêu chí đánh giá.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: KHOA HỌC TỰ NHIÊN 7 · PHÂN MÔN: SINH HỌC\nBÀI 22: VAI TRÒ CỦA TRAO ĐỔI CHẤT VÀ CHUYỂN HÓA NĂNG LƯỢNG Ở SINH VẬT (45 PHÚT)\n(Tích hợp Năng lực số TC1 · An toàn mạng ATM2 · Mạch AI: NLc)\n\nI. MỤC TIÊU BÀI HỌC\n1. Về kiến thức:\n- Nêu được vai trò của trao đổi chất và chuyển hóa năng lượng đối với cơ thể sinh vật (cung cấp năng lượng, xây dựng tế bào, đào thải chất độc hại).\n- Phân tích được các biểu hiện của sự trao đổi chất ở động vật và thực vật qua nghiên cứu các loài sinh vật đặc hữu tại Vườn quốc gia Pù Mát (Nghệ An).\n\n2. Về năng lực:\na) Năng lực chung: Tự chủ giải quyết vấn đề khoa học; Hợp tác nhóm đa giác quan.\nb) Năng lực đặc thù: Quan sát, thu thập dữ liệu sinh học; Thiết lập sơ đồ chuyển hóa vật chất.\nc) Năng lực số (Chuẩn TC1 - CV 3456):\n- TC1.2: Sử dụng Google Sheets để nhập liệu và biểu diễn bảng số liệu tiêu thụ năng lượng.\n- TC1.4: Ứng dụng công cụ tìm kiếm khoa học để tra cứu thông tin loài sinh vật.\n\n3. Về phẩm chất & An toàn mạng (Chuẩn ATM2 - CV 6206):\n- Bảo vệ dữ liệu cá nhân: Tuyệt đối không bật định vị chính xác địa chỉ trường lớp khi tham gia các ứng dụng điều tra sinh học công cộng.\n- Giáo dục AI (Mạch NLc - QĐ 2422): Trải nghiệm kỹ thuật thị giác máy tính (AI Image Recognition) trong việc nhận dạng mẫu lá cây và dấu chân động vật hoang dã.\n\nII. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU SỐ\n1. Phương án Online:\n- Máy tính bảng nhóm cài đặt ứng dụng nhận diện sinh vật (Google Lens / Seek); File bảng tính Google Sheets mẫu chia sẻ qua Google Classroom.\n2. Phương án Offline Kit:\n- Hộp tiêu bản ảnh ép nhựa 20 loài động thực vật Pù Mát; Phiếu điều tra sinh học khổ A4 có mã màu phân loại; Bảng phụ nhóm kẻ sẵn ma trận chuyển hóa.\n\nIII. TIẾN TRÌNH DẠY HỌC 4C (45 PHÚT)\n\n1. HOẠT ĐỘNG 1: MỞ ĐẦU / KHỞI ĐỘNG (CONTEXT - 6 PHÚT)\na) Mục tiêu: Gợi mở vấn đề thông qua clip ngắn 60 giây về loài Sao La - 'Kỳ lân châu Á' được phát hiện tại Pù Mát.\nb) Tổ chức thực hiện: GV đặt câu hỏi: 'Để sinh tồn và di chuyển vượt địa hình hiểm trở của dãy Trường Sơn Bắc, cơ thể Sao La cần những nguồn năng lượng nào và năng lượng đó được chuyển hóa từ đâu?'\nc) Sản phẩm: Câu trả lời thảo luận nhanh của 4 tổ học tập.\nd) Đánh giá: Khen ngợi tinh thần khám phá, định hướng vào khái niệm trao đổi chất.\n\n2. HOẠT ĐỘNG 2: HÌNH THÀNH KIẾN THỨC MỚI (CHALLENGE - 19 PHÚT)\na) Mục tiêu: Phân tích 3 vai trò cốt lõi của trao đổi chất; phân tầng nhiệm vụ A/B/C.\nb) Tổ chức thực hiện:\n- GV giao 03 gói nhiệm vụ số tương ứng với trình độ nhóm:\n  + Gói A (Cơ bản): Đọc sơ đồ chuyển hóa năng lượng (Quang hợp -> Hô hấp tế bào), điền từ còn thiếu vào bảng tương tác trên màn hình.\n  + Gói B (Thành thạo): Tính toán lượng calo cần thiết trong 1 ngày của một cá thể Vượn đen má trắng dựa trên bảng số liệu thức ăn (lá cây, quả dại, côn trùng); nhập dữ liệu vào Google Sheets.\n  + Gói C (Nâng cao): Mô hình hóa dòng năng lượng trong chuỗi thức ăn Pù Mát; giải thích tại sao năng lượng bị hao hụt qua từng bậc dinh dưỡng (thất thoát nhiệt).\n- Lưu ý an toàn ATM2: Học sinh không đăng tải hình ảnh khuôn mặt bạn học khi nộp bài tập nhóm lên không gian mở.\nc) Sản phẩm: Bảng số liệu hoàn chỉnh trên Google Sheets và sơ đồ chuỗi thức ăn số.\nd) Đánh giá: GV chấm nhanh sản phẩm qua màn hình điều khiển lớp học.\n\n3. HOẠT ĐỘNG 3: LUYỆN TẬP (CONCEPT - 12 PHÚT)\na) Mục tiêu: Khắc sâu kiến thức bằng trò chơi phân loại sinh thái.\nb) Tổ chức thực hiện:\n- Phương án Online: Chơi trò 'Bảo vệ rừng Pù Mát' trên nền tảng Wordwall / Google Forms có tính điểm theo thời gian thực.\n- Phương án Offline Kit: Trò chơi 'Mảnh ghép dinh dưỡng': Mỗi bàn nhận 10 thẻ hình sinh vật và phải ghép đúng thẻ dinh dưỡng tương ứng trong vòng 3 phút.\nc) Sản phẩm: Tỉ lệ câu trả lời đúng trên 85% của toàn lớp.\nd) Đánh giá: Tuyên dương các bạn nhóm A có sự bứt phá với sự trợ giúp của Cặp đôi số.\n\n4. HOẠT ĐỘNG 4: VẬN DỤNG & KẾT LUẬN (CONCLUSION - 8 PHÚT)\na) Mục tiêu: Vận dụng kiến thức thiết kế thực đơn dinh dưỡng hợp lí cho học sinh tuổi dậy thì.\nb) Tổ chức thực hiện:\n- Giao dự án: 'Tính toán nhu cầu năng lượng một ngày của bản thân và người thân trong gia đình, xây dựng tháp dinh dưỡng cân bằng số.'\n- Nhắc nhở quy tắc an toàn: Không chia sẻ thông tin sức khỏe riêng tư lên mạng xã hội.\nc) Sản phẩm: Bảng kế hoạch dinh dưỡng cá nhân nộp vào tuần sau.\nd) Đánh giá: Tổng kết tiết dạy, cho điểm cộng thi đua tổ."
+  },
+  {
+    "id": "KHTN-02",
+    "category": "khtn",
+    "category_name": "Khối KHTN",
+    "subject": "Khoa học tự nhiên 8",
+    "grade": "8",
+    "topic": "Bài 6: Phản ứng hóa học và Định luật bảo toàn khối lượng (Thí nghiệm ảo PhET & Cân điện tử)",
+    "outcomes": "Giải thích được bản chất của phản ứng hóa học là sự biến đổi liên kết giữa các nguyên tử; phát biểu và vận dụng được định luật bảo toàn khối lượng; thao tác thành thạo trên phần mềm mô phỏng thí nghiệm ảo PhET.",
+    "tc": "TC2 (lớp 8–9)",
+    "atm": "ATM3",
+    "atm_title": "ATM3 · Phòng chống lừa đảo & mã độc số",
+    "ai_strand": "NLd (Thiết kế hệ thống AI)",
+    "devices": "Phòng máy tính kết nối Internet; Phương án Offline Kit: Bộ mô hình nguyên tử bằng hạt màu/đất nặn, cân đòn cơ học.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Thực hiện mô phỏng cân khối lượng trước và sau phản ứng trên PhET theo từng bước chỉ dẫn; ghi chép số liệu.",
+      "group_b": "Tự thiết lập các phản ứng giữa kim loại và axit, kiểm chứng tính đúng đắn của định luật bảo toàn khối lượng.",
+      "group_c": "Lập phương trình hóa học bằng hệ số tổng quát, giải thích cơ chế bảo toàn nguyên tử bằng mô hình toán học giải thuật."
+    },
+    "offline_kit": "06 Bộ mô hình bi nhựa liên kết hóa học; 02 Cân cơ học và dung dịch BaCl2, Na2SO4 làm thí nghiệm thật trực quan; Phiếu học tập in sẵn.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: KHOA HỌC TỰ NHIÊN 8 · PHÂN MÔN: HÓA HỌC\nBÀI 6: PHẢN ỨNG HÓA HỌC VÀ ĐỊNH LUẬT BẢO TOÀN KHỐI LƯỢNG (45 PHÚT)\n(Tích hợp Năng lực số TC2 · An toàn mạng ATM3 · Mạch AI: NLd)\n\nI. MỤC TIÊU BÀI HỌC\n1. Về kiến thức:\n- Giải thích được dấu hiệu có phản ứng hóa học xảy ra và bản chất biến đổi liên kết giữa các nguyên tử.\n- Phát biểu và chứng minh được định luật bảo toàn khối lượng: m(chất tham gia) = m(sản phẩm).\n- Vận dụng định luật để tính khối lượng của một chất khi biết khối lượng các chất còn lại trong phản ứng.\n\n2. Về năng lực:\na) Năng lực chung: Năng lực giải quyết vấn đề và sáng tạo; Giao tiếp khoa học.\nb) Năng lực đặc thù: Thao tác thực nghiệm số trên phần mềm mô phỏng; Lập phương trình hóa học.\nc) Năng lực số (Chuẩn TC2 - CV 3456):\n- TC2.3: Sử dụng thành thạo phần mềm mô phỏng khoa học PhET Interactive Simulations (Colorado).\n- TC2.1: Tổ chức dữ liệu thực nghiệm trên bảng tính số và phân tích sai số đo lường.\n\n3. Về phẩm chất & An toàn mạng (Chuẩn ATM3 - CV 6206):\n- An toàn phần mềm: Hướng dẫn HS nhận biết link chính thống của các công cụ mô phỏng giáo dục (đuôi .edu, .edu.vn), cảnh giác không tải các file .exe hoặc tiện ích mở rộng không rõ nguồn gốc giả mạo công cụ hóa học.\n- Giáo dục AI (Mạch NLd - QĐ 2422): Khám phá cách các mô hình máy học dự đoán cấu trúc phân tử và cân bằng phương trình phản ứng hóa học tự động.\n\nII. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU SỐ\n1. Phương án Online: Máy tính nối mạng, truy cập thí nghiệm ảo PhET: 'Balancing Chemical Equations' và 'Reactants, Products and Leftovers'.\n2. Phương án Offline Kit: 06 khay thí nghiệm thật gồm cốc thủy tinh, dung dịch BaCl2, Na2SO4, cân phân tích hiện số; Phiếu học tập in sẵn 4C.\n\nIII. TIẾN TRÌNH DẠY HỌC 4C (45 PHÚT)\n1. Hoạt động 1: Khởi động (Context - 6 phút): Quan sát que diêm cháy và thanh sắt gỉ. Khối lượng sau khi cháy tăng hay giảm? Gợi mở nghịch lý để dẫn đến nhu cầu cân đo khoa học.\n2. Hoạt động 2: Hình thành kiến thức (Challenge - 18 phút):\n- HS truy cập PhET thực hiện mô phỏng phản ứng giữa Khí Hydro và Khí Oxy tạo thành Nước.\n- Đếm số lượng nguyên tử H và O trước và sau phản ứng. Rút ra kết luận: Số lượng nguyên tử mỗi nguyên tố được giữ nguyên, chỉ có liên kết biến đổi.\n- Phân hóa A/B/C: Nhóm A làm theo phiếu checklist; Nhóm B tự chọn 3 phản ứng mới; Nhóm C giải thích định luật bảo toàn khối lượng qua góc nhìn bảo toàn năng lượng.\n3. Hoạt động 3: Luyện tập (Concept - 13 phút): Bài tập áp dụng định luật bảo toàn khối lượng; trò chơi 'Cân bằng phản ứng siêu tốc' trên Google Forms có đồng hồ đếm ngược.\n4. Hoạt động 4: Vận dụng (Conclusion - 8 phút): Tính lượng vôi sống (CaO) thu được khi nung đá vôi tại các lò vôi Hoàng Mai (Nghệ An); giải thích vấn đề giảm phát thải khí CO2. Dặn dò an toàn ATM3.\n\nIV. RUBRIC ĐÁNH GIÁ:\n- Tốt: Thao tác PhET mượt mà, lập đúng 100% phương trình, giải bài toán bảo toàn khối lượng chính xác và giải thích rõ bản chất.\n- Khá: Cân bằng đúng phương trình, vận dụng được công thức tính khối lượng.\n- Đạt: Thao tác được mô phỏng theo chỉ dẫn của bạn trong cặp đôi số."
+  },
+  {
+    "id": "TOAN-01",
+    "category": "toan",
+    "category_name": "Toán & Tin học",
+    "subject": "Toán 8",
+    "grade": "8",
+    "topic": "Bài 2: Hàm số bậc nhất y = ax + b (a ≠ 0) và ứng dụng thực tế xác định giá cước taxi TP. Vinh",
+    "outcomes": "Nhận biết được hàm số bậc nhất và tính chất đồng biến, nghịch biến; vẽ được đồ thị hàm số bậc nhất trên phần mềm GeoGebra và giấy kẻ ô; mô hình hóa bài toán tính cước vận tải taxi thực tế tại TP. Vinh, Nghệ An.",
+    "tc": "TC2 (lớp 8–9)",
+    "atm": "ATM7",
+    "atm_title": "ATM7 · Dấu chân số & bảo vệ danh tiếng trực tuyến",
+    "ai_strand": "NLc (Kỹ thuật & Ứng dụng AI)",
+    "devices": "Phần mềm toán học động GeoGebra trên máy tính/điện thoại; Phương án Offline Kit: Giấy kẻ tọa độ Oxy in sẵn, thước đo góc.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Xác định hệ số a, b của hàm số theo bảng giá cước cho trước; vẽ đồ thị qua 2 điểm đặc biệt theo hướng dẫn.",
+      "group_b": "Dùng GeoGebra tạo thanh trượt (slider) cho hệ số a và b để quan sát sự thay đổi độ dốc của đường thẳng.",
+      "group_c": "Lập hàm số so sánh giá cước giữa 2 hãng taxi tại Nghệ An (ví dụ: Mai Linh vs Xanh SM), tìm tọa độ giao điểm để tư vấn lựa chọn kinh tế nhất."
+    },
+    "offline_kit": "Phiếu bài tập in lưới tọa độ Oxy chuẩn mm; Bảng giá cước taxi in màu; Bộ thước kẻ eke theo bàn.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: TOÁN 8 · PHÂN MÔN: ĐẠI SỐ\nBÀI 2: HÀM SỐ BẬC NHẤT Y = AX + B VÀ MÔ HÌNH HÓA THỰC TIỄN (45 PHÚT)\n(Tích hợp Năng lực số TC2 · An toàn mạng ATM7 · Mạch AI: NLc)\n\nI. MỤC TIÊU BÀI HỌC\n1. Về kiến thức: Định nghĩa hàm số bậc nhất; Điều kiện đồng biến (a > 0), nghịch biến (a < 0); Vẽ đồ thị y = ax + b.\n2. Về năng lực: Năng lực mô hình hóa toán học; Sử dụng công cụ phần mềm toán học động GeoGebra (TC2.3).\n3. Về phẩm chất & An toàn mạng: Quản lý chi tiêu số và an toàn giao dịch thanh toán trực tuyến (ATM7).\n\nII. TIẾN TRÌNH DẠY HỌC 4C (45 PHÚT)\n1. Hoạt động 1: Mở đầu (Context - 7 phút): Tình huống thực tế: Bạn An đi taxi từ Quảng trường Hồ Chí Minh (TP. Vinh) về Cửa Lò. Giá mở cửa 10.000đ (cho 0.5 km đầu), mỗi km tiếp theo giá 13.000đ. Viết công thức tính số tiền y (đồng) theo quãng đường x (km).\n2. Hoạt động 2: Hình thành kiến thức (Challenge - 18 phút):\n- Khái quát hóa công thức y = 13000x + 3500 thành dạng tổng quát y = ax + b.\n- Mở GeoGebra vẽ đồ thị đường thẳng. Dùng slider thay đổi hệ số a để học sinh nhận xét góc tạo bởi đường thẳng và trục Ox.\n- Phân hóa A/B/C: Nhóm A vẽ đồ thị trên giấy kẻ ô; Nhóm B thao tác slider trên GeoGebra; Nhóm C giải bài toán kinh tế điểm hòa vốn.\n3. Hoạt động 3: Luyện tập (Concept - 12 phút): Bài tập xác định đồng biến/nghịch biến; Trắc nghiệm nhanh trên Google Classroom.\n4. Hoạt động 4: Vận dụng (Conclusion - 8 phút): Dự án: Khảo sát biểu giá điện lũy tiến hoặc cước internet tại gia đình, lập hàm số bậc nhất từng khoảng."
+  },
+  {
+    "id": "KHXH-02",
+    "category": "khxh",
+    "category_name": "Khối KHXH",
+    "subject": "Lịch sử & Địa lí 8",
+    "grade": "8",
+    "topic": "Bài 16: Phong trào Cần Vương và cuộc khởi nghĩa Hương Khê (1885 - 1896) tại vùng Nghệ - Tĩnh",
+    "outcomes": "Nêu được nguyên nhân bùng nổ, các giai đoạn phát triển chính của cuộc khởi nghĩa Hương Khê do Phan Đình Phùng và Cao Thắng lãnh đạo; phân tích vai trò căn cứ địa tại vùng núi Vũ Quang và Thanh Chương - Nam Đàn (Nghệ An); đánh giá ý nghĩa lịch sử của phong trào.",
+    "tc": "TC2 (lớp 8–9)",
+    "atm": "ATM1",
+    "atm_title": "ATM1 · Bản quyền số & kiểm chứng nguồn (SIFT)",
+    "ai_strand": "NLb (Đạo đức AI)",
+    "devices": "Máy chiếu, Google Slides nhóm; Phương án Offline Kit: Hồ sơ tư liệu in sẵn đóng tập kẹp file, bảng nhóm Ao.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Hoàn thành trục thời gian (Timeline) các mốc lịch sử chính của cuộc khởi nghĩa Hương Khê theo mẫu phiếu học tập.",
+      "group_b": "Xây dựng sơ đồ lược đồ tác chiến căn cứ địa Vũ Quang - Ngàn Trữ trên Google Slides; trích dẫn nguồn bảo tàng số.",
+      "group_c": "Đánh giá vai trò sáng chế súng trường của Cao Thắng; viết bài luận ngắn phản biện quan điểm sai lệch về phong trào Cần Vương."
+    },
+    "offline_kit": "Tập hồ sơ tư liệu lịch sử Hương Khê in kèm chân dung Phan Đình Phùng, Cao Thắng; Bản đồ tác chiến in bạt Ao.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: LỊCH SỬ VÀ ĐỊA LÍ 8 · PHÂN MÔN: LỊCH SỬ\nBÀI 16: PHONG TRÀO CẦN VƯƠNG VÀ CUỘC KHỞI NGHĨA HƯƠNG KHÊ (45 PHÚT)\n(Tích hợp Năng lực số TC2 · An toàn mạng ATM1 · Mạch AI: NLb)\n\nI. MỤC TIÊU BÀI HỌC\n1. Nêu được nguyên nhân, diễn biến và kết quả của khởi nghĩa Hương Khê - đỉnh cao của phong trào Cần Vương.\n2. Năng lực số TC2.1: Thu thập và kiểm chứng tư liệu lịch sử số từ cổng thông tin Viện Lịch sử quân sự và Bảo tàng Xô Viết Nghệ Tĩnh.\n3. Đạo đức AI (NLb): Không sử dụng AI để xuyên tạc bối cảnh lịch sử; ghi rõ nguồn gốc khi dùng AI phục chế ảnh nhân vật lịch sử."
+  },
+  {
+    "id": "GDCD-01",
+    "category": "khxh",
+    "category_name": "Khối KHXH",
+    "subject": "Giáo dục công dân 7",
+    "grade": "7",
+    "topic": "Bài 8: Phòng chống bạo lực học đường và xây dựng văn hóa ứng xử trên không gian mạng (ATM4)",
+    "outcomes": "Nhận biết được các hình thức bạo lực học đường trên không gian mạng (cyberbullying); nêu được tác hại đối với tâm lý học sinh; thực hiện được các biện pháp phòng chống và xử lý khi bị bắt nạt trực tuyến; cam kết thực hiện văn hóa ứng xử số.",
+    "tc": "TC1 (lớp 6–7)",
+    "atm": "ATM4",
+    "atm_title": "ATM4 · Phòng chống bắt nạt & ứng xử văn hóa mạng",
+    "ai_strand": "NLb (Đạo đức AI)",
+    "devices": "Google Forms khảo sát ẩn danh; Phương án Offline Kit: Hộp thư điều ước kín, bộ thẻ tình huống giả định dán nhãn màu.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Nhận diện 4 hành vi bắt nạt trực tuyến phổ biến và ghi nhớ quy trình 4 bước ứng phó sự cố khẩn cấp.",
+      "group_b": "Đóng vai xử lý tình huống một bạn trong lớp bị lập nhóm bôi nhọ trên mạng xã hội; lập biên bản hỗ trợ tâm lý.",
+      "group_c": "Xây dựng cẩm nang số 'Bộ quy tắc 4 KHÔNG - 3 CÓ' dán tại phòng máy tính của trường; thiết kế poster truyền thông."
+    },
+    "offline_kit": "Bộ 15 thẻ tình huống bạo lực mạng in giấy màu; Bản cam kết văn hóa số học đường in khổ A3 cho cả lớp ký tên.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: GIÁO DỤC CÔNG DÂN 7\nBÀI 8: PHÒNG CHỐNG BẠO LỰC TRỰC TUYẾN VÀ ỨNG XỬ VĂN HÓA MẠNG (45 PHÚT)\n(Tích hợp Năng lực số TC1 · An toàn mạng ATM4 · Mạch AI: NLb)\n\nI. MỤC TIÊU BÀI HỌC: Nhận diện cyberbullying, quy trình 4 bước ứng phó sự cố (Chặn - Lưu bằng chứng - Báo người lớn - Tìm hỗ trợ tâm lý), bảo vệ bí mật đời tư học sinh theo Luật 91/2025/QH15 và Luật Trẻ em 2016."
+  },
+  {
+    "id": "TIN-01",
+    "category": "toan",
+    "category_name": "Toán & Tin học",
+    "subject": "Tin học 7",
+    "grade": "7",
+    "topic": "Chủ đề D: Đạo đức, pháp luật và văn hóa trong môi trường số - An toàn thông tin cá nhân (ATM2 & ATM3)",
+    "outcomes": "Nhận biết được tầm quan trọng của việc bảo mật thông tin cá nhân; tạo được mật khẩu mạnh và kích hoạt xác thực hai yếu tố (2FA); nhận diện các thủ đoạn lừa đảo qua mạng xã hội và email mạo danh.",
+    "tc": "TC1 (lớp 6–7)",
+    "atm": "ATM2",
+    "atm_title": "ATM2 · Bảo vệ danh tính & dữ liệu cá nhân",
+    "ai_strand": "NLb (Đạo đức AI)",
+    "devices": "Phòng máy tính thực hành; Phương án Offline Kit: Bảng giải mã mật thư, phiếu bài tập nhận diện email lừa đảo.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Thực hành kiểm tra độ mạnh của mật khẩu trên công cụ kiểm tra offline; ghi nhớ quy tắc đặt mật khẩu an toàn.",
+      "group_b": "Phân tích 3 bức thư điện tử giả mạo (phishing) và tìm ra các điểm bất thường (địa chỉ gửi, link rút gọn, yêu cầu mã OTP).",
+      "group_c": "Thiết lập quy trình mã hóa dữ liệu cơ bản cho bài tập nhóm của tổ; tư vấn bảo mật cho bạn trong cặp đôi số."
+    },
+    "offline_kit": "Bộ thẻ giải mã mật khẩu Caesar bằng bìa xoay; Phiếu nhận diện email độc hại in màu khổ A4.",
+    "simulated_plan": "KẾ HOẠCH BÀI DẠY (KHBD) CHUẨN CÔNG VĂN 5512/BGDĐT-GDTrH\nMÔN: TIN HỌC 7 · CHỦ ĐỀ D: ĐẠO ĐỨC, PHÁP LUẬT VÀ VĂN HÓA TRONG MÔI TRƯỜNG SỐ\nBÀI: AN TOÀN DỮ LIỆU CÁ NHÂN VÀ PHÒNG TRÁNH LỪA ĐẢO SỐ (45 PHÚT)\n(Tích hợp Năng lực số TC1 · An toàn mạng ATM2 & ATM3 · Mạch AI: NLb)"
+  },
+  {
+    "id": "CBQL-01",
+    "category": "cbql",
+    "category_name": "Quản trị CBQL",
+    "subject": "Quản trị THCS",
+    "grade": "CBQL",
+    "topic": "Xây dựng Kế hoạch chuyển đổi số và an toàn mạng học đường trường THCS vùng cao Nghệ An theo chu trình PDCA và 5 Trụ cột",
+    "outcomes": "Lập được Kế hoạch hành động CĐS cấp trường khả thi trong 4 tuần; tổ chức được mạng lưới Cặp đôi số trong các tổ chuyên môn; xây dựng quy chế bảo mật dữ liệu học sinh theo Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 và QĐ 4725/QĐ-BGDĐT.",
+    "tc": "TC2 (lớp 8–9)",
+    "atm": "ATM8",
+    "atm_title": "ATM8 · Đạo đức sử dụng Trí tuệ nhân tạo (AI)",
+    "ai_strand": "NLa (Tư duy lấy con người làm trung tâm)",
+    "devices": "Hệ thống Google Workspace for Education, Google Sheets quản trị Gantt, Google Sites hồ sơ số.",
+    "duration": 45,
+    "scaffolding": {
+      "group_a": "Nắm vững bộ chỉ số CĐS theo QĐ 4725, đánh giá thực trạng cơ sở vật chất và năng lực số của đội ngũ giáo viên.",
+      "group_b": "Xây dựng ma trận phân công trách nhiệm RACI cho 5 Trụ cột CĐS; tổ chức sinh hoạt chuyên môn nghiên cứu bài học số.",
+      "group_c": "Thiết lập hệ thống kiểm soát chất lượng PDCA, thẩm định và nghiệm thu 100% hồ sơ học liệu số của trường."
+    },
+    "offline_kit": "Tập hồ sơ quy chế CĐS in đóng tập; Bảng kiểm đánh giá chỉ số QĐ 4725 in khổ A3 lưu văn phòng.",
+    "simulated_plan": "KẾ HOẠCH HÀNH ĐỘNG CHUYỂN ĐỔI SỐ VÀ AN TOÀN MẠNG TRƯỜNG THCS\nTHEO CHU TRÌNH PDCA VÀ 5 TRỤ CỘT NAEM 2026 (ÁP DỤNG TRƯỜNG THCS HUYỆN KỲ SƠN / TƯƠNG DƯƠNG)\n(Bảo đảm Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 · QĐ 4725/QĐ-BGDĐT · TT 18/2026/TT-BGDĐT)\n\nI. MỤC TIÊU CHIẾN LƯỢC:\n- 100% giáo viên được phân luồng A/B/C và tham gia mạng lưới 'Cặp đôi số' 1-kèm-1.\n- Cắt giảm tối thiểu 60% sổ sách giấy qua ứng dụng Google Workspace và cổng thông tin điện tử trường học.\n- 100% Kế hoạch bài dạy (KHBD) tích hợp năng lực số TC1/TC2, an toàn mạng ATM1-8 mà không làm phát sinh tiết học mới.\n- Xây dựng kho học liệu số dùng chung cấp trường và bộ Offline Kit dự phòng cho 100% các lớp học vùng khó khăn."
+  }
+]

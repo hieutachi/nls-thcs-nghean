@@ -821,6 +821,52 @@
 
       <!-- Tab 1: KHBD 4C -->
       <div class="builder-panel active" id="panel-khbd">
+        
+        <!-- Interactive JSON Case Studies Selector Table -->
+        <div class="case-study-card" id="case-study-container">
+          <div class="case-study-card-head">
+            <div class="case-card-title-group">
+              <span class="eyebrow">DỮ LIỆU CASE STUDY SƯ PHẠM SỐ THÍCH ỨNG (JSON DATA)</span>
+              <h3>📊 Bảng Ca Thực Hành Chuẩn Hóa Mẫu (Chọn để Nạp tự động & Sinh thử trên Tool)</h3>
+              <p class="muted" style="margin:2px 0 0 0;font-size:12.5px;">Bao gồm 8 trường hợp điển hình liên thông KHXH, KHTN, Toán, Tin học & CBQL gắn với bối cảnh địa phương Nghệ An (Pù Mát, Khởi nghĩa Hương Khê, Vận tải Vinh...).</p>
+            </div>
+            <button type="button" class="case-json-btn" id="btn-toggle-json" aria-expanded="false" title="Xem cấu trúc dữ liệu JSON thô">
+              <span>{ }</span>
+              <span>Xem JSON Data</span>
+            </button>
+          </div>
+
+          <div class="case-filter-bar">
+            <span style="font-size:11.5px;font-weight:750;color:var(--navy);margin-right:4px;">LỌC THEO KHỐI:</span>
+            <button type="button" class="case-filter-btn active" data-case-cat="all">Tất cả (8 Case)</button>
+            <button type="button" class="case-filter-btn" data-case-cat="khxh">Khối KHXH (3)</button>
+            <button type="button" class="case-filter-btn" data-case-cat="khtn">Khối KHTN (2)</button>
+            <button type="button" class="case-filter-btn" data-case-cat="toan">Toán & Tin học (2)</button>
+            <button type="button" class="case-filter-btn" data-case-cat="cbql">Quản trị CBQL (1)</button>
+          </div>
+
+          <!-- Raw JSON Drawer (collapsible) -->
+          <pre class="case-json-drawer" id="case-json-drawer"></pre>
+
+          <!-- Table of Cases -->
+          <div class="case-table-wrap">
+            <table class="case-table" id="case-table">
+              <thead>
+                <tr>
+                  <th style="width:110px;">Mã Case</th>
+                  <th style="width:160px;">Môn học & Khối</th>
+                  <th>Chủ đề bài dạy & YCCĐ chuẩn GDPT 2018</th>
+                  <th style="width:170px;">Tích hợp NLS & ATM</th>
+                  <th style="width:130px;">Phương án thiết bị</th>
+                  <th style="width:130px;text-align:center;">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody id="case-table-body">
+                <!-- Rendered dynamically by app.js from cases.json -->
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div class="form-layout">
           <div class="form-card">
             <div class="form-card-head">
@@ -892,6 +938,7 @@
 
             <div class="form-actions">
               <button class="button primary" id="btn-generate-khbd">Tạo Prompt 4 thẻ chuẩn hóa →</button>
+              <button class="button secondary" id="btn-simulate-khbd">✨ Sinh thử KHBD mô phỏng (Demo Tool) →</button>
               <button class="text-button" data-reset="khbd">Xóa nội dung</button>
             </div>
           </div>
@@ -900,15 +947,31 @@
             <div class="output-head">
               <div>
                 <span class="eyebrow">KẾT QUẢ CỦA BẠN</span>
-                <h3>Prompt KHBD 4C sẵn sàng</h3>
+                <h3 id="khbd-output-heading">Prompt KHBD 4C sẵn sàng</h3>
               </div>
               <span id="khbd-status" class="status-tag">CHƯA TẠO</span>
             </div>
-            <div class="output-content placeholder" id="khbd-output">Nội dung câu lệnh 4 thẻ sẽ xuất hiện tại đây sau khi thầy/cô bấm nút "Tạo Prompt". Hãy sao chép để dán vào Gemini / NotebookLM.</div>
+
+            <!-- Dual View Switcher -->
+            <div class="out-tabs-bar">
+              <button type="button" class="out-tab-btn active" id="tab-btn-prompt" data-outview="prompt">
+                <span>📋 Câu lệnh Prompt 4 Thẻ (Dán LLM)</span>
+              </button>
+              <button type="button" class="out-tab-btn" id="tab-btn-demo" data-outview="demo">
+                <span>✨ KHBD Mô Phỏng Hoàn Chỉnh (AI Demo)</span>
+              </button>
+            </div>
+
+            <!-- View 1: 4-Card Master Prompt -->
+            <div class="output-content placeholder" id="khbd-output">Nội dung câu lệnh 4 thẻ sẽ xuất hiện tại đây sau khi thầy/cô chọn case mẫu ở bảng trên hoặc bấm "Tạo Prompt". Hãy sao chép để dán vào Gemini / NotebookLM.</div>
+
+            <!-- View 2: Simulated Full Lesson Plan Document -->
+            <div class="simulated-doc-view placeholder" id="khbd-demo-output" style="display:none;">Chọn một Case mẫu ở bảng trên hoặc bấm "Sinh thử KHBD mô phỏng (Demo Tool)" để xem toàn bộ Kế hoạch bài dạy 45 phút chuẩn Công văn 5512 với đầy đủ 4 hoạt động 4C, phân tầng A/B/C và phương án Offline Kit dự phòng.</div>
+
             <div class="output-actions">
-              <button class="button small primary copy-output" data-output="khbd-output">📋 Sao chép</button>
-              <button class="button small secondary download-output" data-output="khbd-output">💾 Tải .txt</button>
-              <button class="button small secondary print-output" data-output="khbd-output">🖨 In</button>
+              <button class="button small primary copy-output" id="btn-copy-khbd" data-output="khbd-output">📋 Sao chép</button>
+              <button class="button small secondary download-output" id="btn-download-khbd" data-output="khbd-output">💾 Tải .txt</button>
+              <button class="button small secondary print-output" id="btn-print-khbd" data-output="khbd-output">🖨 In</button>
             </div>
           </div>
         </div>
