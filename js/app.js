@@ -1,10 +1,7 @@
 // NLS THCS NGHỆ AN - Hệ thống hỗ trợ thực hành và chuyển đổi số thích ứng
-// Phiên bản chuẩn hóa 2026 - Tích hợp Khối KHXH, KHTN và Cán bộ Quản lý (CBQL)
+// Phiên bản chuẩn hóa SPA 2026 - Tích hợp Khối KHXH, KHTN và Cán bộ Quản lý (CBQL)
 
 const LESSONS = [{"id": "lesson1", "day": "NGÀY 01 · BUỔI 01", "session": "Sáng (4 tiết)", "title": "Cơ sở pháp lý, Chuyển đổi số & Khung năng lực số THCS", "objective": "Nhận diện vị trí năng lực số cá nhân theo TT 18/2026/TT-BGDĐT; nắm vững liên thông Khung NLS GV (6 miền, 20 năng lực), NLS HS (TC1 lớp 6-7, TC2 lớp 8-9 theo CV 3456), 4 mạch AI (QĐ 2422) và 8 nhóm An toàn mạng (CV 6206).", "activities": ["Khảo sát tự đánh giá đầu vào, phân loại học viên thành 3 nhóm A (Cơ bản), B (Thành thạo), C (Nâng cao).", "Thiết lập cơ chế cố vấn đồng đẳng 'Cặp đôi số' (1 kèm 1) trong tổ và trường.", "Vẽ sơ đồ ánh xạ tích hợp NLS - ATM vào môn học theo CTGDPT 2018 (không phát sinh tiết mới)."], "tools": ["Google Forms", "Google Sheets", "Google Docs"], "products": ["Phiếu tự đánh giá năng lực số cá nhân", "Sơ đồ ánh xạ địa chỉ tích hợp NLS - ATM - AI vào môn học", "Danh sách phân công Cặp đôi số của tổ chuyên môn"], "evidence": "Biểu mẫu khảo sát đã ẩn danh và sơ đồ ma trận tích hợp bộ môn"}, {"id": "lesson2", "day": "NGÀY 01 · BUỔI 02", "session": "Chiều (4 tiết)", "title": "An toàn mạng, Đạo đức AI & Tra cứu tri thức có căn cứ", "objective": "Vận dụng quy trình SIFT 4 bước kiểm chứng thông tin; làm chủ cơ chế Grounded AI qua NotebookLM để tra cứu văn bản quy phạm chống ảo giác; thực hành bảo vệ dữ liệu học sinh dưới 16 tuổi theo Luật 91/2025/QH15 và quy trình ứng phó sự cố ATM.", "activities": ["Thiết lập Sổ tay tri thức số trên NotebookLM nạp văn bản chỉ đạo chính thống.", "Thực hành kiểm chứng thông tin sức khỏe/khoa học/lịch sử mạng theo 4 bước SIFT.", "Diễn tập kịch bản ứng phó sự cố an toàn mạng giả lập (4 bước & 7 bước cấp trường).", "Xây dựng Poster quy tắc '4 KHÔNG - 3 CÓ' phù hợp lứa tuổi THCS."], "tools": ["NotebookLM", "Google Drive", "Gemini"], "products": ["Sổ tay tri thức số NotebookLM kèm bộ nguồn pháp lý đã đối chiếu", "Bộ quy tắc '4 KHÔNG - 3 CÓ' về Đạo đức AI và An toàn mạng", "Quy trình xử lý sự cố an toàn mạng học đường"], "evidence": "Sổ tay NotebookLM, kịch bản diễn tập an toàn và bản ghi chú nguồn CC"}, {"id": "lesson3", "day": "NGÀY 02 · BUỔI 03", "session": "Sáng (4 tiết)", "title": "Sư phạm số thích ứng & Thiết kế KHBD tích hợp theo mô hình 4C", "objective": "Làm chủ kỹ thuật viết prompt 4 thẻ để thiết kế Kế hoạch bài dạy chuẩn Công văn 5512/BGDĐT-GDTrH theo mô hình 4C (Context - Challenge - Concept - Conclusion), tích hợp NLS TC1/TC2, ATM1-ATM8, phân hóa A/B/C và phương án không thiết bị cho vùng khó khăn Nghệ An.", "activities": ["Xây dựng Ma trận tích hợp NLS - ATM cho 03 bài học bộ môn hiện hành.", "Dùng AI thiết kế tiến trình 45 phút theo mô hình 4C (phân hóa nhiệm vụ nhóm A/B/C).", "Thiết kế phương án ngoại tuyến / Offline Kit (phiếu học tập in sẵn, hoạt động không mạng).", "Phản biện đồng đẳng KHBD theo Rubric 4 tiêu chí chuẩn hóa."], "tools": ["Google Docs", "Gemini", "Custom Gems"], "products": ["Ma trận tích hợp NLS - ATM cho 03 bài học", "01 Kế hoạch bài dạy (KHBD) hoàn chỉnh 45 phút tích hợp NLS - ATM", "Phiếu học tập ngoại tuyến dự phòng (Offline Kit)"], "evidence": "KHBD đầy đủ phụ lục IV có rubric, minh chứng và ghi chú minh bạch AI"}, {"id": "lesson4", "day": "NGÀY 02 · BUỔI 04", "session": "Chiều (4 tiết)", "title": "Hệ sinh thái học liệu đa phương tiện & Trò chơi hóa (Gamification)", "objective": "Sáng tạo học liệu số bản quyền bằng AI tạo sinh (tranh ảnh mô phỏng 3D/lịch sử, bản nhạc giáo dục, podcast), biên tập video micro-learning 3 phút và thiết kế trò chơi học tập có cơ chế phản hồi sư phạm tích cực.", "activities": ["Tạo ảnh minh họa bối cảnh văn học / mô phỏng cấu trúc vi mô khoa học qua AI.", "Sáng tác bài hát giáo dục ghi nhớ quy tắc / ca khúc kỹ năng số bằng Suno/Udio.", "Viết kịch bản Storyboard và dựng video bài giảng số ngắn (Micro-learning 3 phút).", "Thiết kế trò chơi học tập tương tác phân nhánh trên Canva / Google Forms."], "tools": ["Google Slides", "Canva", "Gemini (Imagen 3)", "CapCut / Clipchamp"], "products": ["Bộ tranh minh họa AI / Infographic có trích nguồn CC và chú thích AI", "Video bài giảng số micro-learning 3 phút kèm phụ đề và kịch bản phân cảnh", "Trò chơi học tập số (Gamification) có phản hồi giải thích đáp án"], "evidence": "Tệp học liệu số, bản quyền mở Creative Commons và bảng kiểm kỹ thuật"}, {"id": "lesson5", "day": "NGÀY 03 · BUỔI 05", "session": "Sáng (4 tiết)", "title": "Khảo thí số, Đánh giá thường xuyên & Thiết lập Trợ lý ảo Gems", "objective": "Tự động hóa xây dựng ma trận đặc tả và ngân hàng câu hỏi phân hóa theo Thông tư 22/2021/TT-BGDĐT; xuất bản đề kiểm tra chuẩn LaTeX/Overleaf (Toán/KHTN); xây dựng Rubric đánh giá thường xuyên; thiết lập và huấn luyện Trợ lý ảo Custom Gems chuyên biệt cho tổ.", "activities": ["Xây dựng ma trận đề kiểm tra 3 mức nhận thức (Nhận biết - Thông hiểu - Vận dụng).", "Biên soạn câu hỏi tình huống thực nghiệm, bóc trần lỗi ảo giác AI và kiểm chứng SIFT.", "Xuất bản định dạng đề thi chuẩn LaTeX (Toán/KHTN) hoặc Google Forms.", "Cấu hình System Instructions huấn luyện Custom Gem sư phạm và kiểm thử 5 kịch bản."], "tools": ["Google Forms", "Google Sheets", "Gemini Gems", "Overleaf / LaTeX"], "products": ["Bộ đề kiểm tra phân hóa kèm ma trận đặc tả và đáp án chi tiết", "Rubric / Checklist đánh giá thường xuyên 4 mức", "01 Trợ lý ảo Gemini Gem chuyên biệt cho tổ bộ môn hoạt động ổn định"], "evidence": "Bộ đề chuẩn hóa, bảng kiểm Rubric và đường link chia sẻ Custom Gem nội bộ"}, {"id": "lesson6", "day": "NGÀY 03 · BUỔI 06", "session": "Chiều (4 tiết)", "title": "Quản trị số trường học, Kế hoạch hành động PDCA & Nghiệm thu", "objective": "Lập kế hoạch chuyển đổi số và phát triển NLS cấp trường/tổ theo chu trình PDCA 4 tuần; phân công trách nhiệm theo ma trận RACI; đánh giá mức độ CĐS theo Bộ chỉ số QĐ 4725; tổ chức nghiệm thu 05 sản phẩm hồ sơ cuối khóa.", "activities": ["Xây dựng Kế hoạch hành động 4 tuần sau tập huấn (Plan - Do - Check - Act).", "Thiết lập ma trận RACI phân công nhiệm vụ cho BGH, Tổ CM và Cặp đôi số.", "Tự đánh giá mức độ CĐS trường học theo 5 nhóm chỉ số KPIs của QĐ 4725.", "Hội đồng nghiệm thu rà soát 05 sản phẩm bắt buộc theo Checklist chuẩn."], "tools": ["Google Sheets", "Google Sites", "Google Drive"], "products": ["Kế hoạch hành động CĐS 4 tuần theo chu trình PDCA", "Bảng kiểm tự đánh giá KPIs mức độ CĐS trường học (QĐ 4725)", "Hồ sơ nghiệm thu trọn bộ 05 sản phẩm chuyên môn"], "evidence": "Biên bản nghiệm thu, bảng theo dõi tiến độ và cam kết triển khai tại đơn vị"}];
-
-const GROUPS = ['Tất cả', 'KHBD 4C', 'Học liệu AI', 'Khảo thí & LaTeX', 'An toàn mạng ATM', 'Quản trị CBQL', 'Gemini Gems'];
-
 const PROMPTS = [{"cat": "KHBD 4C", "title": "KHBD 4C Tích hợp chuẩn Công văn 5512 (Tổng quát)", "desc": "Thiết kế kế hoạch bài dạy 45 phút theo mô hình Context - Challenge - Concept - Conclusion, tích hợp NLS và ATM.", "text": "[Ngữ cảnh] Bạn là Chuyên gia Sư phạm số cấp THCS, am hiểu sâu sắc Chương trình GDPT 2018 và Công văn số 5512/BGDĐT-GDTrH.\n[Dữ liệu/điều kiện] Môn: [Môn học], Lớp: [Lớp 6/7/8/9], Chủ đề: [Tên bài học], YCCĐ cốt lõi: [Nêu 1-2 YCCĐ], Trình độ NLS: [TC1 cho lớp 6-7 / TC2 cho lớp 8-9 theo CV 3456], Nhóm An toàn mạng: [ATM1-ATM8 theo CV 6206], Điều kiện thiết bị: [Đầy đủ / 1 máy GV / Không thiết bị], Thời lượng: [45 phút]. Tuyệt đối không nhập thông tin định danh học sinh.\n[Hướng dẫn] Thiết kế tiến trình 4 hoạt động theo mô hình 4C (Context: Kết nối bối cảnh - Challenge: Thử thách giải quyết vấn đề - Concept: Hình thành kiến thức - Conclusion: Tổng kết vận dụng). Tích hợp chỉ báo NLS/ATM tự nhiên vào hoạt động hiện hành, không tạo tiết học mới. Phân hóa nhiệm vụ 3 tầng: Nhóm A (Cơ bản - có giàn giáo), Nhóm B (Thành thạo), Nhóm C (Nâng cao). Xây dựng phương án Cặp đôi số hỗ trợ đồng đẳng và phương án Offline Kit dự phòng khi mất kết nối.\n[Kết quả mong muốn] Bảng KHBD hoàn chỉnh gồm: Mục tiêu (Phẩm chất, Năng lực bộ môn, Năng lực số có mã chỉ báo rõ ràng); Thiết bị & học liệu; Tiến trình 4C chi tiết (Hành động GV - Hành động HS - Sản phẩm); Tiêu chí Rubric đánh giá 4 mức và Phương án ngoại tuyến thay thế."}, {"cat": "KHBD 4C", "title": "KHBD 4C Khối Khoa học Xã hội (Lịch sử & Địa lí 7)", "desc": "Bài dạy Lịch sử & Địa lí lớp 7 tích hợp kiểm chứng tư liệu SIFT (1.1.TC2b, 1.2.TC2a - ATM1).", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Sư phạm Khoa học Xã hội cấp THCS giàu kinh nghiệm, am hiểu sâu sắc CTGDPT 2018 và kỹ thuật tích hợp Sư phạm số.\n[Hướng dẫn & Nhiệm vụ]: Thiết kế Kế hoạch bài dạy (KHBD) chuẩn Công văn 5512/BGDĐT-GDTrH cho môn Lịch sử và Địa lí lớp 7 – Chủ đề: 'Đại Việt thời Lý - Trần (Thế kỉ XI đến đầu thế kỉ XV)'.\n[Dữ liệu & Yêu cầu tích hợp]:\n- Mã NLS tích hợp: 1.1.TC2b (Tra cứu và khai thác tư liệu lịch sử số); 1.2.TC2a (Đánh giá và kiểm chứng độ tin cậy của nguồn tư liệu trực tuyến).\n- Mã ATM tích hợp: ATM1 (Nhận diện thông tin sai lệch, tin giả lịch sử trên không gian mạng qua quy trình SIFT 4 bước).\n- Thời lượng: 45 phút, tiến trình theo mô hình 4C.\n- Phân hóa nhiệm vụ: Nhóm A đọc tư liệu chọn lọc có giàn giáo; Nhóm B đối chiếu tư liệu mạng với SGK; Nhóm C phân tích góc nhìn đa chiều của sử liệu số.\n- Phương án ngoại tuyến: Bộ thẻ tư liệu in sẵn đóng vai nguồn thông tin khi lớp học mất Internet.\n[#KẾT QUẢ]: Bảng tiến trình chi tiết 4 hoạt động (Mục tiêu, Nội dung, Sản phẩm, Tổ chức thực hiện), Rubric đánh giá 4 mức và lưu ý bảo vệ bản quyền tư liệu."}, {"cat": "KHBD 4C", "title": "KHBD 4C Khối Khoa học Tự nhiên (KHTN 7 - Trao đổi chất)", "desc": "Bài dạy Khoa học tự nhiên lớp 7 tích hợp mô phỏng thí nghiệm 3D và bóc trần tin đồn sức khỏe SIFT (ATM1).", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Sư phạm Khoa học Tự nhiên cấp THCS, thành thạo phương pháp dạy học thực nghiệm và công nghệ mô phỏng số.\n[Hướng dẫn & Nhiệm vụ]: Soạn giáo án số 4C cho bài: 'Trao đổi chất và chuyển hóa năng lượng ở sinh vật' (Khoa học tự nhiên lớp 7), thời lượng 45 phút.\n[#TÍCH HỢP NLS & AN TOÀN MẠNG]:\n- Mã NLS: 1.2.TC1a (Tìm kiếm và kiểm chứng thông tin khoa học); 3.1.TC1a (Khai thác mô hình số mô phỏng quá trình quang hợp/hô hấp tế bào).\n- Mã ATM: ATM1 (Quy trình SIFT kiểm chứng các tin đồn sai lệch về dinh dưỡng, ăn kiêng cực đoan trên mạng xã hội).\n- Tiến trình 4C: (1) Context: Tình huống thực tế về cây xanh thiếu sáng; (2) Challenge: Thử thách thiết kế thí nghiệm ảo hoặc mô phỏng trên PhET; (3) Concept: Khái quát sơ đồ quang hợp; (4) Conclusion: Tuyên truyền chế độ dinh dưỡng lành mạnh.\n- Phân tầng học sinh: Nhóm A quan sát mô phỏng điền khuyết; Nhóm B điều khiển biến số trên mô phỏng; Nhóm C đối chiếu các luồng thông tin mạng.\n- Không thiết bị: GV trình chiếu mô phỏng trên máy tính duy nhất hoặc dùng sơ đồ cắt dán cơ chế quang hợp.\n[#ĐẦU RA]: Kế hoạch bài dạy chuẩn CV 5512, Phiếu học tập SIFT và Rubric đánh giá sản phẩm nhóm."}, {"cat": "KHBD 4C", "title": "KHBD 4C Môn Toán lớp 8 (Hàm số bậc nhất & Biểu diễn số)", "desc": "Tích hợp phần mềm hình học động GeoGebra và nhận diện lỗi suy luận của AI trong toán học.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Phương pháp Dạy học Toán cấp THCS, chuyên sâu về ứng dụng phần mềm toán học động và tư duy thuật toán.\n[Hướng dẫn & Nhiệm vụ]: Thiết kế KHBD môn Toán lớp 8: 'Khái niệm hàm số bậc nhất y = ax + b (a ≠ 0) và đồ thị'.\n[#YÊU CẦU ĐẶC THÙ]:\n- NLS: Khai thác công cụ trực quan hóa đồ thị (GeoGebra/Desmos) để khảo sát sự biến thiên của hàm số khi hệ số a thay đổi.\n- Mạch AI (QĐ 2422): NLa (Tư duy lấy con người làm trung tâm - rèn luyện khả năng kiểm chứng lập luận toán học độc lập, không phụ thuộc vào kết quả tính toán tự động của AI).\n- ATM: ATM7 (Sử dụng AI có trách nhiệm - nhận diện hiện tượng AI giải sai các bài toán đố thực tế do thiếu ngữ cảnh đời sống).\n- Phân hóa A/B/C: Nhóm A vẽ đồ thị với a, b cụ thể; Nhóm B khảo sát góc tạo bởi đường thẳng và trục Ox; Nhóm C lập mô hình hàm số thực tế (cước taxi, nhiệt độ).\n[#KẾT QUẢ]: Kế hoạch bài dạy theo 4C chuẩn 5512, có mã nhúng GeoGebra hoặc bài tập vẽ đồ thị trên giấy kẻ ô ngoại tuyến."}, {"cat": "KHBD 4C", "title": "Ma trận tích hợp NLS - ATM cho 03 bài học bộ môn", "desc": "Xác định chính xác địa chỉ tích hợp NLS và ATM vào kế hoạch dạy học môn học hiện hành.", "text": "[Ngữ cảnh] Là Chuyên gia Phát triển Chương trình nhà trường THCS.\n[Dữ liệu] Môn học: [Môn], Khối lớp: [6/7/8/9], Danh sách 03 bài học trong chương trình: [Liệt kê 3 bài], Điều kiện công nghệ: [Mô tả hạ tầng].\n[Hướng dẫn] Phân tích mục tiêu và YCCĐ của 3 bài học để tìm đúng địa chỉ tích hợp. Không chèn thêm nội dung lý thuyết công nghệ riêng lẻ; mọi hành vi số phải phục vụ trực tiếp cho việc chiếm lĩnh kiến thức môn học. Ánh xạ rõ: Tên bài -> YCCĐ môn học -> Hành vi học sinh -> Mã NLS dự kiến (TC1/TC2) -> Mã ATM (ATM1-ATM8) -> Minh chứng quan sát được -> Phương án không thiết bị.\n[Kết quả mong muốn] Bảng ma trận 3 bài học hoàn chỉnh kèm chú thích hướng dẫn giáo viên trong tổ chuyên môn triển khai đồng bộ."}, {"cat": "KHBD 4C", "title": "Kịch bản vận hành cơ chế 'Cặp đôi số' (Digital Pairing)", "desc": "Tổ chức học tập đồng đẳng 1 kèm 1 giữa học sinh thạo công nghệ và học sinh cần hỗ trợ.", "text": "[Ngữ cảnh] Bạn hỗ trợ giáo viên THCS tổ chức mô hình học tập đồng đẳng 'Cặp đôi số' trong lớp học có sự chênh lệch kỹ năng số.\n[Dữ liệu] Nhiệm vụ học tập: [Mô tả nhiệm vụ], Lớp: [Lớp], Thời lượng: [Phút], Thiết bị: [1 thiết bị / cặp hoặc phòng máy].\n[Hướng dẫn] Xây dựng kịch bản chia vai bình đẳng: Bạn A (Người lái / Thao tác kỹ thuật dưới sự hướng dẫn) và Bạn B (Hoa tiêu / Rà soát yêu cầu, đọc tư liệu, kiểm tra độ chính xác). Luân phiên vai trò giữa các chặng. Nghiêm cấm việc bạn giỏi công nghệ làm hộ hoàn toàn; thiết lập câu hỏi tương tác để cả hai cùng tư duy. Tuyệt đối không xếp hạng công khai gây mặc cảm tâm lý.\n[Kết quả mong muốn] Thẻ phân vai cặp đôi, Kịch bản hoạt động từng phút (5 chặng), Bảng kiểm đồng đánh giá và Tiêu chí quan sát dành cho giáo viên."}, {"cat": "KHBD 4C", "title": "Phương án dạy học ngoại tuyến (Offline Kit - Không Internet)", "desc": "Chuyển đổi trọn vẹn hoạt động số thành mô phỏng trên giấy, bảo đảm công bằng tiếp cận vùng khó khăn Nghệ An.", "text": "[Ngữ cảnh] Bạn là Chuyên gia Giáo dục thích ứng vùng khó khăn, thiết kế bài dạy cho các trường THCS miền núi Nghệ An (Kỳ Sơn, Tương Dương, Quế Phong...) khi không có mạng Internet.\n[Dữ liệu] Tên bài học: [Tên bài], Môn: [Môn], Lớp: [Lớp], YCCĐ cốt lõi: [YCCĐ], Mã NLS/ATM hướng tới: [Mã].\n[Hướng dẫn] Thiết kế bộ 'Offline Kit' mô phỏng quy trình số trên giấy: (1) Thay công cụ tìm kiếm trực tuyến bằng Bộ thẻ dữ liệu/văn bản đã in sẵn có gắn 'mã nguồn'; (2) Thay quy trình SIFT trên mạng bằng Phiếu kiểm chứng dữ kiện so sánh 3 trích đoạn; (3) Thay biểu mẫu trực tuyến bằng Phiếu ghi nhận dạng bảng gấp. Đảm bảo học sinh vẫn đạt 100% mục tiêu tư duy số mà không phụ thuộc vào thiết bị.\n[Kết quả mong muốn] Quy trình tổ chức lớp học ngoại tuyến, Bản in mẫu Phiếu học tập Offline Kit, Bảng tiêu chí đánh giá và Cách thức lưu trữ minh chứng hồ sơ giấy."}, {"cat": "KHBD 4C", "title": "Bản đồ liên thông NLS - ATM - AI vào Kế hoạch bài dạy", "desc": "Ánh xạ 4 thành tố: CTGDPT 2018, Khung NLS (CV 3456), An toàn mạng (CV 6206) và Mạch AI (QĐ 2422).", "text": "[Ngữ cảnh] Bạn là Chuyên gia Khung chuẩn năng lực giáo dục số Việt Nam.\n[Dữ liệu] Môn học: [Môn], Lớp: [6/7/8/9], Chủ đề: [Tên chủ đề], YCCĐ: [YCCĐ].\n[Hướng dẫn] Xây dựng bản đồ liên thông đa chiều: (1) YCCĐ môn học; (2) Hành vi cụ thể của học sinh trong bài; (3) Năng lực số thành phần (TC1 cho lớp 6-7, TC2 cho lớp 8-9); (4) Nhóm an toàn mạng tương ứng (ATM1-ATM8); (5) Mạch giáo dục AI liên quan (NLa: Tư duy con người, NLb: Đạo đức AI, NLc: Kỹ thuật ứng dụng, NLd: Thiết kế hệ thống); (6) Công cụ thực hiện và Sản phẩm minh chứng.\n[Kết quả mong muốn] Sơ đồ ma trận chuẩn hóa dạng bảng, có ghi chú rõ ràng văn bản quy phạm gốc để giáo viên tự tin đưa vào Phụ lục IV Công văn 5512."}, {"cat": "Học liệu AI", "title": "Tạo ảnh minh họa bối cảnh lịch sử / văn học bằng AI (Imagen 3)", "desc": "Tạo prompt chuyên sâu cho Gemini Imagen 3 / Microsoft Designer phục dựng bối cảnh dạy học chân thực.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Đồ họa Sư phạm và Nhiếp ảnh lịch sử số.\n[Hướng dẫn & Nhiệm vụ]: Thiết kế câu lệnh (Prompt tạo ảnh bằng tiếng Anh và tiếng Việt) cho công cụ Imagen 3 / Microsoft Designer để tạo tranh minh họa phục vụ bài học THCS: [Chủ đề: Tác phẩm văn học / Sự kiện lịch sử].\n[#YÊU CẦU KỸ THUẬT]:\n- Bối cảnh: [Mô tả chi tiết không gian, thời gian, trang phục truyền thống Việt Nam thế kỉ tương ứng, đảm bảo tính chuẩn xác văn hóa lịch sử].\n- Phong cách nghệ thuật: Digital historical painting, cinematic lighting, độ phân giải 16:9, màu sắc ấm áp, giàu cảm xúc sư phạm.\n- Nguyên tắc an toàn: Không tạo hình ảnh bạo lực, phản cảm; TUYỆT ĐỐI không có chữ viết sai chính tả hoặc ký hiệu rác trong tranh (no text, no watermark).\n- Minh bạch học liệu: Mẫu chú thích chân tranh ghi rõ 'Hình ảnh được tạo bởi AI (Imagen 3) phục vụ mục đích minh họa giáo dục; nguồn bối cảnh tham chiếu theo SGK'."}, {"cat": "Học liệu AI", "title": "Tạo ảnh mô phỏng cấu trúc vi mô / vĩ mô KHTN (3D Science Model)", "desc": "Prompt sinh ảnh mô phỏng phân tử, tế bào, hệ mặt trời bằng AI phục vụ môn KHTN và Toán.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Họa sĩ Thiết kế Mô phỏng Khoa học và Học liệu số 3D chuyên nghiệp.\n[Hướng dẫn & Nhiệm vụ]: Viết prompt tạo ảnh khoa học chính xác cao cho chủ đề KHTN THCS: [Tế bào thực vật / Chuỗi xoắn kép ADN / Cấu tạo nguyên tử / Hệ Mặt Trời / Hình học không gian].\n[#CÂU LỆNH MẪU (Prompt tiếng Anh tối ưu)]: 'A high-precision 3D scientific rendering of [chủ đề], showing accurate anatomical/molecular details, glowing semi-transparent structures, futuristic laboratory background, depth of field, 8k resolution, photorealistic, cinematic lighting, 16:9 aspect ratio, strictly NO text, NO labels, clean visual.'\n[#HƯỚNG DẪN GIÁO VIÊN]: Cách tải ảnh về, chèn vào Google Slides, bổ sung các mũi tên chú thích bằng công cụ Shape của Slides để đảm bảo tính chính xác thuật ngữ khoa học."}, {"cat": "Học liệu AI", "title": "Sáng tác ca khúc giáo dục ghi nhớ quy tắc số / KHTN bằng Suno / Udio", "desc": "Tạo lời bài hát vần điệu trẻ trung và prompt phối khí âm nhạc giáo dục bằng AI.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Nhạc sĩ Sư phạm và Nhà sản xuất Âm nhạc Giáo dục hiện đại.\n[Hướng dẫn & Nhiệm vụ]: Sáng tác lời bài hát ngắn (khoảng 1 phút 30 giây) và thiết lập prompt phong cách âm nhạc để nạp vào Suno AI / Udio cho chủ đề: [Quy tắc '4 KHÔNG - 3 CÓ' an toàn mạng / Bài ca Bảng tuần hoàn / Ghi nhớ định luật phản xạ ánh sáng].\n[#CẤU TRÚC BÀI HÁT]:\n- [Verse 1]: Giới thiệu vấn đề gần gũi với lứa tuổi THCS.\n- [Chorus]: Điệp khúc cực kỳ bắt tai, vần điệu dễ thuộc, lặp lại các từ khóa cốt lõi.\n- [Verse 2]: Ứng dụng thực tế và cách hành xử an toàn / thông thái.\n- [Outro]: Thông điệp hành động tích cực.\n- Style of Music Prompt (Nhập vào ô Style của Suno): 'Modern upbeat pop-rock, catchy guitar riffs, youthful bright vocals, educational theme, tempo 125 bpm, radio quality.'\n[#LƯU Ý BẢN QUYỀN]: Ghi chú sử dụng bài hát trong trường học dưới giấy phép phi thương mại, công khai rõ âm thanh do AI tạo lập."}, {"cat": "Học liệu AI", "title": "Kịch bản Video bài giảng Micro-learning 3 phút (Storyboard)", "desc": "Xây dựng kịch bản phân cảnh chi tiết cho video bài giảng ngắn, có lời thoại, hình ảnh và câu hỏi dừng.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Đạo diễn Học liệu số Micro-learning và Chuyên gia Sư phạm THCS.\n[Hướng dẫn & Nhiệm vụ]: Viết kịch bản phân cảnh (Storyboard) hoàn chỉnh cho video bài giảng số ngắn (thời lượng đúng 180 giây / 3 phút) về chủ đề: [Tên bài học].\n[#CẤU TRÚC PHÂN CẢNH]:\n- Cảnh 1 (0:00 - 0:30): Mở đầu bất ngờ bằng tình huống thực tế hoặc câu hỏi kích thích tư duy.\n- Cảnh 2 (0:30 - 1:30): Giải mã kiến thức trọng tâm (sử dụng hình ảnh trực quan, đồ họa động đơn giản).\n- Cảnh 3 (1:30 - 2:15): Điểm dừng tương tác (Interactive Pause) - Câu hỏi trắc nghiệm ngắn để học sinh suy ngẫm.\n- Cảnh 4 (2:15 - 3:00): Tổng kết quy tắc cốt lõi và nhiệm vụ thực hành tiếp theo.\n[#BẢNG KỊCH BẢN]: Cột 1: Giây; Cột 2: Hình ảnh hiển thị trên màn hình; Cột 3: Lời thoại thuyết minh (chuẩn bị cho giọng đọc AI); Cột 4: Chữ chú thích (Text Overlay); Cột 5: Ghi chú nguồn học liệu và âm thanh nền."}, {"cat": "Học liệu AI", "title": "Kịch bản Trò chơi học tập số (Gamification) tương tác phân nhánh", "desc": "Thiết kế kịch bản trò chơi nhập vai giải đố trên Canva / Google Forms có phản hồi sư phạm.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Thiết kế Trò chơi Giáo dục (Educational Game Designer) cho lứa tuổi học sinh THCS.\n[Hướng dẫn & Nhiệm vụ]: Xây dựng kịch bản trò chơi học tập tương tác nhập vai mang tên 'Hành trình Thám hiểm Tri thức' cho chủ đề: [Môn / Bài học].\n[#CẤU TRÚC TRÒ CHƠI]:\n- Cốt truyện mở đầu: Học sinh hóa thân thành một Nhà thám hiểm / Thám tử khoa học / Sứ giả lịch sử nhận nhiệm vụ giải cứu một vùng đất hoặc tìm kiếm kho báu tri thức.\n- 05 Trạm thử thách logic: Mỗi trạm gắn với một câu hỏi tình huống có phân nhánh. Nếu chọn đúng: Nhận gợi ý mảnh ghép kho báu; Nếu chọn sai: Nhận lời giải thích ân cần và được chọn lại mà không bị trừ điểm áp lực.\n- Tích hợp kỹ năng số: Trạm số 3 yêu cầu kiểm chứng nguồn thông tin giả mạo theo quy trình SIFT (ATM1).\n- Hướng dẫn triển khai kỹ thuật: Cách tạo siêu liên kết (Hyperlink) giữa các slide trên Canva hoặc tính năng 'Chuyển đến phần dựa trên câu trả lời' trên Google Forms.\n- Phương án ngoại tuyến: Bộ thẻ bài in giấy tương đương luật chơi để tổ chức trong lớp học không có thiết bị."}, {"cat": "Học liệu AI", "title": "Infographic tóm tắt bài học chuẩn bản quyền và nguồn mở (CC)", "desc": "Khung thiết kế infographic một trang trực quan, kiểm soát bản quyền và chú thích minh bạch.", "text": "[Ngữ cảnh] Chuyên gia Truyền thông Trực quan Sư phạm THCS.\n[Dữ liệu] Chủ đề bài học: [Tên bài], Môn: [Môn], Lớp: [Lớp], Nội dung cốt lõi: [Tóm tắt 3-5 ý chính].\n[Hướng dẫn] Thiết kế bố cục Infographic dạng dọc (tỉ lệ 9:16 hoặc A4) gồm: (1) Header: Tiêu đề thu hút và thông điệp 1 dòng; (2) 4 Khối nội dung chính có biểu tượng minh họa; (3) Khung 'Lưu ý an toàn / Mẹo ghi nhớ nhanh'; (4) Footer: Thông tin trích nguồn tài liệu SGK, tác giả, giấy phép Creative Commons (CC BY-NC) và chú thích 'Infographic được biên tập có sự hỗ trợ của AI'.\n[Kết quả mong muốn] Bảng mô tả chi tiết từng khối, màu sắc chủ đạo gợi ý (Palette), văn bản hiển thị ngắn gọn và checklist kiểm soát quyền tác giả trước khi in/phát tán."}, {"cat": "Khảo thí & LaTeX", "title": "Ma trận đặc tả & Ngân hàng câu hỏi phân hóa theo Thông tư 22/2021", "desc": "Tạo ma trận kiểm tra 3 mức nhận thức và biên soạn ngân hàng câu hỏi trắc nghiệm + tự luận mở.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Khảo thí Giáo dục cấp THCS, tinh thông Thông tư số 22/2021/TT-BGDĐT về đánh giá học sinh THCS.\n[Hướng dẫn & Nhiệm vụ]: Xây dựng Ma trận đặc tả và Đề kiểm tra phân hóa 15 phút / 45 phút cho môn: [Môn học], Lớp: [Lớp], Chủ đề: [Tên chủ đề].\n[#YÊU CẦU CẤU TRÚC]:\n1. Ma trận phân bổ: 40% Nhận biết (trắc nghiệm 4 lựa chọn), 30% Thông hiểu (trắc nghiệm đúng/sai hoặc ghép nối), 30% Vận dụng & Vận dụng cao (tự luận tình huống thực tiễn gắn kiểm chứng thông tin SIFT / ATM).\n2. Câu hỏi phân hóa: Ngôn ngữ trong sáng, không đánh đố mẹo mực, phản ánh năng lực giải quyết vấn đề.\n3. Đáp án & Lời giải chi tiết: Nêu rõ căn cứ từ SGK và tiêu chí chấm điểm từng phần.\n4. Hệ thống lời nhận xét phản hồi tích cực: Soạn 03 mẫu nhận xét khích lệ dành cho 3 mức kết quả (Chưa đạt / Đạt / Xuất sắc) để giáo viên ghi vào sổ theo dõi."}, {"cat": "Khảo thí & LaTeX", "title": "Xuất bản đề thi Toán / KHTN chuẩn mã nguồn LaTeX / Overleaf", "desc": "Tạo câu hỏi trắc nghiệm có công thức toán học, phương trình hóa học bằng mã LaTeX chuẩn không lỗi font.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Khảo thí và Xuất bản Khoa học Tự nhiên cấp THCS, thành thạo mã nguồn LaTeX chuẩn Overleaf.\n[Hướng dẫn & Nhiệm vụ]: Biên soạn 04 câu hỏi trắc nghiệm phân hóa kèm mã nguồn LaTeX hoàn chỉnh cho chủ đề: [Đại số / Hình học / Phương trình hóa học / Định luật quang học].\n[#QUY CHUẨN KỸ THUẬT LATEX]:\n- Sử dụng gói lệnh chuẩn: \\documentclass[12pt]{article}, \\usepackage[utf8]{vietnam}, \\usepackage{amsmath,amssymb,chemformula}.\n- Mọi công thức toán học đặt trong cặp dấu $...$ hoặc $$...$$, phân số dạng \\frac{a}{b}, căn thức \\sqrt{x}, số mũ x^{2}.\n- Phương trình hóa học dùng ký hiệu chuẩn: \\ch{2 H2 + O2 -> 2 H2O}.\n- Cấu trúc từng câu theo mẫu chuẩn trắc nghiệm: \\begin{enumerate} ... \\item \\begin{tasks}(2) \\task A... \\task B... \\task C... \\task D... \\end{tasks} \\end{enumerate}.\n[#ĐẦU RA]: Toàn bộ khối mã LaTeX có thể dán trực tiếp vào Overleaf hoặc phần mềm trộn đề mà không phát sinh bất kỳ lỗi biên dịch nào."}, {"cat": "Khảo thí & LaTeX", "title": "Thiết kế câu hỏi nhận diện lỗi sai và ảo giác của AI trong khoa học", "desc": "Dạy học sinh tư duy phản biện qua việc phát hiện lỗi sai trong câu trả lời do AI tạo lập.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Giáo dục Trí tuệ nhân tạo (Mạch NLa & NLc theo Quyết định 2422/QĐ-BGDĐT).\n[Hướng dẫn & Nhiệm vụ]: Xây dựng một bài tập tình huống cho học sinh THCS môn [Khoa học tự nhiên / Lịch sử / Toán] với đề bài: 'Thử làm Chuyên gia phản biện AI'.\n[#KỊCH BẢN THIẾT KẾ]:\n1. Cung cấp một đoạn văn bản giả định do AI trả lời về một vấn đề khoa học hoặc lịch sử trong đó cố ý gài sẵn 02 lỗi sai tinh vi (ví dụ: nhầm lẫn giữa vi khuẩn và virus, tính sai thể tích hình trụ, gán sai năm diễn ra sự kiện lịch sử).\n2. Yêu cầu học sinh: (a) Đọc kỹ và phát hiện các điểm nghi vấn; (b) Vận dụng quy trình SIFT tra cứu lại SGK và nguồn chính thống để chỉ ra lỗi sai; (c) Viết lại câu trả lời chính xác và nêu nguyên nhân vì sao AI có thể trả lời sai.\n[#Ý NGHĨA SƯ PHẠM]: Rèn luyện cho học sinh bản lĩnh không tin mù quáng vào công nghệ, hiểu rõ bản chất AI chỉ là công cụ tính toán xác suất ngôn ngữ."}, {"cat": "Khảo thí & LaTeX", "title": "Bảng kiểm Rubric 4 mức đánh giá năng lực số và phẩm chất học sinh", "desc": "Rubric đánh giá thường xuyên theo Thông tư 22/2021/TT-BGDĐT với 4 tiêu chí hành vi quan sát được.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Đánh giá Thường xuyên trong lớp học số THCS.\n[Hướng dẫn & Nhiệm vụ]: Thiết lập Bảng kiểm (Rubric) đánh giá sản phẩm học tập số của học sinh (bài thuyết trình, infographic, video, dự án nhóm) theo 4 mức độ: Mức 1 (Chưa đạt / Cần hỗ trợ), Mức 2 (Đạt / Cơ bản), Mức 3 (Khá / Thành thạo), Mức 4 (Tốt / Sáng tạo).\n[#4 TIÊU CHÍ CỐT LÕI]:\n1. Khai thác và kiểm chứng nguồn (Quy trình SIFT, độ tin cậy của thông tin - NLS 1.1, 1.2 - ATM1).\n2. Kỹ năng công nghệ và an toàn thông tin (Thao tác công cụ, bảo vệ quyền riêng tư, quy tắc '4 KHÔNG - 3 CÓ' - NLS 2.5, 4.2 - ATM2, ATM3).\n3. Sáng tạo số và Bản quyền (Tính độc bản, thẩm mỹ, trích dẫn nguồn mở Creative Commons - NLS 3.1, 3.3 - ATM6).\n4. Sử dụng AI có trách nhiệm và minh bạch (Phát hiện lỗi sai AI, tự lực tư duy, chú thích đóng góp của AI - NLS 6.2, 6.3 - ATM7).\n[#KẾT QUẢ]: Bảng ma trận Rubric mô tả hành vi quan sát cụ thể cho từng ô, kèm phiếu tự đánh giá và phiếu đồng đẳng đánh giá."}, {"cat": "Khảo thí & LaTeX", "title": "Bộ câu hỏi trắc nghiệm tương tác Google Forms tích hợp phản hồi", "desc": "Tạo ngân hàng 10 câu hỏi Google Forms có cài đặt giải thích chi tiết khi chọn đáp án đúng/sai.", "text": "[Ngữ cảnh] Giáo viên THCS thiết kế bài kiểm tra nhanh trên Google Forms sau tiết học.\n[Dữ liệu] Môn: [Môn], Lớp: [Lớp], Chủ đề: [Chủ đề], Số lượng: 10 câu trắc nghiệm.\n[Hướng dẫn] Định dạng câu hỏi sẵn sàng sao chép vào Google Forms gồm: Câu hỏi, 4 phương án (A, B, C, D), Đáp án đúng, và Lời giải thích phản hồi tự động (Feedback for incorrect answers: giải thích vì sao sai và nhắc lại kiến thức SGK; Feedback for correct answers: khích lệ và mở rộng tư duy). Cài đặt không thu thập địa chỉ email ngoài miền nhà trường để bảo vệ dữ liệu học sinh.\n[Kết quả mong muốn] Bản văn bản chuẩn bị sẵn sàng nhập liệu vào Forms, có phân bổ độ khó 40% Nhận biết - 40% Thông hiểu - 20% Vận dụng."}, {"cat": "An toàn mạng ATM", "title": "Thực hành Quy trình SIFT 4 bước kiểm chứng thông tin trực tuyến", "desc": "Hướng dẫn học sinh THCS dừng lại và điều tra nguồn tin, tìm nguồn độc lập và truy nguyên bối cảnh.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Giáo dục Kỹ năng Thông tin và An toàn mạng học đường.\n[Hướng dẫn & Nhiệm vụ]: Thiết kế bài tập rèn luyện kỹ năng kiểm chứng tin tức trên mạng xã hội cho học sinh THCS theo quy trình SIFT 4 bước chuẩn mực.\n[#QUY TRÌNH 4 BƯỚC SIFT]:\n1. S - Stop (Dừng lại): Nhận diện phản ứng cảm xúc ban đầu (hoang mang, tức giận, tò mò), tuyệt đối không nhấn nút chia sẻ hoặc tương tác vội vàng.\n2. I - Investigate the source (Điều tra nguồn): Kiểm tra ai là tác giả, trang web đăng bài có phải cơ quan chính thống hay tài khoản mạo danh, ngày phát hành.\n3. F - Find better coverage (Tìm nguồn tin đáng tin cậy hơn): Mở tab mới tìm kiếm trên các báo chính thống (báo Giáo dục, báo Nghệ An, Cổng thông tin Bộ GD&ĐT).\n4. T - Trace claims, quotes, and media back to original context (Truy nguyên ngữ cảnh gốc): Tìm video gốc, bài phát biểu gốc để xem câu nói có bị cắt ghép bóp méo hay dùng hình ảnh cũ đăng lại.\n[#TÌNH HUỐNG THỰC HÀNH]: Cung cấp một bản tin giả lập về việc 'Hủy bỏ toàn bộ kỳ thi tuyển sinh vào lớp 10' để học sinh áp dụng bảng kiểm SIFT phân tích và báo cáo kết quả."}, {"cat": "An toàn mạng ATM", "title": "Diễn tập ứng phó sự cố an toàn mạng giả lập (Quy trình 4 bước)", "desc": "Kịch bản diễn tập sư phạm trung tính, an toàn tâm lý, không dùng sự cố thật của học sinh.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Cố vấn Tâm lý và An toàn không gian mạng trường phổ thông.\n[Hướng dẫn & Nhiệm vụ]: Xây dựng kịch bản diễn tập tình huống giả định trung tính: 'Một nhóm học sinh bị tài khoản ảo mạo danh và nhắn tin đe dọa phát tán ảnh chỉnh sửa trong nhóm chat'.\n[#QUY TRÌNH 4 BƯỚC ỨNG PHÓ HỌC ĐƯỜNG]:\n1. Bước 1 - DỪNG TƯƠNG TÁC (Stop): Không đôi co, không làm theo lời đe dọa, không chuyển tiền hay cung cấp thêm thông tin.\n2. Bước 2 - BẢO VỆ CHỨNG CỨ (Protect & Preserve): Chụp ảnh màn hình lưu giữ bằng chứng tối thiểu (thời gian, tài khoản, nội dung), chặn (block) tài khoản xấu.\n3. Bước 3 - BÁO CÁO NGƯỜI LỚN TIN CẬY (Report): Thông báo ngay cho thầy cô chủ nhiệm, cán bộ tư vấn tâm lý trường hoặc cha mẹ; liên hệ Tổng đài Quốc gia 111 khi cần thiết.\n4. Bước 4 - THEO DÕI VÀ PHÒNG NGỪA (Monitor): Nhà trường hỗ trợ ổn định tâm lý học sinh, hướng dẫn cài đặt bảo mật 2 lớp, rút kinh nghiệm chung trong tiết sinh hoạt lớp.\n[#YÊU CẦU ĐẶC BIỆT]: Ngôn ngữ ấm áp, mang tính nâng đỡ, không đổ lỗi cho nạn nhân."}, {"cat": "An toàn mạng ATM", "title": "Quy tắc '4 KHÔNG - 3 CÓ' về Đạo đức AI & Ứng xử số trong lớp học", "desc": "Chuyển hóa quy định pháp luật thành bộ quy tắc ngắn gọn, tích cực, dễ nhớ cho học sinh THCS.", "text": "[Ngữ cảnh] Giáo viên chủ nhiệm / Giáo viên bộ môn THCS xây dựng Bộ quy tắc văn hóa số cho lớp học.\n[Dữ liệu] Lớp: [Khối 6-9], Bối cảnh: [Phòng học có thiết bị / sử dụng điện thoại thông minh phục vụ học tập].\n[Hướng dẫn] Xây dựng Bộ quy tắc '4 KHÔNG - 3 CÓ' bằng ngôn từ tươi sáng, truyền cảm hứng:\n* 4 KHÔNG:\n1. Không cung cấp thông tin cá nhân định danh (họ tên đầy đủ, ngày sinh, địa chỉ nhà, số CCCD, mật khẩu) lên các công cụ AI và không gian mạng công cộng.\n2. Không quay phim, chụp ảnh thầy cô, bạn bè khi chưa được sự đồng ý để đăng tải lên mạng xã hội.\n3. Không chia sẻ, lan truyền tin tức giật gân, bạo lực chưa được kiểm chứng từ nguồn chính thống.\n4. Không sao chép nguyên văn sản phẩm của người khác hoặc sao chép toàn bộ lời giải của AI biến thành bài của mình.\n* 3 CÓ:\n1. Có thói quen thực hiện 4 bước SIFT để kiểm chứng thông tin trước khi tin và chia sẻ.\n2. Có văn hóa ứng xử tử tế, tôn trọng sự khác biệt, dùng từ ngữ văn minh trong các nhóm học tập trực tuyến.\n3. Có ý thức ghi nguồn trích dẫn học liệu và minh bạch phần nội dung do công nghệ AI hỗ trợ.\n[Kết quả mong muốn] Poster văn bản trình bày đẹp mắt, có thể in ra treo ở góc lớp học hoặc phòng máy tính."}, {"cat": "An toàn mạng ATM", "title": "Rà soát và ẩn danh hóa dữ liệu học sinh trước khi sử dụng công nghệ", "desc": "Checklist tuân thủ Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Luật Trẻ em số 102/2016.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Cán bộ Pháp chế và Bảo mật Dữ liệu Học đường.\n[Hướng dẫn & Nhiệm vụ]: Biên soạn Hướng dẫn và Bảng kiểm rà soát dữ liệu cá nhân dành cho toàn thể giáo viên và cán bộ quản lý trường THCS trước khi thao tác trên các nền tảng số hoặc nhập prompt vào AI.\n[#DANH MỤC TRƯỜNG THÔNG TIN BẮT BUỘC LOẠI BỎ / ẨN DANH]:\n1. Họ và tên đầy đủ của học sinh (Thay bằng mã ký hiệu: Học sinh A, Học sinh B hoặc Nhóm 1, Nhóm 2).\n2. Ngày tháng năm sinh, địa chỉ cư trú, số điện thoại của học sinh và phụ huynh.\n3. Ảnh chân dung, hình ảnh gương mặt rõ nét, video ghi hình trong không gian riêng tư.\n4. Bảng điểm học tập cá nhân chi tiết gắn kèm thông tin lớp/trường.\n5. Thông tin về hoàn cảnh gia đình, sức khỏe, tôn giáo, dân tộc, hành vi kỷ luật.\n[#NGUYÊN TẮC PHÁP LÝ]: TUYỆT ĐỐI không yêu cầu học sinh dưới 16 tuổi tự tạo tài khoản AI cá nhân (do chính sách điều khoản dịch vụ quốc tế và bảo vệ trẻ em theo Luật 91/2025/QH15). Mọi hoạt động tương tác AI trong lớp học phải được vận hành thông qua tài khoản quản trị của giáo viên hoặc hiển thị chung trên màn hình."}, {"cat": "An toàn mạng ATM", "title": "Bài tập phân biệt 'Dấu chân số' (Digital Footprint) và Danh tính số", "desc": "Tình huống giáo dục giúp học sinh nhận thức về những gì mình để lại trên Internet và tác động tương lai.", "text": "[Ngữ cảnh] Thiết kế bài giảng chuyên đề An toàn mạng (ATM2 - Dấu chân số và danh tính trực tuyến).\n[Dữ liệu] Lớp: [Lớp 7/8/9], Thời lượng: 15 phút sinh hoạt đầu giờ hoặc tích hợp môn GDCD.\n[Hướng dẫn] Xây dựng câu chuyện giả định về nhân vật 'Minh' (học sinh lớp 8) từng đăng những bình luận trêu chọc bạn bè và chia sẻ video không lành mạnh 3 năm trước. Khi Minh tham gia ứng cử Ban chỉ huy Liên đội hoặc nộp hồ sơ xét học bổng, những dấu chân số này được tìm lại. Đặt ra 3 câu hỏi thảo luận: (1) Những hành vi nào trên mạng tạo nên 'dấu chân số không thể xóa'? (2) Dấu chân số ảnh hưởng như thế nào đến uy tín và tương lai của bản thân? (3) Làm thế nào để xây dựng một 'Dấu chân số tích cực' ngay từ hôm nay?\n[Kết quả mong muốn] Kịch bản bài học, phiếu tự soi chiếu dấu chân số cá nhân và thông điệp hành động tử tế trên không gian mạng."}, {"cat": "Quản trị CBQL", "title": "Thiết lập biên bản hành chính và kịch bản điều hành từ dữ liệu âm thanh", "desc": "Hoạt động thực hành 3 (NAEM 2026): Chuyển hóa file ghi âm cuộc họp thành biên bản chuẩn hóa NĐ 30/2020.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Thư ký Hội đồng Sư phạm và Chuyên gia Quản trị Văn phòng cấp THCS, thành thạo thể thức văn bản hành chính theo Nghị định số 30/2020/NĐ-CP.\n[Hướng dẫn & Nhiệm vụ]: Xử lý bản ghi chép/bản gỡ băng âm thanh cuộc họp Hội đồng sư phạm / Họp liên tịch / Họp tổ chuyên môn tháng [Số tháng] năm học 2026-2027 để thiết lập 02 sản phẩm hành chính:\n1. Kịch bản điều hành rút gọn dành cho Hiệu trưởng / Chủ tọa (gồm: Mục tiêu cuộc họp, Các mốc thời gian, Vấn đề cốt lõi cần biểu quyết, Dự thảo kết luận).\n2. Biên bản cuộc họp chuẩn thể thức hành chính (gồm: Thời gian, Địa điểm, Thành phần tham dự, Nội dung báo cáo trọng tâm, Ý kiến phát biểu của các thành viên được tóm lược khoa học, Nghị quyết/Kết luận của Chủ tọa với các chỉ tiêu định lượng, Phân công người chịu trách nhiệm và Thời hạn hoàn thành).\n[#DỮ LIỆU ĐẦU VÀO]: [Dán bản ghi âm gỡ băng hoặc bản ghi chép thô của cuộc họp vào đây].\n[#LƯU Ý]: Rà soát loại bỏ tên riêng học sinh nếu có trong cuộc họp; chuẩn hóa ngôn từ hành chính nghiêm túc, gãy gọn."}, {"cat": "Quản trị CBQL", "title": "Soạn thảo văn bản chỉ đạo chuyên môn chuẩn Nghị định 30/2020/NĐ-CP", "desc": "Hoạt động thực hành 1 (NAEM 2026): Soạn công văn hướng dẫn, kế hoạch CĐS và email nghiệp vụ cho CBQL.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên viên Quản lý Giáo dục cấp Trung học cơ sở, nắm vững thể thức và kỹ thuật trình bày văn bản hành chính theo Nghị định số 30/2020/NĐ-CP.\n[Hướng dẫn & Nhiệm vụ]: Soạn thảo Công văn hướng dẫn của Ban Giám hiệu gửi các Tổ chuyên môn và toàn thể giáo viên trường THCS [Tên trường] về việc: 'Triển khai tích hợp Khung năng lực số (Thông tư 18/2026/TT-BGDĐT), giáo dục An toàn mạng (Công văn 6206) và vận hành mô hình Cặp đôi số trong học kỳ [I/II] năm học 2026-2027'.\n[#CẤU TRÚC VĂN BẢN QUY CHUẨN]:\n1. Quốc hiệu, Tiêu ngữ, Tên cơ quan ban hành, Số/Ký hiệu, Địa danh và ngày tháng năm.\n2. Trích yếu nội dung công văn.\n3. Phần mở đầu: Nêu căn cứ pháp lý chỉ đạo (TT 18/2026, TT 02/2025, CV 3456, CV 6206, Kế hoạch năm học của Sở/Phòng GD&ĐT Nghệ An).\n4. Phần nội dung: (a) Mục tiêu cụ thể; (b) Nhiệm vụ trọng tâm của Tổ trưởng CM và Giáo viên bộ môn; (c) Quy định bảo mật dữ liệu học sinh theo Luật 91/2025/QH15; (d) Lộ trình thực hiện và nghiệm thu sản phẩm.\n5. Phần kết thúc: Nơi nhận, Chữ ký và thẩm quyền của Hiệu trưởng.\n6. Kèm theo một bản thảo email nội bộ truyền tải thông điệp truyền cảm hứng gửi qua hệ thống điều hành."}, {"cat": "Quản trị CBQL", "title": "Quy trình Grounded AI tra cứu, trích xuất văn bản quy phạm qua NotebookLM", "desc": "Hoạt động thực hành 2 (NAEM 2026): Thiết lập sổ tay pháp lý chỉ đạo, đối chiếu quy định chống ảo giác.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Cố vấn Pháp lý Giáo dục và Chuyên gia Quản trị Tri thức số trường phổ thông.\n[Hướng dẫn & Nhiệm vụ]: Hướng dẫn Ban Giám hiệu và Tổ trưởng chuyên môn THCS thiết lập một 'Sổ tay Pháp lý & Chỉ đạo Chuyên môn số' trên Google NotebookLM.\n[#DANH MỤC NGUỒN CHÍNH THỐNG NẠP VÀO NOTEBOOKLM]:\n- Thông tư 18/2026/TT-BGDĐT (Khung năng lực số giáo viên, CBQL);\n- Thông tư 02/2025/TT-BGDĐT & Công văn 3456/BGDĐT-GDPT (Khung NLS người học cấp THCS);\n- Quyết định 2422/QĐ-BGDĐT (Khung giáo dục AI 4 mạch NLa-NLd);\n- Công văn 6206/BGDĐT-GDPT (8 nhóm nội dung An toàn mạng ATM1-ATM8);\n- Quyết định 4725/QĐ-BGDĐT (Bộ chỉ số đánh giá mức độ CĐS trường học);\n- Công văn 5512/BGDĐT-GDTrH & Thông tư 22/2021/TT-BGDĐT;\n- Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Luật Trẻ em số 102/2016/QH13.\n[#CÂU LỆNH TRUY VẤN MẪU ĐỂ CHỐNG ẢO GIÁC]: 'Dựa DUY NHẤT vào các tài liệu đã nạp trong sổ tay, hãy trích xuất: (1) 05 tiêu chí cốt lõi để nghiệm thu kế hoạch bài dạy tích hợp NLS của giáo viên; (2) Trách nhiệm pháp lý của nhà trường khi để xảy ra sự cố lộ lọt dữ liệu học sinh; (3) Quy định về độ tuổi học sinh được phép sử dụng công cụ AI. Mỗi ý bắt buộc trích dẫn chính xác điều khoản, tên văn bản và số trang nguồn'."}, {"cat": "Quản trị CBQL", "title": "Kế hoạch Chuyển đổi số toàn trường theo 5 Trụ cột (NAEM 2026)", "desc": "Khung kế hoạch chuyển đổi số toàn diện theo 5 Trụ cột và 5 Giải pháp của Học viện Quản lý Giáo dục.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Chiến lược Chuyển đổi số trường phổ thông của Học viện Quản lý Giáo dục (NAEM).\n[Hướng dẫn & Nhiệm vụ]: Xây dựng Khung Kế hoạch Chuyển đổi số toàn trường năm học 2026-2027 cho trường THCS [Tên trường, Huyện/Thị xã tỉnh Nghệ An] bám sát 5 Trụ cột và 5 Giải pháp thực thi:\n- TRỤ CỘT 1: Quản trị số tinh gọn và tối ưu hóa vận hành học đường (Giải pháp 1: Số hóa 100% hồ sơ chuyên môn, giảm ≥ 60% hồ sơ giấy theo NĐ 30/2020).\n- TRỤ CỘT 2: Sư phạm số thích ứng, trực quan và trò chơi hóa (Giải pháp 2: Ứng dụng AI tạo sinh thiết kế học liệu đa phương tiện & Gamification kiểm tra đánh giá).\n- TRỤ CỘT 3: Kết nối cộng đồng số linh hoạt và đồng thuận (Giải pháp 3: Số hóa sổ liên lạc, xây dựng tương tác sư phạm nhân văn với phụ huynh).\n- TRỤ CỘT 4: Phát triển nhân lực số nòng cốt và nâng đỡ nội bộ (Giải pháp 4: Vận hành Cộng đồng học tập PLC, cơ chế Cặp đôi số theo TT 18/2026).\n- TRỤ CỘT 5: Hạ tầng số an toàn và bảo mật định danh học đường (Giải pháp 5: Chuẩn hóa quy trình an toàn thông tin theo Luật 91/2025/QH15, cơ chế Grounded AI NotebookLM).\n[#ĐẦU RA]: Kế hoạch có mục tiêu SMART, lộ trình từng quý, phân công RACI, chỉ số đo lường KPIs và phương án ứng phó cho học sinh vùng khó khăn."}, {"cat": "Quản trị CBQL", "title": "Bảng kiểm KPIs tự đánh giá mức độ CĐS trường THCS (QĐ 4725)", "desc": "Công cụ rà soát 5 lĩnh vực chỉ số đo lường cốt lõi năm học 2026-2027 theo Bộ tiêu chuẩn Bộ GD&ĐT.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Cán bộ Thanh tra và Khảo thí Đánh giá Chất lượng Giáo dục số.\n[Hướng dẫn & Nhiệm vụ]: Thiết lập Bảng kiểm chỉ số KPIs tự đánh giá mức độ Chuyển đổi số trường THCS cuối năm học 2026-2027 theo Quyết định 4725/QĐ-BGDĐT.\n[#5 LĨNH VỰC ĐÁNH GIÁ CỐT LÕI]:\n1. Quản trị số & Hồ sơ điện tử: 100% văn bản chỉ đạo, kế hoạch chuyên môn, giáo án, sổ điểm, học bạ điện tử được xử lý và ký số; giảm ≥ 60% hồ sơ giấy (Đánh giá: Mức 1 / Mức 2 / Mức 3).\n2. Tích hợp NLS & ATM vào chương trình: 100% tổ chuyên môn tích hợp mã chỉ báo TC1/TC2 (CV 3456) và ATM1-ATM8 (CV 6206) vào Phụ lục III & IV (CV 5512) đúng địa chỉ (Đánh giá: Mức 1 / Mức 2 / Mức 3).\n3. Sư phạm số & Khảo thí thích ứng: ≥ 80% giáo viên vận hành thành thạo ≥ 02 công cụ tương tác số/tuần và xây dựng được ngân hàng câu hỏi phân hóa, kho học liệu số dùng chung (Đánh giá: Mức 1 / Mức 2 / Mức 3).\n4. Năng lực số đội ngũ (TT 18/2026): 100% CBQL và GV hoàn thành tự đánh giá theo Khung NLS 2026 và thực hành thành thạo ≥ 02 sản phẩm ứng dụng AI có trách nhiệm (Đánh giá: Mức 1 / Mức 2 / Mức 3).\n5. An toàn mạng & Bảo vệ dữ liệu: Ban hành Quy chế bảo vệ dữ liệu cá nhân (Luật 91/2025); công khai Quy trình ứng phó sự cố ATM; 100% không để lộ lọt dữ liệu học sinh (Đánh giá: Mức 1 / Mức 2 / Mức 3).\n[#KẾT QUẢ]: Bảng kiểm dạng bảng có công thức tính điểm tổng hợp và xếp loại mức độ CĐS của nhà trường."}, {"cat": "Gemini Gems", "title": "Chỉ dẫn hệ thống huấn luyện Gem chuyên biệt Khối KHXH", "desc": "Hoạt động thực hành 9 (Bộ 1): System Instructions huấn luyện Gem 'Trợ lý Giáo án số & Khảo thí KHXH'.", "text": "[Ngữ cảnh & Vai trò]: Bạn là một Chuyên gia Sư phạm và Khảo thí cao cấp lĩnh vực Khoa học Xã hội cấp Trung học cơ sở (THCS), am hiểu sâu sắc CTGDPT 2018 các môn Ngữ văn, Lịch sử và Địa lí, Giáo dục công dân; làm chủ Khung năng lực số giáo viên (Thông tư số 18/2026/TT-BGDĐT), Khung năng lực số học sinh (Thông tư số 02/2025/TT-BGDĐT, Công văn số 3456/BGDĐT-GDPT) và Hướng dẫn giáo dục An toàn mạng (Công văn số 6206/BGDĐT-GDPT).\n[#NHIỆM VỤ TRỌNG TÂM]:\n1. Hỗ trợ giáo viên thiết kế Kế hoạch bài dạy (KHBD) chuẩn Công văn 5512/BGDĐT-GDTrH theo mô hình 4C, tự động lồng ghép mã NLS (bậc TC1 lớp 6-7, TC2 lớp 8-9) và an toàn mạng (ATM1-ATM8).\n2. Xây dựng ngân hàng câu hỏi phân hóa 3 mức (Nhận biết - Thông hiểu - Vận dụng) và tạo tình huống giả định rèn luyện kỹ năng kiểm chứng nguồn SIFT.\n3. Gợi ý kịch bản trò chơi học tập số (Gamification) và ý tưởng tranh ảnh minh họa AI, nhạc AI phục vụ bài dạy.\n[#QUY TẮC PHẢN HỒI]:\n- Luôn sử dụng ngôn ngữ sư phạm chuẩn mực, giàu cảm xúc nhân văn và tôn trọng bản sắc văn hóa Việt Nam.\n- Mọi mã chỉ báo NLS/ATM phải ghi rõ mã và hành vi quan sát được của học sinh.\n- Tuyệt đối không yêu cầu dữ liệu định danh của học sinh thật; luôn có phương án dự phòng khi trường thiếu thiết bị."}, {"cat": "Gemini Gems", "title": "Chỉ dẫn hệ thống huấn luyện Gem chuyên biệt Khối KHTN - Toán", "desc": "Hoạt động thực hành 9 (Bộ 2): System Instructions huấn luyện Gem 'Chuyên gia Mô phỏng & Khảo thí LaTeX KHTN'.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Chuyên gia Sư phạm Khoa học Tự nhiên và Toán học cấp THCS, tinh thông phương pháp giáo dục STEM, công nghệ mô phỏng số và khảo thí chuẩn hóa theo Thông tư 22/2021/TT-BGDĐT và Công văn 5512/BGDĐT-GDTrH.\n[#NHIỆM VỤ TRỌNG TÂM]:\n1. Thiết kế giáo án số 4C tích hợp thí nghiệm ảo (PhET, GeoGebra), video mô phỏng 3D quá trình vi mô/vĩ mô và kiểm chứng tin đồn sức khỏe/môi trường theo quy trình SIFT (ATM1).\n2. Biên soạn ngân hàng câu hỏi trắc nghiệm và tự luận phân hóa xuất bản bằng mã nguồn LaTeX chuẩn Overleaf không lỗi ký hiệu toán - lý - hóa.\n3. Xây dựng các bài tập 'Bắt lỗi ảo giác AI' nhằm rèn luyện tư duy phản biện khoa học độc lập cho học sinh (mạch NLa - QĐ 2422).\n[#QUY TẮC BẮT BUỘC]:\n- 100% công thức toán học và phương trình hóa học viết dưới định dạng LaTeX ($...$).\n- Kiểm tra tính chính xác tuyệt đối của các định luật bảo toàn, hóa trị và đơn vị đo lường trước khi đưa ra phản hồi.\n- Luôn thiết kế 2 phương án song hành: phương án có máy tính và phương án Phiếu học tập thực nghiệm trên giấy."}, {"cat": "Gemini Gems", "title": "Chỉ dẫn hệ thống huấn luyện Gem Cán bộ Quản lý (Executive Gem)", "desc": "System Instructions cấu hình Trợ lý ảo cho Hiệu trưởng / Phó Hiệu trưởng / Tổ trưởng chuyên môn.", "text": "[Ngữ cảnh & Vai trò]: Bạn là Trợ lý Quản trị Giáo dục số cấp cao dành cho Ban Giám hiệu và Tổ trưởng Chuyên môn trường THCS, nắm vững Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15, Nghị định số 30/2020/NĐ-CP và Quyết định số 4725/QĐ-BGDĐT.\n[Hướng dẫn & Nhiệm vụ]:\n1. Hỗ trợ dự thảo văn bản chỉ đạo hành chính chuyên môn chuẩn thể thức pháp quy;\n2. Chuyển đổi dữ liệu ghi chép / gỡ băng âm thanh cuộc họp thành kịch bản điều hành và biên bản hành chính súc tích;\n3. Tổng hợp và phân tích báo cáo mức độ chuyển đổi số theo bộ chỉ số KPIs;\n4. Đề xuất phương án phân công điều phối cơ chế Cặp đôi số và cộng đồng học tập PLC trong nhà trường.\n[#RANH GIỚI BẢO MẬT & ĐẠO ĐỨC]:\n- Không đưa ra kết luận pháp lý vượt quá thẩm quyền; mọi nội dung mang tính tham mưu để người quản lý duyệt.\n- Tuyệt đối bảo mật thông tin nội bộ: không xử lý các dữ liệu chứa tên riêng, số căn cước, bệnh án hay kỷ luật của giáo viên và học sinh."}, {"cat": "Gemini Gems", "title": "Bộ 05 ca kiểm thử (Test Cases) nghiệm thu Trợ lý ảo Custom Gem", "desc": "Quy trình kiểm thử nghiêm ngặt trước khi đưa Gem vào vận hành chung trong tổ chuyên môn.", "text": "[Ngữ cảnh] Tổ chuyên môn tổ chức nghiệm thu Trợ lý ảo Gemini Gem (Sản phẩm 5 cuối khóa bồi dưỡng).\n[Danh mục 5 ca kiểm thử bắt buộc]:\n1. Ca kiểm thử 1 (Chuẩn mực Sư phạm & 4C): Nhập yêu cầu soạn 1 hoạt động môn học, kiểm tra xem Gem có trả về đúng tiến trình 4C và chuẩn CV 5512 hay không.\n2. Ca kiểm thử 2 (Tính chuẩn xác mã NLS & ATM): Kiểm tra xem Gem có trích đúng mã TC1/TC2 (CV 3456) và ATM1-ATM8 (CV 6206) gắn với hành vi hay tự bịa mã.\n3. Ca kiểm thử 3 (Ranh giới Bảo vệ Dữ liệu Học sinh): Nhập thử một đoạn danh sách có tên học sinh và điểm số; Gem BẮT BUỘC phải từ chối hoặc nhắc nhở ẩn danh hóa theo Luật 91/2025/QH15.\n4. Ca kiểm thử 4 (Chất lượng Kỹ thuật / LaTeX): Đối với Gem KHTN, yêu cầu viết 2 câu hỏi có công thức toán/hóa; kiểm tra mã LaTeX có biên dịch trơn tru hay không.\n5. Ca kiểm thử 5 (Phương án không thiết bị): Yêu cầu Gem đưa ra phương án khi trường mất điện/mất Internet; Gem BẮT BUỘC phải có giải pháp Offline Kit trên giấy.\n[Tiêu chí Đạt]: Gem vượt qua cả 5 ca kiểm thử mới được cấp quyền chia sẻ nội bộ."}, {"cat": "KHBD 4C", "title": "Hoạt động phân hóa A/B/C theo YCCĐ", "desc": "Ba mức hỗ trợ và mở rộng cùng hướng tới YCCĐ chung.", "text": "[Ngữ cảnh] Thiết kế dạy học phân hóa cho lớp THCS.\n[Dữ liệu/điều kiện] YCCĐ [YCCĐ], chủ đề [chủ đề], lớp [lớp], thời gian [phút], thiết bị [điều kiện].\n[Hướng dẫn] Tạo nhiệm vụ Nhóm A cơ bản có giàn giáo, B thành thạo tự thực hiện, C nâng cao mở rộng; cùng hướng tới YCCĐ, không gắn nhãn năng lực cố định, cho phép học sinh lựa chọn.\n[Kết quả mong muốn] Bảng nhiệm vụ, hỗ trợ, sản phẩm, tiêu chí chung và cách tổ chức cặp đôi số."}, {"cat": "Học liệu AI", "title": "Slide bài giảng số dễ tiếp cận", "desc": "Dàn ý slide ngắn, rõ, có nguồn và ghi chú trình bày.", "text": "[Ngữ cảnh] Bạn là nhà thiết kế học liệu cho giáo viên THCS.\n[Dữ liệu/điều kiện] Môn [môn], lớp [lớp], chủ đề [chủ đề], mục tiêu [mục tiêu], thời lượng [phút].\n[Hướng dẫn] Tạo dàn ý slide ít chữ, tương phản tốt, ngôn ngữ phù hợp lứa tuổi; gợi ý hình ảnh có giấy phép phù hợp, trích nguồn; ghi phần AI hỗ trợ.\n[Kết quả mong muốn] Bảng slide: số, tiêu đề, nội dung, hoạt động, gợi ý hình, ghi chú GV, nguồn cần bổ sung."}, {"cat": "Học liệu AI", "title": "Thẻ học tập ngoại tuyến (Offline Flashcards)", "desc": "Chuyển nội dung thành bộ thẻ dùng nhóm nhỏ khi không có thiết bị.", "text": "[Ngữ cảnh] Thiết kế học liệu giấy cho môn THCS.\n[Dữ liệu/điều kiện] Chủ đề [chủ đề], lớp [lớp], mục tiêu [mục tiêu].\n[Hướng dẫn] Tạo thẻ hỏi–đáp/ghép cặp có độ khó tăng dần; kiểm chứng kiến thức, ghi nguồn và hướng dẫn dùng lớp đông.\n[Kết quả mong muốn] Nội dung thẻ, đáp án, hướng dẫn tổ chức 10–15 phút, phương án phân hóa."}, {"cat": "Học liệu AI", "title": "Quy chuẩn chú thích bản quyền và minh bạch AI", "desc": "Mẫu ghi nguồn, giấy phép Creative Commons và đóng góp của AI.", "text": "[Ngữ cảnh] Cố vấn bản quyền học liệu giáo dục.\n[Dữ liệu/điều kiện] Tài nguyên [mô tả], tác giả/URL [nguồn], giấy phép [nếu biết], công cụ AI [nếu có].\n[Hướng dẫn] Không tự suy đoán giấy phép; nếu thiếu, ghi cần xác minh và không tái phân phối. Phân biệt nội dung tự tạo, trích dẫn và AI hỗ trợ.\n[Kết quả mong muốn] Mẫu attribution, chú thích AI, checklist quyền sử dụng."}, {"cat": "Khảo thí & LaTeX", "title": "Hệ thống phản hồi sư phạm vì sự tiến bộ", "desc": "Viết nhận xét cụ thể, khích lệ, chỉ ra bước tiếp theo thay vì so sánh điểm số.", "text": "[Ngữ cảnh] Cố vấn đánh giá hình thành trong lớp THCS.\n[Dữ liệu/điều kiện] Mục tiêu [mục tiêu], loại sản phẩm [sản phẩm], tiêu chí [tiêu chí]. Không cung cấp thông tin nhận diện người học.\n[Hướng dẫn] Tạo mẫu phản hồi dựa trên minh chứng: điều làm tốt, một điểm cần cải thiện, bước tiếp theo; tránh nhãn tiêu cực hoặc so sánh học sinh.\n[Kết quả mong muốn] 3 mẫu phản hồi theo mức độ và checklist GV."}, {"cat": "Khảo thí & LaTeX", "title": "Rà soát và kiểm tra chất lượng câu hỏi kiểm tra", "desc": "Phát hiện lỗi câu hỏi mơ hồ, phương án nhiễu vô lý hoặc thiên lệch ngôn ngữ.", "text": "[Ngữ cảnh] Chuyên gia rà soát câu hỏi kiểm tra THCS.\n[Dữ liệu/điều kiện] Câu hỏi và đáp án đã bỏ thông tin cá nhân: [nội dung].\n[Hướng dẫn] Kiểm tra bám mục tiêu, độ rõ, độ khó, đáp án, ngôn ngữ bao hàm; giải thích từng đề xuất sửa, không thay đổi chuẩn kiến thức tùy tiện.\n[Kết quả mong muốn] Bảng lỗi, mức độ, bản sửa và lý do; câu hỏi cần GV quyết định."}, {"cat": "Khảo thí & LaTeX", "title": "Phân tích dữ liệu kết quả học tập không định danh", "desc": "Tìm xu hướng tiếp thu của lớp học, không suy diễn gán nhãn cá nhân.", "text": "[Ngữ cảnh] Chuyên gia đánh giá dữ liệu giáo dục.\n[Dữ liệu/điều kiện] Chỉ cung cấp bảng tổng hợp điểm đã ẩn danh: [dữ liệu tổng hợp].\n[Hướng dẫn] Tóm tắt xu hướng, hạn chế cỡ mẫu, không suy luận nhân quả/cá nhân; đề xuất điều chỉnh dạy học.\n[Kết quả mong muốn] 3 phát hiện, mức tin cậy/giới hạn, hành động tiếp theo; không nhận dạng học sinh."}, {"cat": "An toàn mạng ATM", "title": "Giải thích giới hạn và hiện tượng ảo giác của AI cho học sinh", "desc": "Bài tập phân biệt giữa câu trả lời trôi chảy và bằng chứng thực tế.", "text": "[Ngữ cảnh] Dạy hiểu biết AI cho học sinh THCS.\n[Dữ liệu/điều kiện] Khái niệm môn [môn], lớp [lớp], không yêu cầu HS đăng nhập AI.\n[Hướng dẫn] Tạo hoạt động GV trình chiếu đầu ra giả lập, học sinh kiểm chứng nguồn, thảo luận sai lệch/thiếu căn cứ.\n[Kết quả mong muốn] Kịch bản, ví dụ an toàn, câu hỏi gợi mở, rubric và phương án giấy."}, {"cat": "Quản trị CBQL", "title": "Kịch bản sinh hoạt chuyên môn theo nghiên cứu bài học số", "desc": "Chia sẻ sản phẩm số và phản hồi đồng nghiệp có cấu trúc nhân văn.", "text": "[Ngữ cảnh] Điều phối sinh hoạt chuyên môn sau tập huấn.\n[Dữ liệu/điều kiện] Thời gian [phút], nhóm [tổ], sản phẩm đem chia sẻ [sản phẩm].\n[Hướng dẫn] Thiết kế quy trình xem minh chứng, phản hồi tôn trọng, chú ý công bằng tiếp cận và quyền riêng tư.\n[Kết quả mong muốn] Agenda theo phút, câu hỏi phản hồi, ghi nhận quyết định và hành động tiếp."}, {"cat": "Quản trị CBQL", "title": "Quy trình phân quyền và chia sẻ Google Drive an toàn", "desc": "Phân quyền tối thiểu, tránh mở liên kết công khai tài liệu nội bộ nhà trường.", "text": "[Ngữ cảnh] Hỗ trợ quản trị kho tài nguyên tổ chuyên môn.\n[Dữ liệu/điều kiện] Loại tài liệu [loại], nhóm người dùng [nhóm], chính sách trường [nếu có].\n[Hướng dẫn] Đưa ra quy trình kiểm tra quyền sở hữu, chia sẻ theo nhóm, hạn chế tải/đổi quyền khi phù hợp; không mở rộng quyền mặc định.\n[Kết quả mong muốn] Checklist thao tác và rà soát định kỳ; ghi rõ cần theo chính sách quản trị Workspace."}, {"cat": "Quản trị CBQL", "title": "Phiếu tự phản tư phát triển năng lực số giáo viên (TT 18/2026)", "desc": "Câu hỏi tự soi chiếu 6 miền năng lực phục vụ tự bồi dưỡng, không dùng để xếp hạng thi đua.", "text": "[Ngữ cảnh] Thiết kế phiếu tự đánh giá phát triển năng lực số giáo viên.\n[Dữ liệu/điều kiện] Lĩnh vực [lĩnh vực], mục đích [phát triển cá nhân], thời gian [phút].\n[Hướng dẫn] Tạo câu hỏi hành vi có lựa chọn mức độ và bước tiếp theo; nêu phiếu không phải đánh giá nhân sự, thu thập tối thiểu và kiểm tra quyền truy cập.\n[Kết quả mong muốn] 8 câu, thang mô tả, phản hồi gợi ý và lưu ý quyền riêng tư."}, {"cat": "Quản trị CBQL", "title": "Checklist nghiệm thu hồ sơ 05 sản phẩm chuyên môn cuối khóa", "desc": "Rà soát chuẩn xác pháp lý, tính khả thi sư phạm, an toàn dữ liệu và minh bạch AI.", "text": "[Ngữ cảnh] Hội đồng/tổ chuyên môn nghiệm thu sản phẩm khóa bồi dưỡng.\n[Dữ liệu/điều kiện] Sản phẩm [tên], yêu cầu chương trình [yêu cầu].\n[Hướng dẫn] Tạo tiêu chí 3 mức, yêu cầu minh chứng; kiểm tra mã và quy định theo văn bản gốc; không yêu cầu hồ sơ định danh học sinh.\n[Kết quả mong muốn] Rubric 5 sản phẩm, checklist chung và cột phản hồi cải tiến."}];
 
 // Helper functions
@@ -34,7 +31,279 @@ function escapeHtml(s) {
   }[c]));
 }
 
-// Render 6 Lessons
+// ==========================================
+// 1. SPA ROUTER & NAVIGATION ENGINE
+// ==========================================
+
+const ROUTE_MAP = {
+  '': 'home',
+  'home': 'home',
+  'overview': 'home',
+  'path': 'path',
+  'curriculum': 'path',
+  'missions': 'path',
+  'self-assess-sec': 'self-assess-sec',
+  'self-assess': 'self-assess-sec',
+  'workbench': 'workbench',
+  'prompts': 'prompts',
+  'safety': 'safety',
+  'pdca-sec': 'pdca-sec',
+  'pdca': 'pdca-sec',
+  'deliverables': 'deliverables',
+  'resources': 'deliverables'
+};
+
+function navigateTo(rawHash, subTab = null, searchPrompt = null) {
+  const cleanHash = (rawHash || '').replace(/^#/, '').trim();
+  const targetId = ROUTE_MAP[cleanHash] || 'home';
+
+  // 1. Hide all SPA views, activate target view
+  const views = $$('.spa-view');
+  let found = false;
+  views.forEach(v => {
+    if (v.id === targetId) {
+      v.classList.add('active');
+      found = true;
+    } else {
+      v.classList.remove('active');
+    }
+  });
+
+  if (!found && views.length > 0) {
+    views[0].classList.add('active');
+  }
+
+  // 2. Update Topbar Navigation Active State
+  $$('#nav a').forEach(a => {
+    const aRoute = (a.getAttribute('href') || '').replace(/^#/, '');
+    const isAct = ROUTE_MAP[aRoute] === targetId;
+    a.classList.toggle('active', isAct);
+  });
+
+  // 3. Update Stepper Bar Active State
+  $$('.flow-step').forEach(btn => {
+    const btnRoute = btn.dataset.route || '';
+    const isAct = ROUTE_MAP[btnRoute] === targetId;
+    btn.classList.toggle('active', isAct);
+  });
+
+  // 4. Activate Sub-tab if requested (e.g. workbench)
+  if (subTab) {
+    switchTab(subTab);
+  }
+
+  // 5. Search prompt if requested
+  if (searchPrompt && targetId === 'prompts') {
+    const sInput = $('#prompt-search');
+    if (sInput) {
+      sInput.value = searchPrompt;
+      renderPrompts();
+    }
+  }
+
+  // 6. Smooth scroll to top of view
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // 7. Update browser history hash without reload
+  if (window.location.hash !== '#' + cleanHash && cleanHash !== '') {
+    history.pushState(null, '', '#' + cleanHash);
+  }
+}
+
+function setupRouter() {
+  // Intercept all internal anchor clicks
+  document.addEventListener('click', e => {
+    // Check if clicked element or parent has data-route or is an anchor with #
+    const link = e.target.closest('a[href^="#"], [data-route]');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    const route = link.dataset.route || (href ? href.replace(/^#/, '') : '');
+    const tab = link.dataset.tab || null;
+    const search = link.dataset.search || null;
+
+    if (route && (ROUTE_MAP[route] !== undefined || route.startsWith('panel-'))) {
+      e.preventDefault();
+
+      if (route.startsWith('panel-')) {
+        // Internal tab click
+        switchTab(route.replace('panel-', ''));
+      } else {
+        navigateTo(route, tab, search);
+      }
+
+      // Close mobile menu if open
+      const nav = $('#nav');
+      const menuBtn = $('.menu-toggle');
+      if (nav && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+
+  // Listen for browser Back / Forward buttons
+  window.addEventListener('hashchange', () => {
+    const hash = window.location.hash.replace(/^#/, '');
+    navigateTo(hash);
+  });
+
+  // Initial routing on page load
+  const initialHash = window.location.hash.replace(/^#/, '');
+  navigateTo(initialHash || 'home');
+}
+
+// ==========================================
+// 2. MISSION HIGHLIGHTING & PROGRESS ENGINE
+// ==========================================
+
+const MISSION_KEYS = ['mission1', 'mission2', 'mission3', 'mission4', 'mission5', 'mission6'];
+const DELIV_KEYS = ['deliv_1', 'deliv_2', 'deliv_3', 'deliv_4', 'deliv_5', 'self_assessed', 'pdca_ready'];
+
+function getCompletedMissions() {
+  try {
+    return JSON.parse(localStorage.getItem('nls_completed_missions') || '[]');
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveCompletedMissions(list) {
+  try {
+    localStorage.setItem('nls_completed_missions', JSON.stringify(list));
+  } catch (e) {}
+}
+
+function updateMissionUI() {
+  const completed = getCompletedMissions();
+
+  // Update Mission Cards in View 1 (#path)
+  MISSION_KEYS.forEach((mKey, idx) => {
+    const num = idx + 1;
+    const isDone = completed.includes(mKey);
+    const card = $('#mission-card-' + num);
+    const pill = $('#status-pill-m' + num);
+    const chk = $('#check-m' + num);
+
+    if (card) card.classList.toggle('completed', isDone);
+    if (pill) {
+      pill.textContent = isDone ? '✓ ĐÃ HOÀN THÀNH' : 'CHƯA HOÀN THÀNH';
+    }
+    if (chk) chk.checked = isDone;
+  });
+
+  // Update Stepper checkmarks
+  const checkPath = $('#check-step-path');
+  const pathDone = MISSION_KEYS.some(k => completed.includes(k));
+  if (checkPath) checkPath.style.display = pathDone ? 'inline' : 'none';
+
+  const checkAssess = $('#check-step-assess');
+  if (checkAssess) checkAssess.style.display = completed.includes('self_assessed') ? 'inline' : 'none';
+
+  const checkWb = $('#check-step-wb');
+  const wbDone = ['mission3', 'mission4', 'mission5'].some(k => completed.includes(k));
+  if (checkWb) checkWb.style.display = wbDone ? 'inline' : 'none';
+
+  const checkSafety = $('#check-step-safety');
+  if (checkSafety) checkSafety.style.display = completed.includes('mission2') ? 'inline' : 'none';
+
+  const checkPdca = $('#check-step-pdca');
+  if (checkPdca) checkPdca.style.display = completed.includes('mission6') ? 'inline' : 'none';
+
+  const checkDeliv = $('#check-step-deliv');
+  const allMissionsDone = MISSION_KEYS.every(k => completed.includes(k));
+  if (checkDeliv) checkDeliv.style.display = allMissionsDone ? 'inline' : 'none';
+
+  // Calculate overall percentage
+  const totalItems = MISSION_KEYS.length + DELIV_KEYS.length;
+  let doneCount = 0;
+  MISSION_KEYS.forEach(k => { if (completed.includes(k)) doneCount++; });
+  DELIV_KEYS.forEach(k => { if (completed.includes(k)) doneCount++; });
+
+  const percent = Math.min(100, Math.round((doneCount / totalItems) * 100));
+  const pEl = $('#progress-percent');
+  const fEl = $('#progress-fill');
+  if (pEl) pEl.textContent = percent + '%';
+  if (fEl) fEl.style.width = percent + '%';
+}
+
+function setupMissionCheckboxes() {
+  // Mission checkboxes on cards
+  $$('.mission-checkbox').forEach(chk => {
+    chk.addEventListener('change', () => {
+      const mKey = chk.dataset.mission;
+      if (!mKey) return;
+      let completed = getCompletedMissions();
+      if (chk.checked) {
+        if (!completed.includes(mKey)) completed.push(mKey);
+        toast('Đã ghi nhận hoàn thành nhiệm vụ ' + mKey.toUpperCase() + '!');
+      } else {
+        completed = completed.filter(k => k !== mKey);
+        toast('Đã bỏ đánh dấu nhiệm vụ ' + mKey.toUpperCase());
+      }
+      saveCompletedMissions(completed);
+      updateMissionUI();
+    });
+  });
+
+  // Deliverables checkboxes in View 7
+  $$('[data-task]').forEach(chk => {
+    chk.addEventListener('change', () => {
+      const tKey = chk.dataset.task;
+      let completed = getCompletedMissions();
+      if (chk.checked) {
+        if (!completed.includes(tKey)) completed.push(tKey);
+        toast('Đã đánh dấu hoàn thành sản phẩm nghiệm thu!');
+      } else {
+        completed = completed.filter(k => k !== tKey);
+      }
+      saveCompletedMissions(completed);
+      updateMissionUI();
+    });
+  });
+
+  // Load existing deliverables checks
+  const completed = getCompletedMissions();
+  $$('[data-task]').forEach(chk => {
+    chk.checked = completed.includes(chk.dataset.task);
+  });
+
+  // Mission filter bar
+  $$('.mission-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      $$('.mission-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.mfilter || 'all';
+      const cards = $$('.mission-card');
+      const compList = getCompletedMissions();
+
+      cards.forEach((c, idx) => {
+        const day = c.dataset.missionDay;
+        const role = c.dataset.missionRole;
+        const mKey = 'mission' + (idx + 1);
+        const isDone = compList.includes(mKey);
+
+        let show = true;
+        if (filter === 'day1') show = day === '1';
+        else if (filter === 'day2') show = day === '2';
+        else if (filter === 'day3') show = day === '3';
+        else if (filter === 'gv') show = role === 'gv' || role === 'all';
+        else if (filter === 'cbql') show = role === 'cbql' || role === 'all';
+        else if (filter === 'incomplete') show = !isDone;
+
+        c.style.display = show ? 'block' : 'none';
+      });
+    });
+  });
+
+  updateMissionUI();
+}
+
+// ==========================================
+// 3. LESSONS & PROMPTS RENDERING
+// ==========================================
+
 function renderLessons() {
   const grid = $('#lesson-grid');
   if (!grid) return;
@@ -51,252 +320,83 @@ function renderLessons() {
         <b>Công cụ:</b> ${(Array.isArray(l.tools) ? l.tools.join(', ') : l.tools)}
       </div>
       <div class="lesson-actions">
-        <button class="lesson-btn" data-go="${i === 1 ? '#safety' : (i === 4 ? '#workbench' : (i === 5 ? '#pdca' : '#workbench'))}">
+        <button class="lesson-btn" data-route="workbench" data-tab="${i === 1 ? 'cbql' : (i === 2 ? 'khbd' : (i === 3 ? 'media' : (i === 4 ? 'assessment' : (i === 5 ? 'pdca' : 'khbd'))))}">
           Bắt đầu buổi ${i + 1} →
         </button>
       </div>
     </article>
   `).join('');
-
-  grid.addEventListener('click', e => {
-    const b = e.target.closest('[data-go]');
-    if (b) location.hash = b.dataset.go;
-  });
 }
 
-// Render Prompts Library
 let activeGroup = 'Tất cả';
-function renderPrompts() {
-  const filters = $('#prompt-filters');
-  if (filters) {
-    filters.innerHTML = GROUPS.map(g => `
-      <button class="filter-chip ${g === activeGroup ? 'active' : ''}" data-group="${escapeHtml(g)}">
-        ${escapeHtml(g)}
-      </button>
-    `).join('');
-  }
 
-  const q = ($('#prompt-search') ? $('#prompt-search').value.trim().toLowerCase() : '');
-  const items = PROMPTS.filter(p => {
-    const matchCat = (activeGroup === 'Tất cả' || p.cat === activeGroup);
-    const matchSearch = (!q || (p.title + ' ' + p.desc + ' ' + p.cat + ' ' + p.text).toLowerCase().includes(q));
-    return matchCat && matchSearch;
+function renderPrompts() {
+  const grid = $('#prompt-grid');
+  if (!grid) return;
+
+  const query = ($('#prompt-search')?.value || '').toLowerCase().trim();
+  const filtered = PROMPTS.filter(p => {
+    const matchesGroup = activeGroup === 'Tất cả' || p.cat === activeGroup;
+    const matchesQuery = !query || p.title.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query) || p.text.toLowerCase().includes(query);
+    return matchesGroup && matchesQuery;
   });
 
-  const pgrid = $('#prompt-grid');
-  if (!pgrid) return;
-  
-  if (!items.length) {
-    pgrid.innerHTML = '<p class="empty-state">Không tìm thấy prompt phù hợp với từ khóa tìm kiếm.</p>';
-    return;
-  }
-
-  pgrid.innerHTML = items.map((p, idx) => {
-    const origIdx = PROMPTS.indexOf(p);
+  grid.innerHTML = filtered.map(p => {
+    const originalIndex = PROMPTS.indexOf(p);
     return `
       <article class="prompt-card">
-        <div class="prompt-meta">
-          <span class="category">${escapeHtml(p.cat.toUpperCase())}</span>
-          <span class="prompt-num">#${origIdx + 1}</span>
-        </div>
-        <h3>${escapeHtml(p.title)}</h3>
+        <span class="prompt-badge">${escapeHtml(p.cat)}</span>
+        <h4>${escapeHtml(p.title)}</h4>
         <p>${escapeHtml(p.desc)}</p>
         <div class="prompt-actions">
-          <button class="btn-copy-prompt" data-prompt="${origIdx}">
-            <span>📋</span> Sao chép prompt
-          </button>
-          <button class="btn-view-prompt" data-view="${origIdx}">
-            <span>👁</span> Xem chi tiết
-          </button>
+          <button class="button outline btn-copy-prompt" data-prompt="${originalIndex}">Sao chép prompt</button>
+          <button class="button secondary btn-view-prompt" data-view="${originalIndex}">Xem chi tiết</button>
         </div>
       </article>
     `;
   }).join('');
+
+  $$('#prompt-filters button').forEach(b => {
+    b.classList.toggle('active', b.dataset.group === activeGroup);
+  });
 }
 
-// Output helper
-function setOutput(id, value) {
-  const el = $('#' + id);
-  if (!el) return;
-  el.textContent = value;
-  el.classList.remove('placeholder');
-  markTask('generated_' + id, true);
-  
-  const st = $('#' + id.replace('-output', '-status'));
-  if (st) {
-    st.textContent = 'ĐÃ TẠO';
-    st.classList.add('ready');
-  }
+function showPromptModal(p) {
+  const modal = $('#prompt-modal');
+  if (!modal) return;
+  $('#modal-title').textContent = p.title;
+  $('#modal-meta').textContent = `Chuyên mục: ${p.cat} · 4 Thẻ Sư phạm chuẩn hóa 2026`;
+  $('#modal-desc').textContent = p.desc;
+  $('#modal-content').textContent = p.text;
+  modal.classList.add('show');
 }
 
-// Prompt 4-card structure builder
-function prompt4(title, context, data, instructions, result) {
-  return `${title}
-==================================================
-[Ngữ cảnh & Vai trò]
-${context}
+// ==========================================
+// 4. WORKBENCH TABS & PRESETS
+// ==========================================
 
-[Dữ liệu / Điều kiện lớp học]
-${data}
-
-[Hướng dẫn thực thi chi tiết]
-${instructions}
-
-[Kết quả mong muốn]
-${result}
-==================================================
-* Lưu ý: Đây là câu lệnh mẫu hỗ trợ sư phạm. Giáo viên cần đối chiếu văn bản quy phạm gốc, ẩn danh hóa 100% dữ liệu học sinh trước khi đưa vào công cụ AI.`;
+function switchTab(tabKey) {
+  $$('.tab').forEach(x => x.classList.toggle('active', x.dataset.tab === tabKey));
+  $$('.builder-panel').forEach(x => x.classList.toggle('active', x.id === 'panel-' + tabKey));
 }
 
-// Event Handlers for Builders
-function setupBuilders() {
-  // 1. KHBD 4C
-  const btnKhbd = $('#make-khbd');
-  if (btnKhbd) {
-    btnKhbd.addEventListener('click', () => {
-      const g = Number(text('grade')) || 7;
-      const expected = g <= 7 ? 'TC1 (lớp 6–7)' : 'TC2 (lớp 8–9)';
-      const selected = text('tc');
-      const durationInput = $('#duration');
-      const rawDuration = Number(durationInput ? durationInput.value : 45);
-      const duration = Number.isFinite(rawDuration) ? Math.min(180, Math.max(1, Math.round(rawDuration))) : 45;
-      if (durationInput) durationInput.value = duration;
+function setupWorkbench() {
+  // Tab click
+  $$('.tab').forEach(t => {
+    t.addEventListener('click', () => switchTab(t.dataset.tab));
+  });
 
-      const promptText = prompt4(
-        'PROMPT THIẾT KẾ KẾ HOẠCH BÀI DẠY (KHBD) 4C TÍCH HỢP',
-        `Bạn là Chuyên gia Sư phạm số cấp THCS, am hiểu sâu sắc CTGDPT 2018 và quy chuẩn Công văn 5512/BGDĐT-GDTrH. Thiết kế hoạt động tích hợp trực tiếp vào bài học hiện hành, không tạo tiết học mới.`,
-        `Môn học: ${text('subject')}
-Lớp: ${g}
-Chủ đề bài dạy: ${text('topic')}
-Yêu cầu cần đạt (YCCĐ): ${text('outcomes')}
-Trình độ NLS: ${selected} (chuẩn đối chiếu theo CV 3456: ${expected})
-Mã An toàn mạng: ${text('atm')} (theo CV 6206)
-Mạch giáo dục AI: ${text('ai-strand')} (theo QĐ 2422)
-Điều kiện thiết bị: ${text('devices')}
-Thời lượng: ${duration} phút.
-Cam kết an toàn: 100% không nhập dữ liệu định danh học sinh; tuân thủ Luật 91/2025/QH15.`,
-        `1) Xây dựng tiến trình 4C (Context: Kết nối bối cảnh - Challenge: Thử thách giải quyết vấn đề - Concept: Hình thành kiến thức - Conclusion: Tổng kết vận dụng).
-2) Tích hợp chỉ báo NLS và ATM vào đúng 'địa chỉ' hoạt động học sinh thao tác, không tách rời kiến thức môn học.
-3) Thiết kế phân hóa nhiệm vụ: Nhóm A (Cơ bản - có giàn giáo), Nhóm B (Thành thạo), Nhóm C (Nâng cao mở rộng); xây dựng cơ chế Cặp đôi số (1 kèm 1) đồng đẳng.
-4) Luôn có phương án ngoại tuyến (Offline Kit / Phiếu học tập in sẵn) khi lớp học mất mạng Internet hoặc thiếu thiết bị (đặc thù vùng khó khăn Nghệ An).
-5) Đề xuất tiêu chí Rubric đánh giá thường xuyên 4 mức, nguồn học liệu mở Creative Commons và ghi chú minh bạch phần nội dung do AI hỗ trợ.`,
-        `Bảng Kế hoạch bài dạy chuẩn CV 5512 gồm:
-- Mục tiêu (Phẩm chất, Năng lực môn học, Năng lực số rõ mã chỉ báo);
-- Thiết bị và học liệu dạy học (kèm phương án ngoại tuyến);
-- Tiến trình dạy học 4C chi tiết (Hoạt động GV - Hoạt động HS - Sản phẩm);
-- Rubric 4 mức đánh giá thường xuyên;
-- Bản in Phiếu học tập dự phòng cho học sinh.`
-      );
-      setOutput('khbd-output', promptText);
-    });
-  }
-
-  // 2. Học liệu AI
-  const btnMedia = $('#make-media');
-  if (btnMedia) {
-    btnMedia.addEventListener('click', () => {
-      const promptText = prompt4(
-        'PROMPT THIẾT KẾ HỆ SINH THÁI HỌC LIỆU ĐA PHƯƠNG TIỆN',
-        `Bạn là Chuyên gia Thiết kế Học liệu số Sư phạm và Đồ họa Đa phương tiện cấp THCS.`,
-        `Loại học liệu: ${text('media-type')}
-Khối lớp / Đối tượng: ${text('media-audience')}
-Mục tiêu bài học: ${text('media-goal')}
-Thời lượng / Quy mô: ${text('media-duration')}
-Điều kiện hạ tầng: ${text('media-device')}`,
-        `1) Xây dựng học liệu trực quan, thẩm mỹ, phù hợp tâm sinh lý lứa tuổi THCS.
-2) Nếu là Tranh ảnh mô phỏng AI (Imagen 3): Cung cấp prompt tiếng Anh chuyên sâu, quy định tỷ lệ 16:9, phong cách 3D hoặc tranh lịch sử số, nghiêm cấm sinh chữ rác/lỗi ký hiệu.
-3) Nếu là Bài hát giáo dục (Suno/Udio): Cung cấp lời vần điệu dễ thuộc (Verse, Chorus bắt tai) và prompt phối khí phong cách Modern Pop-Rock.
-4) Nếu là Video Micro-learning 3 phút: Cung cấp kịch bản phân cảnh Storyboard 4 cột (Giây, Hình ảnh, Thuyết minh, Text chú thích).
-5) Đảm bảo bản quyền: Gợi ý tài nguyên mở Creative Commons (CC BY-NC), mẫu ghi chú minh bạch 'Học liệu có sự hỗ trợ của AI' và phương án thẻ in giấy ngoại tuyến.`,
-        `Kịch bản chi tiết, prompt nạp vào công cụ AI tương ứng, bản quyền và checklist nghiệm thu kỹ thuật sư phạm.`
-      );
-      setOutput('media-output', promptText);
-    });
-  }
-
-  // 3. Khảo thí & LaTeX
-  const btnAssess = $('#make-assessment');
-  if (btnAssess) {
-    btnAssess.addEventListener('click', () => {
-      const promptText = prompt4(
-        'PROMPT THIẾT KẾ KHẢO THÍ SỐ VÀ XUẤT BẢN LATEX PHÂN HÓA',
-        `Bạn là Chuyên gia Khảo thí Giáo dục THCS, tinh thông Thông tư 22/2021/TT-BGDĐT và kỹ thuật xuất bản học liệu LaTeX chuẩn Overleaf.`,
-        `Chủ đề kiểm tra: ${text('assess-topic')}
-Lớp / Môn học: ${text('assess-class')}
-Số lượng câu: ${text('assess-count')}
-Thang điểm: ${text('assess-points')}
-Tỷ lệ nhận thức: ${text('assess-levels')}
-Định dạng xuất bản: ${text('assess-format')}`,
-        `1) Thiết lập ma trận đặc tả chuẩn Thông tư 22 phân bổ rõ 3 mức: Nhận biết, Thông hiểu, Vận dụng.
-2) Biên soạn câu hỏi trắc nghiệm khách quan kết hợp tự luận tình huống thực tiễn gắn với kiểm chứng nguồn SIFT (ATM1) hoặc phát hiện lỗi sai ảo giác của AI.
-3) Nếu chọn định dạng LaTeX (Toán/KHTN): Toàn bộ công thức toán, phương trình hóa học phải đặt trong mã LaTeX ($...$, chemformula) biên dịch không lỗi trên Overleaf.
-4) Cung cấp đáp án chi tiết, hướng dẫn chấm điểm và hệ thống 3 lời nhận xét phản hồi khích lệ vì sự tiến bộ của học sinh.
-5) Thiết lập Rubric 4 mức đánh giá thường xuyên tương ứng.`,
-        `Ma trận đặc tả đề, Bộ đề trắc nghiệm + tự luận hoàn chỉnh (kèm mã nguồn LaTeX nếu có), Đáp án và lời giải chi tiết, Rubric đánh giá và Phiếu phản hồi sư phạm.`
-      );
-      setOutput('assessment-output', promptText);
-    });
-  }
-
-  // 4. Cán bộ Quản lý (CBQL)
-  const btnCbql = $('#make-cbql');
-  if (btnCbql) {
-    btnCbql.addEventListener('click', () => {
-      const taskType = text('cbql-task');
-      const promptText = prompt4(
-        'PROMPT QUẢN TRỊ SỐ & TÁC NGHIỆP DÀNH CHO CÁN BỘ QUẢN LÝ (CBQL THCS)',
-        `Bạn là Chuyên gia Quản trị Giáo dục số cấp cao, am hiểu sâu sắc Nghị định số 30/2020/NĐ-CP về thể thức văn bản hành chính, Quyết định số 4725/QĐ-BGDĐT về Bộ chỉ số CĐS trường học và 5 Trụ cột CĐS của Học viện Quản lý Giáo dục (NAEM 2026).`,
-        `Loại tác vụ quản lý: ${taskType}
-Cơ quan / Đơn vị: ${text('cbql-org')}
-Tên văn bản / Cuộc họp: ${text('cbql-title')}
-Dữ liệu đầu vào / Nội dung trọng tâm: ${text('cbql-input')}`,
-        `1) Áp dụng đúng thể thức văn bản hành chính quy chuẩn nhà nước theo NĐ 30/2020/NĐ-CP (Quốc hiệu, Tiêu ngữ, Tên cơ quan, Trích yếu, Nội dung, Thẩm quyền ký).
-2) Nếu là xử lý dữ liệu âm thanh cuộc họp (Hoạt động 3 - NAEM): Trích xuất Kịch bản điều hành rút gọn cho Chủ tọa và Biên bản hành chính súc tích có ghi rõ nghị quyết, chỉ tiêu định lượng, phân công RACI và thời hạn hoàn thành.
-3) Nếu là chỉ đạo chuyên môn / Kế hoạch CĐS (Hoạt động 1, 5.2): Tích hợp 5 Trụ cột CĐS tinh gọn, giảm ≥ 60% hồ sơ giấy, quy định cơ chế Cặp đôi số và an toàn dữ liệu theo Luật 91/2025/QH15.
-4) Nếu là tra cứu pháp lý qua NotebookLM (Hoạt động 2): Xây dựng câu lệnh Grounded AI yêu cầu trích dẫn chính xác điều khoản, tên văn bản gốc, chống ảo giác.
-5) Tuyệt đối bảo mật thông tin nội bộ và đời tư học sinh.`,
-        `Văn bản hành chính / Kịch bản điều hành / Kế hoạch CĐS hoàn chỉnh theo chuẩn pháp quy, kèm bảng phân công nhiệm vụ và email điều hành nội bộ.`
-      );
-      setOutput('cbql-output', promptText);
-    });
-  }
-
-  // 5. PDCA Kế hoạch hành động
-  const btnPdca = $('#make-pdca');
-  if (btnPdca) {
-    btnPdca.addEventListener('click', () => {
-      const promptText = prompt4(
-        'PROMPT LẬP KẾ HOẠCH HÀNH ĐỘNG CĐS 4 TUẦN THEO CHU TRÌNH PDCA',
-        `Bạn là Cố vấn Chiến lược Chuyển đổi số trường phổ thông của Sở GD&ĐT Nghệ An và Học viện Quản lý Giáo dục (NAEM).`,
-        `Đơn vị / Trường: ${text('pdca-team')}
-Người / Bộ phận phụ trách: ${text('pdca-owner')}
-Ưu tiên đổi mới: ${text('pdca-priority')}
-Nguồn lực và rào cản thực tế: ${text('pdca-resources')}`,
-        `Thiết kế Kế hoạch hành động 4 tuần sau tập huấn theo chu trình PDCA tinh gọn:
-- Tuần 1 (Plan): Thống nhất bản đồ địa chỉ tích hợp NLS (TC1/TC2) và ATM1-ATM8 vào chương trình học kỳ; phân công chính thức các 'Cặp đôi số' trong tổ.
-- Tuần 2 (Do): Giáo viên hoàn thiện KHBD 4C, học liệu đa phương tiện (có Offline Kit dự phòng) và cấu hình Gem dùng chung của tổ.
-- Tuần 3 (Check): Tổ chức dạy thực nghiệm tối thiểu 01 tiết có tích hợp; thu thập minh chứng sản phẩm học sinh và dữ liệu khảo thí.
-- Tuần 4 (Act): Sinh hoạt chuyên môn rút kinh nghiệm theo 4 câu hỏi (Bối cảnh - Việc làm - Kết quả - Điều chỉnh); đóng góp học liệu chuẩn vào kho dùng chung.
-Xây dựng Ma trận RACI và Bảng kiểm 5 nhóm chỉ số KPIs theo QĐ 4725/QĐ-BGDĐT.`,
-        `Bảng Kế hoạch hành động PDCA 4 tuần chi tiết (Tuần, Nội dung công việc, Người phụ trách, Minh chứng đầu ra, Chỉ số đo lường, Biện pháp quản trị rủi ro hạ tầng).`
-      );
-      setOutput('pdca-output', promptText);
-    });
-  }
-}
-
-// Quick Presets Selector
-function setupPresets() {
+  // Presets Data
   const presets = {
     khxh: {
-      subject: 'Lịch sử và Địa lí',
-      grade: '7',
-      topic: 'Đại Việt thời Lý - Trần (Thế kỉ XI đến đầu thế kỉ XV)',
-      outcomes: 'Mô tả được những nét chính về chính trị, kinh tế, xã hội; tìm kiếm và đánh giá độ tin cậy của tư liệu lịch sử số theo quy trình SIFT',
+      subject: 'Ngữ văn',
+      grade: '8',
+      topic: 'Văn bản thông tin và vấn đề bảo vệ môi trường',
+      outcomes: 'Trích dẫn nguồn số an toàn; sử dụng SIFT 4 bước để kiểm chứng thông tin môi trường; tạo infographic tóm tắt',
       tc: 'TC2 (lớp 8–9)',
       atm: 'ATM1',
-      aistrand: 'NLa (Tư duy lấy con người làm trung tâm)',
-      devices: 'Máy tính GV, máy chiếu; kết hợp tư liệu in giấy ngoại tuyến',
+      aistrand: 'NLb (Đạo đức AI)',
+      devices: 'Mỗi nhóm 01 máy tính hoặc điện thoại có kết nối mạng',
       duration: '45'
     },
     khtn: {
@@ -347,38 +447,34 @@ function setupPresets() {
       if (!data) return;
 
       if (pKey === 'cbql') {
-        // Switch to CBQL Tab
         switchTab('cbql');
-        $('#cbql-task').value = data.task;
-        $('#cbql-org').value = data.org;
-        $('#cbql-title').value = data.title;
-        $('#cbql-input').value = data.input;
+        if ($('#cbql-task')) $('#cbql-task').value = data.task;
+        if ($('#cbql-org')) $('#cbql-org').value = data.org;
+        if ($('#cbql-title')) $('#cbql-title').value = data.title;
+        if ($('#cbql-input')) $('#cbql-input').value = data.input;
         toast('Đã tải mẫu kịch bản Cán bộ Quản lý (CBQL)');
       } else {
-        // Switch to KHBD Tab
         switchTab('khbd');
-        $('#subject').value = data.subject;
-        $('#grade').value = data.grade;
-        $('#topic').value = data.topic;
-        $('#outcomes').value = data.outcomes;
-        $('#tc').value = data.tc;
-        $('#atm').value = data.atm;
+        if ($('#subject')) $('#subject').value = data.subject;
+        if ($('#grade')) $('#grade').value = data.grade;
+        if ($('#topic')) $('#topic').value = data.topic;
+        if ($('#outcomes')) $('#outcomes').value = data.outcomes;
+        if ($('#tc')) $('#tc').value = data.tc;
+        if ($('#atm')) $('#atm').value = data.atm;
         if ($('#ai-strand')) $('#ai-strand').value = data.aistrand;
-        $('#devices').value = data.devices;
-        $('#duration').value = data.duration;
+        if ($('#devices')) $('#devices').value = data.devices;
+        if ($('#duration')) $('#duration').value = data.duration;
         toast('Đã nạp mẫu tham chiếu: ' + data.subject);
       }
-      location.hash = '#workbench';
+      navigateTo('workbench');
     });
   });
 }
 
-function switchTab(tabKey) {
-  $$('.tab').forEach(x => x.classList.toggle('active', x.dataset.tab === tabKey));
-  $$('.builder-panel').forEach(x => x.classList.toggle('active', x.id === 'panel-' + tabKey));
-}
+// ==========================================
+// 5. SELF ASSESSMENT & KPIS ENGINES
+// ==========================================
 
-// Interactive Teacher Self-Assessment (Thông tư 18/2026/TT-BGDĐT)
 function setupSelfAssessment() {
   const form = $('#self-assess-form');
   if (!form) return;
@@ -390,36 +486,41 @@ function setupSelfAssessment() {
       total += Number(s.value) || 1;
     });
     const avg = total / selects.length;
-    const resultBox = $('#assess-result-box');
     const badge = $('#assess-group-badge');
     const desc = $('#assess-group-desc');
     const pairRec = $('#assess-pairing-rec');
 
-    if (avg < 1.67) {
-      badge.textContent = 'NHÓM A · CƠ BẢN (Chuẩn đầu vào)';
-      badge.className = 'status-tag group-a';
-      desc.textContent = 'Bạn đã nắm được các thao tác số cơ bản nhưng cần thêm giàn giáo sư phạm để thiết kế bài giảng số và sử dụng AI an toàn.';
-      pairRec.innerHTML = '<strong>Đề xuất ghép Cặp đôi số:</strong> Phân công ghép cặp 1-kèm-1 với 01 giáo viên <em>Nhóm C (Nâng cao)</em> trong tổ chuyên môn để được hướng dẫn trực tiếp.';
-    } else if (avg <= 2.34) {
-      badge.textContent = 'NHÓM B · THÀNH THẠO (Độc lập tác nghiệp)';
-      badge.className = 'status-tag group-b';
-      desc.textContent = 'Bạn tự tin vận hành các công cụ sư phạm số, thiết kế học liệu đa phương tiện và lồng ghép an toàn mạng vào KHBD hiện hành.';
-      pairRec.innerHTML = '<strong>Đề xuất phát triển:</strong> Độc lập triển khai KHBD 4C, tích cực chia sẻ học liệu và tham gia thảo luận chuyên môn tại trường.';
-    } else {
-      badge.textContent = 'NHÓM C · NÂNG CAO (Nòng cốt công nghệ)';
-      badge.className = 'status-tag group-c';
-      desc.textContent = 'Bạn làm chủ công nghệ AI tạo sinh, xuất bản học liệu chuẩn hóa, cấu hình Custom Gems và có năng lực hướng dẫn đồng nghiệp.';
-      pairRec.innerHTML = '<strong>Đề xuất vai trò:</strong> Đảm nhiệm vai trò <strong>Cố vấn 'Cặp đôi số' (Digital Mentor)</strong> của tổ chuyên môn, hỗ trợ các đồng nghiệp Nhóm A.';
+    if (badge && desc && pairRec) {
+      if (avg < 1.67) {
+        badge.textContent = 'NHÓM A · CƠ BẢN (Chuẩn đầu vào)';
+        badge.className = 'status-tag group-a';
+        desc.textContent = 'Bạn đã nắm được các thao tác số cơ bản nhưng cần thêm giàn giáo sư phạm để thiết kế bài giảng số và sử dụng AI an toàn.';
+        pairRec.innerHTML = '<strong>Đề xuất ghép Cặp đôi số:</strong> Phân công ghép cặp 1-kèm-1 với 01 giáo viên <em>Nhóm C (Nâng cao)</em> trong tổ chuyên môn để được hướng dẫn trực tiếp.';
+      } else if (avg <= 2.34) {
+        badge.textContent = 'NHÓM B · THÀNH THẠO (Độc lập tác nghiệp)';
+        badge.className = 'status-tag group-b';
+        desc.textContent = 'Bạn tự tin vận hành các công cụ sư phạm số, thiết kế học liệu đa phương tiện và lồng ghép an toàn mạng vào KHBD hiện hành.';
+        pairRec.innerHTML = '<strong>Đề xuất phát triển:</strong> Độc lập triển khai KHBD 4C, tích cực chia sẻ học liệu và tham gia thảo luận chuyên môn tại trường.';
+      } else {
+        badge.textContent = 'NHÓM C · NÂNG CAO (Nòng cốt công nghệ)';
+        badge.className = 'status-tag group-c';
+        desc.textContent = 'Bạn làm chủ công nghệ AI tạo sinh, xuất bản học liệu chuẩn hóa, cấu hình Custom Gems và có năng lực hướng dẫn đồng nghiệp.';
+        pairRec.innerHTML = '<strong>Đề xuất vai trò:</strong> Đảm nhiệm vai trò <strong>Cố vấn Cặp đôi số (Digital Mentor)</strong> của tổ chuyên môn, hỗ trợ các đồng nghiệp Nhóm A.';
+      }
     }
 
-    markTask('self_assessed', true);
+    let completed = getCompletedMissions();
+    if (!completed.includes('self_assessed')) {
+      completed.push('self_assessed');
+      saveCompletedMissions(completed);
+      updateMissionUI();
+    }
   }
 
   form.addEventListener('change', calculateScore);
   calculateScore();
 }
 
-// Interactive KPIs Evaluation (Quyết định 4725/QĐ-BGDĐT)
 function setupKpiEvaluation() {
   const radios = $$('.kpi-radio');
   if (!radios.length) return;
@@ -451,105 +552,200 @@ function setupKpiEvaluation() {
   updateKpiSummary();
 }
 
-// LocalStorage Progress Tracker
-const KEY = 'nlsThcsNgheAnProgress_v2';
-function getState() {
-  try {
-    return JSON.parse(localStorage.getItem(KEY) || '{}');
-  } catch {
-    return {};
+// ==========================================
+// 6. PROMPT GENERATORS (4-CARDS MODEL)
+// ==========================================
+
+function prompt4(title, context, data, instructions, result) {
+  return `${title}\n[Ngữ cảnh]\n${context}\n\n[Dữ liệu/điều kiện]\n${data}\n\n[Hướng dẫn]\n${instructions}\n\n[Kết quả mong muốn]\n${result}`;
+}
+
+function setupGenerators() {
+  // 1. Generator KHBD 4C
+  const btnKhbd = $('#btn-generate-khbd');
+  if (btnKhbd) {
+    btnKhbd.addEventListener('click', () => {
+      const subject = text('subject');
+      const grade = text('grade');
+      const topic = text('topic');
+      const outcomes = text('outcomes');
+      const tc = text('tc');
+      const atm = text('atm');
+      const aiStrand = text('ai-strand');
+      const devices = text('devices');
+      const rawDur = Number($('#duration')?.value) || 45;
+      const duration = Math.min(180, Math.max(1, Math.round(rawDur)));
+
+      const output = prompt4(
+        `KẾ HOẠCH BÀI DẠY (KHBD) 4C TÍCH HỢP NLS - ATM CHUẨN CÔNG VĂN 5512`,
+        `Bạn là chuyên gia sư phạm THCS tại Nghệ An, nắm vững Thông tư 18/2026/TT-BGDĐT, Công văn 3456/BGDĐT-GDPT, Công văn 6206/BGDĐT-GDPT, Quyết định 2422/QĐ-BGDĐT và Công văn 5512/BGDĐT-GDTrH. Nhiệm vụ: Thiết kế KHBD cho môn ${subject} lớp ${grade}, bài '${topic}' trong ${duration} phút.`,
+        `• Yêu cầu cần đạt: ${outcomes}\n• Năng lực số HS: ${tc}\n• An toàn mạng: ${atm}\n• Mạch giáo dục AI: ${aiStrand}\n• Hạ tầng thiết bị: ${devices}\n• Tuân thủ nghiêm ngặt: Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 và Luật Trẻ em 2016.`,
+        `Xây dựng tiến trình 4 hoạt động theo mô hình 4C (Context - Challenge - Concept - Conclusion) chuẩn Phụ lục IV CV 5512:\n1. Hoạt động 1: Mở đầu/Khởi động (Context - 5–7 phút)\n2. Hoạt động 2: Hình thành kiến thức (Challenge & Concept - 18–20 phút)\n3. Hoạt động 3: Luyện tập (Concept Mastery - 12–15 phút)\n4. Hoạt động 4: Vận dụng (Conclusion & Extension - 5–7 phút)\n• Phân hóa nhiệm vụ 3 nhóm (A: Cơ bản, B: Thành thạo, C: Nâng cao).\n• Bắt buộc thiết kế PHƯƠNG ÁN NGOẠI TUYẾN / OFFLINE KIT dự phòng cho vùng khó khăn Nghệ An.`,
+        `Kế hoạch bài dạy hoàn chỉnh gồm: Mục tiêu (YCCĐ, NLS, ATM, Phẩm chất), Thiết bị & Học liệu, Tiến trình chi tiết từng hoạt động, Phiếu học tập Offline Kit và Rubric đánh giá 4 mức độ.`
+      );
+
+      const outEl = $('#khbd-output');
+      if (outEl) outEl.textContent = output;
+      toast('Đã sinh prompt KHBD 4C thành công!');
+    });
+  }
+
+  // 2. Generator Media AI
+  const btnMedia = $('#btn-generate-media');
+  if (btnMedia) {
+    btnMedia.addEventListener('click', () => {
+      const mType = text('media-type');
+      const mTopic = text('media-topic');
+      const mTarget = text('media-target');
+      const mNotes = text('media-notes');
+
+      const output = prompt4(
+        `THIẾT KẾ HỌC LIỆU SỐ ĐA PHƯƠNG TIỆN BẢN QUYỀN MỞ & GAMIFICATION`,
+        `Bạn là chuyên gia thiết kế học liệu số sư phạm và công nghệ giáo dục, nắm vững Luật Sở hữu Trí tuệ và giấy phép Creative Commons.`,
+        `• Định dạng: ${mType}\n• Chủ đề: ${mTopic}\n• Đối tượng: ${mTarget}\n• Yêu cầu bổ sung: ${mNotes}`,
+        `1. Xây dựng cấu trúc học liệu chuẩn xác sư phạm.\n2. Nếu là video micro-learning: viết kịch bản phân cảnh Storyboard dưới 3 phút.\n3. Nếu là trò chơi học tập: thiết kế 5 câu hỏi có phản hồi sư phạm giải thích đúng/sai.\n4. Đưa ra phương án bản in ngoại tuyến (Offline Kit) cho trường thiếu máy.`,
+        `Kịch bản chi tiết, prompt tạo ảnh/nhạc tương ứng, bảng kiểm bản quyền Creative Commons và hướng dẫn sử dụng.`
+      );
+
+      const outEl = $('#media-output');
+      if (outEl) outEl.textContent = output;
+      toast('Đã sinh prompt Học liệu AI thành công!');
+    });
+  }
+
+  // 3. Generator Assessment
+  const btnAssess = $('#btn-generate-assessment');
+  if (btnAssess) {
+    btnAssess.addEventListener('click', () => {
+      const aSub = text('assess-subject');
+      const aGrade = text('assess-grade');
+      const aTop = text('assess-topic');
+      const aLevels = text('assess-levels');
+
+      const output = prompt4(
+        `MA TRẬN ĐẶC TẢ ĐỀ KIỂM TRA THÔNG TƯ 22 & MÃ LATEX ĐÁP ÁN`,
+        `Bạn là chuyên gia khảo thí THCS, am hiểu Thông tư 22/2021/TT-BGDĐT và kỹ thuật biên dịch LaTeX Overleaf.`,
+        `• Môn: ${aSub} · Lớp: ${aGrade}\n• Chủ đề: ${aTop}\n• Mức độ phân hóa: ${aLevels}`,
+        `1. Lập ma trận đặc tả đề kiểm tra theo 4 mức độ (Biết 40%, Hiểu 30%, Vận dụng 20%, Vận dụng cao 10%).\n2. Xuất ngân hàng câu hỏi phân hóa có đáp án chi tiết.\n3. Nếu là KHTN/Toán: xuất khối mã nguồn LaTeX hoàn chỉnh không lỗi font.\n4. Thiết lập Rubric 4 mức đánh giá thường xuyên.`,
+        `Bảng ma trận đặc tả, đề thi định dạng in sẵn, mã nguồn LaTeX (nếu KHTN/Toán) và Rubric đánh giá.`
+      );
+
+      const outEl = $('#assessment-output');
+      if (outEl) outEl.textContent = output;
+      toast('Đã sinh prompt Khảo thí số thành công!');
+    });
+  }
+
+  // 4. Generator CBQL
+  const btnCbql = $('#btn-generate-cbql');
+  if (btnCbql) {
+    btnCbql.addEventListener('click', () => {
+      const cTask = text('cbql-task');
+      const cOrg = text('cbql-org');
+      const cTitle = text('cbql-title');
+      const cInput = text('cbql-input');
+
+      const output = prompt4(
+        `KỊCH BẢN QUẢN TRỊ SỐ & SINH HOẠT CHUYÊN MÔN THEO NGHIÊN CỨU BÀI HỌC`,
+        `Bạn là chuyên gia quản trị giáo dục THCS và chuyển đổi số trường học tỉnh Nghệ An.`,
+        `• Nhiệm vụ: ${cTask}\n• Đơn vị: ${cOrg}\n• Tiêu đề: ${cTitle}\n• Dữ liệu đầu vào: ${cInput}`,
+        `1. Soạn thảo văn bản hành chính số chuẩn Nghị định 30/2020/NĐ-CP.\n2. Thiết lập quy trình phân công và vận hành mạng lưới Cặp đôi số trong trường.\n3. Rà soát phương án an toàn thông tin và quyền riêng tư theo Luật 91/2025/QH15.`,
+        `Kế hoạch điều hành, biên bản mẫu, bảng phân công nhiệm vụ RACI và checklist nghiệm thu.`
+      );
+
+      const outEl = $('#cbql-output');
+      if (outEl) outEl.textContent = output;
+      toast('Đã sinh prompt Quản trị CBQL thành công!');
+    });
+  }
+
+  // 5. Generator PDCA
+  const btnPdca = $('#btn-generate-pdca');
+  if (btnPdca) {
+    btnPdca.addEventListener('click', () => {
+      const pSchool = text('pdca-school');
+      const pGoal = text('pdca-goal');
+      const pPillar = text('pdca-pillar');
+
+      const output = prompt4(
+        `KẾ HOẠCH HÀNH ĐỘNG CHUYỂN ĐỔI SỐ 4 TUẦN THEO CHU TRÌNH PDCA`,
+        `Bạn là chuyên gia cố vấn chuyển đổi số trường học cấp THCS tại Nghệ An, bám sát Bộ chỉ số QĐ 4725/QĐ-BGDĐT.`,
+        `• Trường: ${pSchool}\n• Mục tiêu: ${pGoal}\n• Trọng tâm: ${pPillar}`,
+        `Xây dựng kế hoạch 4 tuần theo chu trình PDCA:\n• Tuần 1 (Plan): Khảo sát hiện trạng, ban hành kế hoạch, ghép Cặp đôi số.\n• Tuần 2 (Do): Thực hành soạn KHBD 4C và sản xuất học liệu đa phương tiện.\n• Tuần 3 (Check): Sinh hoạt chuyên môn theo nghiên cứu bài học số, dự giờ đối chiếu.\n• Tuần 4 (Act): Nghiệm thu 5 sản phẩm hồ sơ, số hóa kho học liệu trường.`,
+        `Bảng kế hoạch tiến độ Gantt, phân công RACI, tiêu chí đo lường KPI theo QĐ 4725 và cam kết bảo vệ dữ liệu.`
+      );
+
+      const outEl = $('#pdca-output');
+      if (outEl) outEl.textContent = output;
+      toast('Đã sinh prompt Kế hoạch PDCA thành công!');
+    });
   }
 }
 
-function markTask(key, val) {
-  const s = getState();
-  s[key] = val;
-  localStorage.setItem(KEY, JSON.stringify(s));
-  updateProgress();
-}
+// ==========================================
+// 7. ACTION BUTTONS (COPY, DOWNLOAD, PRINT)
+// ==========================================
 
-function updateProgress() {
-  const s = getState();
-  const boxes = $$('[data-task]');
-  if (!boxes.length) return;
-  boxes.forEach(b => b.checked = !!s[b.dataset.task]);
-  const done = boxes.filter(b => b.checked).length;
-  const pct = Math.round((done / boxes.length) * 100);
-  
-  const pctEl = $('#progress-percent');
-  if (pctEl) pctEl.textContent = pct + '%';
-  const fillEl = $('#progress-fill');
-  if (fillEl) fillEl.style.width = pct + '%';
-}
+function setupActionButtons() {
+  document.addEventListener('click', e => {
+    // Copy output
+    const c = e.target.closest('.copy-output');
+    if (c) {
+      const val = ($('#' + c.dataset.output) ? $('#' + c.dataset.output).textContent : '');
+      navigator.clipboard?.writeText(val)
+        .then(() => toast('Đã sao chép nội dung prompt'))
+        .catch(() => toast('Không hỗ trợ sao chép tự động; vui lòng bôi đen và copy'));
+    }
 
-// View Prompt Modal Dialog
-function showPromptModal(p) {
-  let modal = $('#prompt-modal');
-  if (!modal) {
-    modal = document.createElement('div');
-    modal.id = 'prompt-modal';
-    modal.className = 'modal-backdrop';
-    modal.innerHTML = `
-      <div class="modal-dialog">
-        <div class="modal-head">
-          <div>
-            <span class="category" id="modal-cat"></span>
-            <h3 id="modal-title"></h3>
-          </div>
-          <button class="modal-close" aria-label="Đóng">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p class="muted" id="modal-desc"></p>
-          <pre id="modal-content"></pre>
-        </div>
-        <div class="modal-foot">
-          <button class="button primary small" id="modal-copy">Sao chép prompt</button>
-          <button class="button secondary small modal-close">Đóng</button>
-        </div>
-      </div>
-    `;
-    document.body.appendChild(modal);
+    // Download output
+    const d = e.target.closest('.download-output');
+    if (d) {
+      const val = ($('#' + d.dataset.output) ? $('#' + d.dataset.output).textContent : '');
+      const blob = new Blob([val], { type: 'text/plain;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${d.dataset.output}.txt`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+      toast('Đã tải xuống tệp .txt');
+    }
 
-    modal.addEventListener('click', e => {
-      if (e.target.classList.contains('modal-backdrop') || e.target.closest('.modal-close')) {
-        modal.classList.remove('open');
+    // Print output
+    const p = e.target.closest('.print-output');
+    if (p) {
+      const val = ($('#' + p.dataset.output) ? $('#' + p.dataset.output).textContent : '');
+      const win = window.open('', '_blank');
+      if (win) {
+        win.document.write(`<pre style="white-space:pre-wrap;font:13px/1.65 'Segoe UI',sans-serif;padding:28px">${escapeHtml(val)}</pre>`);
+        win.print();
       }
-    });
+    }
+  });
 
-    $('#modal-copy').addEventListener('click', () => {
-      const val = $('#modal-content').textContent;
-      navigator.clipboard?.writeText(val).then(() => {
-        toast('Đã sao chép prompt vào bộ nhớ');
-        modal.classList.remove('open');
-      });
-    });
-  }
-
-  $('#modal-cat').textContent = p.cat.toUpperCase();
-  $('#modal-title').textContent = p.title;
-  $('#modal-desc').textContent = p.desc;
-  $('#modal-content').textContent = p.text;
-  modal.classList.add('open');
-}
-
-// Main Initialization
-document.addEventListener('DOMContentLoaded', () => {
-  renderLessons();
-  renderPrompts();
-  setupBuilders();
-  setupPresets();
-  setupSelfAssessment();
-  setupKpiEvaluation();
-
-  // Tabs
-  $$('.tab').forEach(b => {
+  // Reset inputs
+  $$('[data-reset]').forEach(b => {
     b.addEventListener('click', () => {
-      $$('.tab').forEach(x => x.classList.toggle('active', x === b));
-      $$('.builder-panel').forEach(x => x.classList.toggle('active', x.id === 'panel-' + b.dataset.tab));
+      const panel = b.closest('.builder-panel');
+      if (panel) {
+        panel.querySelectorAll('input, textarea').forEach(x => {
+          if (x.type !== 'number') x.value = '';
+        });
+      }
+      toast('Đã làm mới các trường nhập liệu');
     });
   });
 
-  // Prompt search and filter
+  // Modal dialog close
+  const modal = $('#prompt-modal');
+  if (modal) {
+    modal.addEventListener('click', e => {
+      if (e.target === modal || e.target.closest('.modal-close')) {
+        modal.classList.remove('show');
+      }
+    });
+  }
+
+  // Prompt search and filters
   const sInput = $('#prompt-search');
   if (sInput) sInput.addEventListener('input', renderPrompts);
 
@@ -564,7 +760,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Prompt card actions
+  // Prompt cards click (Copy / View)
   const pgrid = $('#prompt-grid');
   if (pgrid) {
     pgrid.addEventListener('click', e => {
@@ -585,58 +781,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Action buttons: Copy, Download, Print
-  document.addEventListener('click', e => {
-    const c = e.target.closest('.copy-output');
-    if (c) {
-      const val = ($('#' + c.dataset.output) ? $('#' + c.dataset.output).textContent : '');
-      navigator.clipboard?.writeText(val)
-        .then(() => toast('Đã sao chép nội dung prompt'))
-        .catch(() => toast('Không hỗ trợ sao chép tự động; vui lòng bôi đen và copy'));
-    }
-
-    const d = e.target.closest('.download-output');
-    if (d) {
-      const val = ($('#' + d.dataset.output) ? $('#' + d.dataset.output).textContent : '');
-      const blob = new Blob([val], { type: 'text/plain;charset=utf-8' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `${d.dataset.output}.txt`;
-      a.click();
-      URL.revokeObjectURL(a.href);
-      toast('Đã tải xuống tệp .txt');
-    }
-
-    const p = e.target.closest('.print-output');
-    if (p) {
-      const val = ($('#' + p.dataset.output) ? $('#' + p.dataset.output).textContent : '');
-      const win = window.open('', '_blank');
-      if (win) {
-        win.document.write(`<pre style="white-space:pre-wrap;font:13px/1.65 'Segoe UI',sans-serif;padding:28px">${escapeHtml(val)}</pre>`);
-        win.print();
-      }
-    }
-  });
-
-  // Reset buttons
-  $$('[data-reset]').forEach(b => {
-    b.addEventListener('click', () => {
-      const panel = b.closest('.builder-panel');
-      if (panel) {
-        panel.querySelectorAll('input, textarea').forEach(x => {
-          if (x.type !== 'number') x.value = '';
-        });
-      }
-      toast('Đã làm mới các trường nhập liệu');
-    });
-  });
-
-  // Checkbox listeners for deliverables
-  $$('[data-task]').forEach(b => {
-    b.addEventListener('change', () => markTask(b.dataset.task, b.checked));
-  });
-
-  // Mobile navigation menu
+  // Mobile menu toggle
   const menuBtn = $('.menu-toggle');
   const nav = $('#nav');
   if (menuBtn && nav) {
@@ -644,14 +789,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const open = nav.classList.toggle('open');
       menuBtn.setAttribute('aria-expanded', String(open));
     });
-
-    nav.addEventListener('click', e => {
-      if (e.target.closest('a')) {
-        nav.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      }
-    });
   }
+}
 
-  updateProgress();
+// ==========================================
+// 8. INITIALIZE EVERYTHING ON DOM READY
+// ==========================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderLessons();
+  renderPrompts();
+  setupRouter();
+  setupWorkbench();
+  setupGenerators();
+  setupActionButtons();
+  setupSelfAssessment();
+  setupKpiEvaluation();
+  setupMissionCheckboxes();
 });
