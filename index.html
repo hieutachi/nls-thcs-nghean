@@ -1,16 +1,866 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Công cụ thực hành khóa bồi dưỡng NLS THCS Nghệ An"><title>NLS THCS Nghệ An | Thực hành số</title><link rel="stylesheet" href="css/style.css"></head><body>
-<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">N</span><span>NLS <b>THCS</b><small>NGHỆ AN · THỰC HÀNH SỐ</small></span></a><button class="menu-toggle" aria-label="Mở menu" aria-expanded="false" aria-controls="nav">☰</button><nav id="nav"><a href="#path">Lộ trình</a><a href="#workbench">Tạo sản phẩm</a><a href="#prompts">Prompt</a><a href="#safety">An toàn số</a><a href="#pdca">PDCA</a><a href="#resources">Google tools</a></nav></header>
-<main id="home"><section class="hero"><div class="hero-copy"><span class="eyebrow">CHƯƠNG TRÌNH 03 NGÀY · 06 BUỔI</span><h1>Chuyển đổi số<br><em>bắt đầu từ lớp học.</em></h1><p>Công cụ thực hành dành cho CBQL và GV THCS: kiểm chứng thông tin, thiết kế KHBD, học liệu, đánh giá và kế hoạch hành động.</p><div class="hero-actions"><a class="button primary" href="#path">Khám phá lộ trình →</a><a class="button secondary" href="#workbench">Tạo prompt đầu tiên</a></div><div class="hero-meta"><span>✦ 70% thực hành</span><span>◉ Không backend</span><span>⌂ Dữ liệu ở thiết bị</span></div></div><div class="hero-card"><div class="card-top">● HỒ SƠ THỰC HÀNH</div><div class="stat"><strong id="progress-percent">0%</strong><span>hoàn thành nhiệm vụ</span></div><div class="progress-track"><div id="progress-fill"></div></div><div class="mini-list"><div><b>01 · Thiết kế KHBD 4C</b><small>Tích hợp NLS · ATM · phân hóa</small></div><div><b>02 · Học liệu & đánh giá</b><small>Sản phẩm có căn cứ</small></div><div><b>03 · Kế hoạch hành động</b><small>PDCA 4 tuần</small></div></div><div class="privacy-note">🔒 Tiến độ lưu cục bộ bằng localStorage</div></div><div class="hero-orb orb1"></div></section><div class="notice"><b>!</b><p><strong>Lưu ý sử dụng:</strong> Website chỉ là công cụ hỗ trợ; giáo viên chịu trách nhiệm kiểm chứng nội dung, pháp lý và phù hợp học sinh. Không nhập thông tin nhận diện học sinh.</p></div>
-<section class="section" id="path"><div class="section-head"><div><span class="eyebrow">03 NGÀY · 06 CHUYÊN ĐỀ</span><h2>Lộ trình học tập</h2><p>Mỗi buổi gắn với sản phẩm thực hành áp dụng được vào công việc hiện có.</p></div><span class="section-index">01 / LỘ TRÌNH</span></div><div class="lesson-grid" id="lesson-grid"></div></section>
-<section class="section workbench" id="workbench"><div class="section-head"><div><span class="eyebrow">TẠO SẢN PHẨM NGAY</span><h2>Bàn thực hành</h2><p>Nội dung sinh ra trong trình duyệt; không gửi lên máy chủ.</p></div><span class="section-index">02 / TẠO</span></div><div class="tabs"><button class="tab active" data-tab="khbd">✳ KHBD 4C</button><button class="tab" data-tab="media">▧ Học liệu</button><button class="tab" data-tab="assessment">✓ Đề & Rubric</button><button class="tab" data-tab="pdca">↗ PDCA</button></div>
-<div class="builder-panel active" id="panel-khbd"><div class="form-layout"><div class="form-card"><h3>Thiết kế KHBD tích hợp</h3><p class="muted">Không nhập dữ liệu học sinh.</p><div class="form-grid"><label>Môn học<input id="subject" placeholder="Ví dụ: Khoa học tự nhiên"></label><label>Lớp<select id="grade"><option value="6">Lớp 6</option><option value="7">Lớp 7</option><option value="8">Lớp 8</option><option value="9">Lớp 9</option></select></label><label class="wide">Chủ đề<input id="topic" placeholder="Chủ đề bài học"></label><label class="wide">Yêu cầu cần đạt<textarea id="outcomes" rows="3" placeholder="YCCĐ của bài học hiện hành"></textarea></label><label>Năng lực số<select id="tc"><option>TC1 (lớp 6–7)</option><option>TC2 (lớp 8–9)</option></select></label><label>Mã ATM<select id="atm"><option>ATM1</option><option>ATM2</option><option>ATM3</option><option>ATM4</option><option>ATM5</option><option>ATM6</option><option>ATM7</option><option>ATM8</option></select></label><label>Thiết bị<input id="devices" placeholder="Thiết bị / mạng sẵn có"></label><label>Thời lượng phút<input id="duration" type="number" value="45" min="1" max="180" step="1"></label></div><div class="form-actions"><button class="button primary" id="make-khbd">Tạo prompt 4 thẻ →</button><button class="text-button" data-reset="khbd">Xóa nội dung</button></div></div><div class="output-card"><div class="output-head"><div><span class="eyebrow">KẾT QUẢ CỦA BẠN</span><h3>Prompt sẵn sàng</h3></div><span id="khbd-status" class="status-tag">CHƯA TẠO</span></div><div class="output-content placeholder" id="khbd-output">Prompt sẽ xuất hiện ở đây. Kiểm tra kỹ và bỏ thông tin nhạy cảm trước khi dùng.</div><div class="output-actions"><button class="button small primary copy-output" data-output="khbd-output">Sao chép</button><button class="button small secondary download-output" data-output="khbd-output">Tải .txt</button><button class="button small secondary print-output" data-output="khbd-output">In</button></div></div></div></div>
-<div class="builder-panel" id="panel-media"><div class="form-layout"><div class="form-card"><h3>Tạo brief học liệu</h3><div class="form-grid"><label>Loại<select id="media-type"><option>Slide bài giảng</option><option>Infographic</option><option>Video micro-learning 3 phút</option><option>Trò chơi học tập có phản hồi</option></select></label><label>Đối tượng<input id="media-audience" placeholder="Lớp 6–7 / 8–9"></label><label class="wide">Mục tiêu<input id="media-goal" placeholder="Kết quả học tập mong muốn"></label><label>Thời lượng<input id="media-duration" placeholder="10 phút"></label><label>Thiết bị/mạng<input id="media-device" placeholder="Điều kiện thực tế"></label></div><div class="form-actions"><button class="button primary" id="make-media">Tạo prompt học liệu →</button></div></div><div class="output-card"><h3>Prompt học liệu</h3><div class="output-content placeholder" id="media-output">Brief xuất hiện tại đây.</div><div class="output-actions"><button class="button small primary copy-output" data-output="media-output">Sao chép</button><button class="button small secondary download-output" data-output="media-output">Tải .txt</button><button class="button small secondary print-output" data-output="media-output">In</button></div></div></div></div>
-<div class="builder-panel" id="panel-assessment"><div class="form-layout"><div class="form-card"><h3>Tạo đề phân hóa & Rubric</h3><div class="form-grid"><label>Chủ đề<input id="assess-topic"></label><label>Lớp / môn<input id="assess-class"></label><label>Số câu<input id="assess-count" type="number" value="9"></label><label>Thang điểm<input id="assess-points" type="number" value="10"></label><label class="wide">Tỷ lệ mức độ<textarea id="assess-levels" rows="2" placeholder="Nhận biết 40%, Thông hiểu 40%, Vận dụng 20%"></textarea></label></div><div class="form-actions"><button class="button primary" id="make-assessment">Tạo prompt đề & rubric →</button></div></div><div class="output-card"><h3>Prompt đánh giá</h3><div class="output-content placeholder" id="assessment-output">Prompt sẽ xuất hiện ở đây.</div><div class="output-actions"><button class="button small primary copy-output" data-output="assessment-output">Sao chép</button><button class="button small secondary download-output" data-output="assessment-output">Tải .txt</button><button class="button small secondary print-output" data-output="assessment-output">In</button></div></div></div></div>
-<div class="builder-panel" id="panel-pdca"><div class="form-layout"><div class="form-card"><h3>Kế hoạch hành động 4 tuần</h3><div class="form-grid"><label>Tổ / đơn vị<input id="pdca-team" placeholder="Tổ chuyên môn"></label><label>Phụ trách<input id="pdca-owner" placeholder="Vai trò, không cần tên cá nhân"></label><label class="wide">Ưu tiên cải tiến<input id="pdca-priority" placeholder="Ưu tiên của tổ/trường"></label><label class="wide">Nguồn lực / hạn chế<textarea id="pdca-resources" rows="2"></textarea></label></div><div class="form-actions"><button class="button primary" id="make-pdca">Tạo kế hoạch PDCA →</button></div></div><div class="output-card"><h3>Kế hoạch 4 tuần</h3><div class="output-content placeholder" id="pdca-output">Kế hoạch xuất hiện tại đây.</div><div class="output-actions"><button class="button small primary copy-output" data-output="pdca-output">Sao chép</button><button class="button small secondary download-output" data-output="pdca-output">Tải .txt</button><button class="button small secondary print-output" data-output="pdca-output">In</button></div></div></div></div></section>
-<section class="section" id="prompts"><div class="section-head"><div><span class="eyebrow">THƯ VIỆN DÙNG NGAY</span><h2>Prompt có mục đích</h2><p>Tìm theo từ khóa, chọn nhóm và điều chỉnh cho bối cảnh lớp học.</p></div><span class="section-index">03 / THƯ VIỆN</span></div><div class="prompt-controls"><div class="searchbox">⌕ <input id="prompt-search" placeholder="Tìm prompt: rubric, SIFT, KHBD..."></div><div id="prompt-filters" class="filter-row"></div></div><div id="prompt-grid" class="prompt-grid"></div></section>
-<section class="section safety-section" id="safety"><div class="section-head"><div><span class="eyebrow">BẢO VỆ NGƯỜI HỌC</span><h2>An toàn số & đạo đức AI</h2><p>Thực hiện theo quy trình và đầu mối chính thức của nhà trường.</p></div><span class="section-index">04 / AN TOÀN</span></div><div class="safety-grid"><article class="safety-card"><div class="safety-icon">⌕</div><h3>SIFT kiểm chứng nguồn</h3><ol><li><b>Stop</b> — dừng, không vội chia sẻ.</li><li><b>Investigate</b> — tìm hiểu nguồn phát tán.</li><li><b>Find</b> — tìm nguồn đáng tin cậy khác.</li><li><b>Trace</b> — truy nguyên ngữ cảnh, trích dẫn gốc.</li></ol><p class="muted">Không coi AI là nguồn xác thực độc lập.</p></article><article class="safety-card"><div class="safety-icon coral">↗</div><h3>Ứng phó sự cố: 4 bước</h3><ol><li><b>Dừng</b> tương tác, không phát tán thêm.</li><li><b>Bảo vệ</b> người học, lưu bằng chứng tối thiểu an toàn.</li><li><b>Báo cáo</b> theo đầu mối và quy trình trường.</li><li><b>Theo dõi</b> xử lý và phòng ngừa tái diễn.</li></ol><p class="muted">Nguy cơ khẩn cấp: liên hệ người có trách nhiệm; 111 hoặc 113 khi phù hợp.</p></article><article class="safety-card"><div class="safety-icon violet">◈</div><h3>4 KHÔNG – 3 CÓ</h3><p><b>4 KHÔNG:</b> không nhập dữ liệu nhận diện; không chia sẻ tài khoản/mật khẩu; không phát tán nội dung chưa kiểm chứng; không sao chép trái quyền.</p><p><b>3 CÓ:</b> có ẩn danh hóa; có kiểm chứng nguồn; có ghi nguồn và minh bạch AI.</p></article><article class="safety-card"><div class="safety-icon green">▣</div><h3>Ẩn danh hóa dữ liệu</h3><ul><li>Thay tên bằng mã giả; bỏ ảnh, giọng nói, chi tiết nhận diện.</li><li>Chỉ dùng dữ liệu tối thiểu; không đưa hồ sơ HS vào AI công cộng.</li><li>Không yêu cầu HS dưới 16 tuổi tự tạo tài khoản AI.</li><li>Kiểm tra chính sách trường và văn bản gốc.</li></ul></article></div><div class="law-note"><b>Đối chiếu pháp lý:</b> số hiệu và nội dung văn bản trong chương trình là thông tin tham chiếu ban đầu. Cần đối chiếu văn bản gốc, hiệu lực và hướng dẫn cơ quan có thẩm quyền trước khi sử dụng chính thức. Website không diễn giải điều khoản.</div></section>
-<section class="section" id="pdca"><div class="section-head"><div><span class="eyebrow">CHUYỂN HÓA SAU TẬP HUẤN</span><h2>PDCA · 4 tuần hành động</h2><p>Cải tiến nhỏ trong KHBD hiện hành — không tạo thêm tiết học.</p></div><span class="section-index">05 / HÀNH ĐỘNG</span></div><div class="pdca-grid"><article><span>TUẦN 01</span><div class="pdca-letter">P</div><h3>Plan · Lập kế hoạch</h3><p>Chọn địa chỉ tích hợp NLS–ATM; thống nhất mục tiêu, cặp đôi số và nguồn lực.</p></article><article><span>TUẦN 02</span><div class="pdca-letter do">D</div><h3>Do · Thiết kế</h3><p>Hoàn thiện KHBD 4C, học liệu, đánh giá, an toàn và phương án ngoại tuyến.</p></article><article><span>TUẦN 03</span><div class="pdca-letter check">C</div><h3>Check · Thử nghiệm</h3><p>Thực hiện trong tiết hiện hành; xem minh chứng ẩn danh, phản hồi, khả năng tiếp cận.</p></article><article><span>TUẦN 04</span><div class="pdca-letter act">A</div><h3>Act · Cải tiến</h3><p>Rút kinh nghiệm, điều chỉnh và chia sẻ tài nguyên có nguồn trong tổ.</p></article></div></section>
-<section class="section resource-section" id="resources"><div class="section-head"><div><span class="eyebrow">HỆ SINH THÁI GOOGLE</span><h2>Công cụ & tài nguyên</h2><p>Dùng dịch vụ/tài khoản được trường cho phép, chia sẻ với quyền tối thiểu.</p></div><span class="section-index">06 / CÔNG CỤ</span></div><div class="tool-grid"><a href="https://forms.google.com" target="_blank" rel="noopener"><span>▤</span><b>Google Forms</b><small>Tự đánh giá, khảo sát</small></a><a href="https://drive.google.com" target="_blank" rel="noopener"><span>◫</span><b>Google Drive</b><small>Kho tài liệu, quyền chia sẻ</small></a><a href="https://docs.google.com" target="_blank" rel="noopener"><span>▧</span><b>Google Docs</b><small>KHBD, cộng tác</small></a><a href="https://slides.google.com" target="_blank" rel="noopener"><span>▱</span><b>Google Slides</b><small>Trình chiếu, học liệu</small></a><a href="https://sites.google.com" target="_blank" rel="noopener"><span>▣</span><b>Google Sites</b><small>Chia sẻ tài nguyên</small></a><a href="https://classroom.google.com" target="_blank" rel="noopener"><span>▦</span><b>Classroom</b><small>Giao nhiệm vụ theo chính sách trường</small></a><a href="https://notebooklm.google.com" target="_blank" rel="noopener"><span>▤</span><b>NotebookLM</b><small>Hỏi đáp dựa trên nguồn</small></a><a href="https://gemini.google.com" target="_blank" rel="noopener"><span>✳</span><b>Gemini / Gems</b><small>Hỗ trợ soạn thảo, cần kiểm chứng</small></a></div><div class="offline-box"><b>Thiếu thiết bị hoặc Internet?</b> In phiếu, làm việc theo cặp/nhóm trên thiết bị GV hoặc mô phỏng quy trình trên giấy. HS không cần tài khoản AI. Nút tải prompt tạo tệp để sử dụng ngoại tuyến.</div></section>
-<section class="section deliverables"><div class="section-head"><div><span class="eyebrow">ĐÍCH ĐẾN CUỐI KHÓA</span><h2>5 sản phẩm nghiệm thu</h2></div></div><div class="deliverable-list"><div><span>01</span><b>Sổ tay tri thức</b><small>NotebookLM · nguồn đáng tin cậy</small><label><input type="checkbox" data-task="d1"> Hoàn thành</label></div><div><span>02</span><b>KHBD 4C</b><small>NLS–ATM · phân hóa · ngoại tuyến</small><label><input type="checkbox" data-task="d2"> Hoàn thành</label></div><div><span>03</span><b>Học liệu số & trò chơi</b><small>Ghi nguồn · giấy phép · minh bạch AI</small><label><input type="checkbox" data-task="d3"> Hoàn thành</label></div><div><span>04</span><b>Công cụ đánh giá</b><small>Đề phân hóa · Rubric/Checklist</small><label><input type="checkbox" data-task="d4"> Hoàn thành</label></div><div><span>05</span><b>Gemini Gem</b><small>Trợ lý chuyên biệt đã thử nghiệm</small><label><input type="checkbox" data-task="d5"> Hoàn thành</label></div></div><p class="muted small-note">Tiến độ lưu trên thiết bị hiện tại. Không lưu dữ liệu cá nhân học sinh.</p></section></main>
-<footer><div class="footer-brand">NLS <b>THCS</b> <span>NGHỆ AN · THỰC HÀNH SỐ</span></div><p>Công cụ hỗ trợ sư phạm · Không thay thế chuyên môn, quy định trường hoặc văn bản gốc.</p><a href="#home">Lên đầu trang ↑</a></footer><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="js/app.js"></script></body></html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hệ thống hỗ trợ bồi dưỡng Năng lực số và Sư phạm số thích ứng dành cho CBQL và Giáo viên THCS tỉnh Nghệ An.">
+  <title>NLS THCS Nghệ An · Phát triển Năng lực số & Sư phạm số thích ứng 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Topbar Navigation -->
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">NA</span>
+      <div class="brand-text">
+        <span class="brand-title">NLS <b>THCS</b> NGHỆ AN</span>
+        <small class="brand-sub">SƯ PHẠM SỐ THÍCH ỨNG · 2026</small>
+      </div>
+    </a>
+    <button class="menu-toggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav">
+      <a href="#path">Lộ trình 6 buổi</a>
+      <a href="#self-assess-sec">Khảo sát NLS</a>
+      <a href="#workbench">Bàn thực hành</a>
+      <a href="#prompts">Thư viện Prompt (45)</a>
+      <a href="#safety">An toàn mạng ATM</a>
+      <a href="#pdca-sec">Quản trị 5 Trụ cột</a>
+      <a href="#deliverables">Hồ sơ nghiệm thu</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">CHƯƠNG TRÌNH CHUẨN HÓA 03 NGÀY · 06 BUỔI (NAEM 2026)</span>
+        <h1>Phát triển Năng lực số &<br><em>Sư phạm số thích ứng THCS</em></h1>
+        <p>Hệ thống công cụ thực hành dành riêng cho Cán bộ quản lý và Giáo viên THCS tỉnh Nghệ An: Liên thông Khung NLS GV (TT 18/2026), NLS HS (CV 3456), 4 mạch AI (QĐ 2422), 8 chuyên đề An toàn mạng (CV 6206) và 5 Trụ cột CĐS toàn diện.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#workbench">Bắt đầu thực hành ngay →</a>
+          <a class="button secondary" href="#self-assess-sec">Tự khảo sát NLS (TT 18)</a>
+          <a class="button outline" href="#prompts">Xem 45 Prompt chuẩn</a>
+        </div>
+        <div class="hero-meta">
+          <span>✦ 70% Thực hành sản phẩm</span>
+          <span>◉ Hai phương án (Online & Offline Kit)</span>
+          <span>🔒 100% Bảo vệ dữ liệu học sinh dưới 16 tuổi</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top">● TIẾN ĐỘ THỰC HÀNH CỦA BẠN</div>
+        <div class="stat">
+          <strong id="progress-percent">0%</strong>
+          <span>nhiệm vụ khóa học hoàn thành</span>
+        </div>
+        <div class="progress-track"><div id="progress-fill"></div></div>
+        <div class="mini-list">
+          <div><b>01 · Tự khảo sát NLS</b><small>Phân nhóm A/B/C & Cặp đôi số</small></div>
+          <div><b>02 · Thiết kế KHBD 4C</b><small>Tích hợp NLS · ATM chuẩn CV 5512</small></div>
+          <div><b>03 · Học liệu đa phương tiện</b><small>Ảnh/Nhạc AI · Video 3 phút · Trò chơi</small></div>
+          <div><b>04 · Khảo thí số & LaTeX</b><small>Ma trận đề TT 22 · Rubric 4 mức</small></div>
+          <div><b>05 · Kế hoạch CĐS 4 tuần</b><small>Chu trình PDCA & 5 Trụ cột NAEM</small></div>
+        </div>
+        <div class="privacy-note">🔒 Tiến độ lưu tự động trong trình duyệt (localStorage), không truyền dữ liệu ra ngoài.</div>
+      </div>
+      <div class="hero-orb orb1"></div>
+    </section>
+
+    <!-- Notice / Disclaimer -->
+    <div class="notice">
+      <b>!</b>
+      <p><strong>Lưu ý bắt buộc về An toàn dữ liệu & Sư phạm:</strong> Mọi hoạt động ứng dụng AI phải tuân thủ Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 và Luật Trẻ em 2016. Tuyệt đối không nhập thông tin định danh của học sinh (họ tên, điểm số, ảnh chân dung). Giáo viên luôn giữ vai trò chủ đạo kiểm chứng chuyên môn và văn bản gốc trước khi áp dụng trên lớp.</p>
+    </div>
+
+    <!-- Section 1: Lộ trình 6 buổi -->
+    <section class="section" id="path">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">03 NGÀY · 06 CHUYÊN ĐỀ CHUẨN HÓA</span>
+          <h2>Khung chương trình bồi dưỡng</h2>
+          <p>Mỗi buổi học gắn liền với 01 sản phẩm thực hành cụ thể, tích hợp vào môn học hiện hành — không phát sinh tiết học mới.</p>
+        </div>
+        <span class="section-index">01 / LỘ TRÌNH</span>
+      </div>
+      <div class="lesson-grid" id="lesson-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Section 2: Khảo sát tự đánh giá NLS cá nhân -->
+    <section class="section self-assess-section" id="self-assess-sec">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">CHUYÊN ĐỀ 1 · SẢN PHẨM BẮT BUỘC SỐ 1</span>
+          <h2>Khảo sát tự đánh giá Năng lực số cá nhân</h2>
+          <p>Dựa trên Khung Năng lực số Giáo viên theo Thông tư số 18/2026/TT-BGDĐT (6 miền, 20 năng lực) để phân loại đầu vào và thiết lập cơ chế cố vấn đồng đẳng "Cặp đôi số".</p>
+        </div>
+        <span class="section-index">02 / ĐÁNH GIÁ</span>
+      </div>
+
+      <div class="assess-container">
+        <form id="self-assess-form" class="assess-card">
+          <h3>Phiếu tự soi chiếu 6 Miền Năng lực số Giáo viên</h3>
+          <p class="muted">Hãy chọn mức độ phản ánh đúng nhất thực tế giảng dạy hiện tại của thầy/cô (1: Cơ bản - 2: Thành thạo - 3: Nâng cao):</p>
+          
+          <div class="assess-grid">
+            <div class="assess-item">
+              <label><b>Miền 1:</b> Vận hành thiết bị số & khai thác phần mềm dạy học</label>
+              <select>
+                <option value="1">Mức 1 (Cơ bản): Sử dụng máy tính, máy chiếu, tạo tệp văn bản/trình chiếu cơ bản</option>
+                <option value="2" selected>Mức 2 (Thành thạo): Quản lý dữ liệu đám mây (Drive), dùng công cụ tương tác mượt mà</option>
+                <option value="3">Mức 3 (Nâng cao): Khắc phục lỗi kỹ thuật, tích hợp đa nền tảng và chia sẻ học liệu số</option>
+              </select>
+            </div>
+
+            <div class="assess-item">
+              <label><b>Miền 2:</b> Khai thác dữ liệu, tư liệu số & tra cứu có căn cứ (SIFT)</label>
+              <select>
+                <option value="1">Mức 1 (Cơ bản): Tìm kiếm thông tin qua Google, lưu trữ tư liệu bài giảng</option>
+                <option value="2" selected>Mức 2 (Thành thạo): Áp dụng quy trình SIFT kiểm chứng tin giả, dùng NotebookLM tra cứu</option>
+                <option value="3">Mức 3 (Nâng cao): Xây dựng kho học liệu mở (OER), thẩm định bản quyền và trích dẫn chuẩn</option>
+              </select>
+            </div>
+
+            <div class="assess-item">
+              <label><b>Miền 3:</b> Sư phạm số thích ứng & thiết kế bài dạy 4C</label>
+              <select>
+                <option value="1">Mức 1 (Cơ bản): Chiếu slide bài giảng thay bảng phụ, dùng video minh họa</option>
+                <option value="2" selected>Mức 2 (Thành thạo): Thiết kế KHBD 4C tích hợp NLS/ATM, có phương án phân hóa A/B/C</option>
+                <option value="3">Mức 3 (Nâng cao): Tích hợp sư phạm thích ứng, có song hành Online & Offline Kit cho vùng khó</option>
+              </select>
+            </div>
+
+            <div class="assess-item">
+              <label><b>Miền 4:</b> Khảo thí số, đánh giá thường xuyên & phân hóa</label>
+              <select>
+                <option value="1">Mức 1 (Cơ bản): Tạo bài kiểm tra trắc nghiệm đơn giản trên Google Forms</option>
+                <option value="2" selected>Mức 2 (Thành thạo): Xây dựng ma trận đặc tả TT 22, Rubric 4 mức, phân tích dữ liệu lớp</option>
+                <option value="3">Mức 3 (Nâng cao): Xuất bản đề chuẩn LaTeX/Overleaf, thiết kế câu hỏi phát hiện ảo giác AI</option>
+              </select>
+            </div>
+
+            <div class="assess-item">
+              <label><b>Miền 5:</b> Phát triển chuyên môn số & kết nối cộng đồng</label>
+              <select>
+                <option value="1">Mức 1 (Cơ bản): Tham gia nhóm Zalo chuyên môn trường, nhận chỉ đạo trực tuyến</option>
+                <option value="2" selected>Mức 2 (Thành thạo): Sinh hoạt chuyên môn theo nghiên cứu bài học số, cộng tác trên Docs/Sheets</option>
+                <option value="3">Mức 3 (Nâng cao): Điều hành dự án số, lan tỏa sáng kiến kinh nghiệm và hướng dẫn đồng nghiệp</option>
+              </select>
+            </div>
+
+            <div class="assess-item">
+              <label><b>Miền 6:</b> An toàn mạng ATM & Đạo đức AI (bảo vệ HS &lt; 16 tuổi)</label>
+              <select>
+                <option value="1">Mức 1 (Cơ bản): Nhắc nhở học sinh không chia sẻ mật khẩu</option>
+                <option value="2" selected>Mức 2 (Thành thạo): Thực thi bộ quy tắc "4 KHÔNG - 3 CÓ", quy trình ứng phó sự cố 4 bước</option>
+                <option value="3">Mức 3 (Nâng cao): Tham mưu quy chế bảo vệ dữ liệu cá nhân theo Luật 91/2025/QH15 trong trường</option>
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <div class="assess-result" id="assess-result-box">
+          <div class="result-header">
+            <span class="eyebrow">KẾT QUẢ ĐỊNH VỊ VÀ PHÂN NHÓM</span>
+            <div id="assess-group-badge" class="status-tag group-b">NHÓM B · THÀNH THẠO (Nòng cốt chuyên môn)</div>
+          </div>
+          <p id="assess-group-desc" class="group-desc">
+            Thầy/cô có nền tảng năng lực số vững vàng, sẵn sàng thiết kế bài giảng số thích ứng và đồng hành cùng đồng nghiệp trong tổ chuyên môn.
+          </p>
+          <div class="pairing-box">
+            <h4>🤝 Khuyến nghị cơ chế Cố vấn đồng đẳng "Cặp đôi số":</h4>
+            <div id="assess-pairing-rec">
+              <strong>Mô hình ghép đôi đề xuất:</strong> Ghép 01 học viên Nhóm B (Thành thạo) với 01 học viên Nhóm A (Cơ bản) trong cùng tổ chuyên môn để hỗ trợ thực hành 1 kèm 1, bảo đảm hoàn thành 100% sản phẩm đầu ra.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Bàn thực hành (Workbench 5 tabs) -->
+    <section class="section workbench" id="workbench">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">TẠO SẢN PHẨM TRỰC TUYẾN</span>
+          <h2>Bàn thực hành Sư phạm số thích ứng</h2>
+          <p>Tạo lập các cấu trúc Prompt 4 thẻ chuyên sâu nạp vào Gemini / NotebookLM / ChatGPT. Toàn bộ xử lý tại trình duyệt, bảo mật tuyệt đối.</p>
+        </div>
+        <span class="section-index">03 / THỰC HÀNH</span>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="khbd">✳ KHBD 4C</button>
+        <button class="tab" data-tab="media">▧ Học liệu & AI</button>
+        <button class="tab" data-tab="assessment">✓ Đề & Rubric</button>
+        <button class="tab" data-tab="cbql">⚙ Quản trị CBQL</button>
+        <button class="tab" data-tab="pdca">↗ Kế hoạch PDCA</button>
+      </div>
+
+      <!-- Tab 1: KHBD 4C -->
+      <div class="builder-panel active" id="panel-khbd">
+        <div class="form-layout">
+          <div class="form-card">
+            <div class="form-card-head">
+              <div>
+                <h3>Thiết kế Kế hoạch bài dạy (KHBD) 4C</h3>
+                <p class="muted">Tích hợp NLS & An toàn mạng vào bài học hiện hành chuẩn Công văn 5512/BGDĐT-GDTrH.</p>
+              </div>
+            </div>
+
+            <!-- Quick Presets -->
+            <div class="preset-group">
+              <span class="preset-label">Mẫu nạp nhanh theo khối:</span>
+              <button type="button" class="preset-btn" data-preset="khxh">📖 Lịch sử & Địa lí 7 (KHXH)</button>
+              <button type="button" class="preset-btn" data-preset="khtn">🔬 KHTN 7 - Trao đổi chất (KHTN)</button>
+              <button type="button" class="preset-btn" data-preset="math">📐 Toán 8 - Hàm số bậc nhất</button>
+            </div>
+
+            <div class="form-grid">
+              <label>Môn học
+                <input id="subject" placeholder="Ví dụ: Khoa học tự nhiên">
+              </label>
+              <label>Khối lớp
+                <select id="grade">
+                  <option value="6">Lớp 6 (chuẩn TC1)</option>
+                  <option value="7" selected>Lớp 7 (chuẩn TC1)</option>
+                  <option value="8">Lớp 8 (chuẩn TC2)</option>
+                  <option value="9">Lớp 9 (chuẩn TC2)</option>
+                </select>
+              </label>
+              <label class="wide">Tên chủ đề / bài dạy
+                <input id="topic" placeholder="Ví dụ: Trao đổi chất và chuyển hóa năng lượng ở tế bào">
+              </label>
+              <label class="wide">Yêu cầu cần đạt (YCCĐ môn học)
+                <textarea id="outcomes" rows="3" placeholder="Ghi rõ YCCĐ theo Chương trình GDPT 2018 của bài học"></textarea>
+              </label>
+              <label>Khung năng lực số HS (CV 3456)
+                <select id="tc">
+                  <option value="TC1 (lớp 6–7)">TC1 (Chuẩn cho Lớp 6–7)</option>
+                  <option value="TC2 (lớp 8–9)">TC2 (Chuẩn cho Lớp 8–9)</option>
+                </select>
+              </label>
+              <label>Mã An toàn mạng (CV 6206)
+                <select id="atm">
+                  <option value="ATM1">ATM1 · Bản quyền số & kiểm chứng nguồn (SIFT)</option>
+                  <option value="ATM2">ATM2 · Bảo vệ danh tính & dữ liệu cá nhân</option>
+                  <option value="ATM3">ATM3 · Phòng chống lừa đảo & mã độc số</option>
+                  <option value="ATM4">ATM4 · Phòng chống bắt nạt & ứng xử văn hóa mạng</option>
+                  <option value="ATM5">ATM5 · Sức khỏe thể chất, tâm lý & cân bằng số</option>
+                  <option value="ATM6">ATM6 · Giao tiếp & hợp tác số có trách nhiệm</option>
+                  <option value="ATM7">ATM7 · Dấu chân số & bảo vệ danh tiếng trực tuyến</option>
+                  <option value="ATM8">ATM8 · Đạo đức sử dụng Trí tuệ nhân tạo (AI)</option>
+                </select>
+              </label>
+              <label>Mạch giáo dục AI (QĐ 2422)
+                <select id="ai-strand">
+                  <option value="NLa (Tư duy lấy con người làm trung tâm)">NLa · Tư duy lấy con người làm trung tâm</option>
+                  <option value="NLb (Đạo đức AI)">NLb · Đạo đức & Trách nhiệm AI</option>
+                  <option value="NLc (Kỹ thuật & Ứng dụng AI)">NLc · Kỹ thuật & Ứng dụng AI</option>
+                  <option value="NLd (Thiết kế hệ thống AI)">NLd · Thiết kế hệ thống AI</option>
+                </select>
+              </label>
+              <label>Điều kiện thiết bị & Phương án ngoại tuyến
+                <input id="devices" placeholder="Ví dụ: Máy tính GV, máy chiếu; có bộ thẻ in giấy Offline Kit">
+              </label>
+              <label>Thời lượng bài học (phút)
+                <input id="duration" type="number" value="45" min="1" max="180" step="1">
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="button primary" id="make-khbd">Tạo Prompt 4 thẻ chuẩn hóa →</button>
+              <button class="text-button" data-reset="khbd">Xóa nội dung</button>
+            </div>
+          </div>
+
+          <div class="output-card">
+            <div class="output-head">
+              <div>
+                <span class="eyebrow">KẾT QUẢ CỦA BẠN</span>
+                <h3>Prompt KHBD 4C sẵn sàng</h3>
+              </div>
+              <span id="khbd-status" class="status-tag">CHƯA TẠO</span>
+            </div>
+            <div class="output-content placeholder" id="khbd-output">Nội dung câu lệnh 4 thẻ sẽ xuất hiện tại đây sau khi thầy/cô bấm nút "Tạo Prompt". Hãy sao chép để dán vào Gemini / NotebookLM.</div>
+            <div class="output-actions">
+              <button class="button small primary copy-output" data-output="khbd-output">📋 Sao chép</button>
+              <button class="button small secondary download-output" data-output="khbd-output">💾 Tải .txt</button>
+              <button class="button small secondary print-output" data-output="khbd-output">🖨 In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Học liệu & AI -->
+      <div class="builder-panel" id="panel-media">
+        <div class="form-layout">
+          <div class="form-card">
+            <h3>Tạo Prompt Hệ sinh thái học liệu đa phương tiện</h3>
+            <p class="muted">Sản xuất ảnh AI mô phỏng (Imagen 3), bài hát ghi nhớ (Suno), video 3 phút hoặc trò chơi phân nhánh.</p>
+            <div class="form-grid">
+              <label>Loại học liệu
+                <select id="media-type">
+                  <option>Slide bài giảng tương tác Google Slides</option>
+                  <option>Infographic tóm tắt kiến thức / Bản đồ tư duy</option>
+                  <option>Tranh ảnh mô phỏng AI (Imagen 3 / 3D Science)</option>
+                  <option>Bài hát giáo dục ghi nhớ quy tắc số / KHTN (Suno/Udio)</option>
+                  <option>Kịch bản Video micro-learning 3 phút (Storyboard)</option>
+                  <option>Trò chơi học tập số (Gamification) tương tác phân nhánh</option>
+                </select>
+              </label>
+              <label>Đối tượng học sinh
+                <input id="media-audience" placeholder="Ví dụ: Học sinh lớp 7 (12-13 tuổi), vùng bán sơn địa">
+              </label>
+              <label class="wide">Mục tiêu sư phạm cụ thể
+                <input id="media-goal" placeholder="Ví dụ: Ghi nhớ 4 bước kiểm chứng SIFT hoặc trực quan hóa chu trình cacbon">
+              </label>
+              <label>Thời lượng / Quy mô học liệu
+                <input id="media-duration" placeholder="Ví dụ: 3 phút / 5 slide / 1 infographic">
+              </label>
+              <label>Điều kiện hạ tầng phòng học
+                <input id="media-device" placeholder="Ví dụ: Máy chiếu, smartphone học sinh hoặc bảng tương tác">
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" id="make-media">Tạo prompt học liệu đa phương tiện →</button>
+              <button class="text-button" data-reset="media">Xóa nội dung</button>
+            </div>
+          </div>
+          <div class="output-card">
+            <div class="output-head">
+              <div>
+                <span class="eyebrow">KẾT QUẢ CỦA BẠN</span>
+                <h3>Prompt Học liệu số</h3>
+              </div>
+              <span id="media-status" class="status-tag">CHƯA TẠO</span>
+            </div>
+            <div class="output-content placeholder" id="media-output">Prompt kịch bản học liệu sẽ xuất hiện tại đây.</div>
+            <div class="output-actions">
+              <button class="button small primary copy-output" data-output="media-output">📋 Sao chép</button>
+              <button class="button small secondary download-output" data-output="media-output">💾 Tải .txt</button>
+              <button class="button small secondary print-output" data-output="media-output">🖨 In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Khảo thí & LaTeX -->
+      <div class="builder-panel" id="panel-assessment">
+        <div class="form-layout">
+          <div class="form-card">
+            <h3>Tạo đề kiểm tra phân hóa, chuẩn LaTeX & Rubric</h3>
+            <p class="muted">Chuẩn hóa ma trận đặc tả theo Thông tư 22/2021/TT-BGDĐT, xuất mã LaTeX và phát hiện lỗi ảo giác AI.</p>
+            <div class="form-grid">
+              <label>Chủ đề kiểm tra
+                <input id="assess-topic" placeholder="Ví dụ: Khúc xạ ánh sáng và mắt hoặc Lịch sử Nghệ An">
+              </label>
+              <label>Môn học & Khối lớp
+                <input id="assess-class" placeholder="Ví dụ: KHTN 8 hoặc Ngữ văn 7">
+              </label>
+              <label>Số lượng câu hỏi
+                <input id="assess-count" type="number" value="12" min="1" max="50">
+              </label>
+              <label>Thang điểm đánh giá
+                <input id="assess-points" type="number" value="10" min="1" max="100">
+              </label>
+              <label class="wide">Tỷ lệ phân bố mức độ (chuẩn TT 22)
+                <textarea id="assess-levels" rows="2" placeholder="Ví dụ: 40% Nhận biết, 30% Thông hiểu, 20% Vận dụng, 10% Vận dụng cao (có tích hợp kiểm chứng tin giả)"></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" id="make-assessment">Tạo prompt ma trận đề & Rubric →</button>
+              <button class="text-button" data-reset="assessment">Xóa nội dung</button>
+            </div>
+          </div>
+          <div class="output-card">
+            <div class="output-head">
+              <div>
+                <span class="eyebrow">KẾT QUẢ CỦA BẠN</span>
+                <h3>Prompt Khảo thí số & Rubric</h3>
+              </div>
+              <span id="assessment-status" class="status-tag">CHƯA TẠO</span>
+            </div>
+            <div class="output-content placeholder" id="assessment-output">Prompt khảo thí sẽ hiển thị tại đây.</div>
+            <div class="output-actions">
+              <button class="button small primary copy-output" data-output="assessment-output">📋 Sao chép</button>
+              <button class="button small secondary download-output" data-output="assessment-output">💾 Tải .txt</button>
+              <button class="button small secondary print-output" data-output="assessment-output">🖨 In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Quản trị CBQL -->
+      <div class="builder-panel" id="panel-cbql">
+        <div class="form-layout">
+          <div class="form-card">
+            <h3>Quản trị số & Tác nghiệp Cán bộ Quản lý (CBQL THCS)</h3>
+            <p class="muted">Tối ưu hóa hành chính theo Nghị định 30/2020/NĐ-CP và 5 Trụ cột CĐS toàn diện (NAEM 2026).</p>
+            <div class="form-grid">
+              <label class="wide">Loại tác vụ quản lý trọng tâm
+                <select id="cbql-task">
+                  <option value="Xử lý âm thanh cuộc họp trích kịch bản điều hành & biên bản chuẩn NĐ 30/2020">Biên bản cuộc họp & Kịch bản điều hành (từ âm thanh cuộc họp)</option>
+                  <option value="Soạn thảo kế hoạch CĐS toàn trường theo 5 Trụ cột (NAEM 2026)">Kế hoạch Chuyển đổi số toàn trường theo 5 Trụ cột</option>
+                  <option value="Grounded AI tra cứu văn bản quy phạm pháp luật qua NotebookLM">Grounded AI tra cứu pháp lý chống ảo giác (NotebookLM)</option>
+                  <option value="Quy trình phân quyền và quản trị Google Drive an toàn">Phân quyền Google Drive an toàn & kiểm soát truy cập</option>
+                  <option value="Kịch bản sinh hoạt chuyên môn theo nghiên cứu bài học số">Kịch bản Sinh hoạt chuyên môn nghiên cứu bài học số</option>
+                </select>
+              </label>
+              <label>Cơ quan / Đơn vị trường học
+                <input id="cbql-org" placeholder="Ví dụ: Trường THCS Đặng Thai Mai, TP. Vinh">
+              </label>
+              <label class="wide">Tên văn bản / Cuộc họp / Dự thảo
+                <input id="cbql-title" placeholder="Ví dụ: Kế hoạch thực hiện Chuyển đổi số năm học 2026-2027">
+              </label>
+              <label class="wide">Dữ liệu đầu vào / Nội dung chỉ đạo trọng tâm
+                <textarea id="cbql-input" rows="4" placeholder="Tóm tắt nội dung cuộc họp, các chỉ tiêu phấn đấu định lượng, hoặc yêu cầu thể chế hóa cụ thể..."></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" id="make-cbql">Tạo prompt Quản trị số CBQL →</button>
+              <button class="text-button" data-reset="cbql">Xóa nội dung</button>
+            </div>
+          </div>
+          <div class="output-card">
+            <div class="output-head">
+              <div>
+                <span class="eyebrow">KẾT QUẢ CỦA BẠN</span>
+                <h3>Prompt Quản trị CBQL</h3>
+              </div>
+              <span id="cbql-status" class="status-tag">CHƯA TẠO</span>
+            </div>
+            <div class="output-content placeholder" id="cbql-output">Prompt quản trị sẽ xuất hiện tại đây.</div>
+            <div class="output-actions">
+              <button class="button small primary copy-output" data-output="cbql-output">📋 Sao chép</button>
+              <button class="button small secondary download-output" data-output="cbql-output">💾 Tải .txt</button>
+              <button class="button small secondary print-output" data-output="cbql-output">🖨 In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 5: Kế hoạch PDCA -->
+      <div class="builder-panel" id="panel-pdca">
+        <div class="form-layout">
+          <div class="form-card">
+            <h3>Kế hoạch hành động 4 tuần sau tập huấn (PDCA)</h3>
+            <p class="muted">Thiết kế lộ trình chuyển hóa vào thực tế: Plan - Do - Check - Act, đo lường bằng minh chứng khả thi.</p>
+            <div class="form-grid">
+              <label>Tổ chuyên môn / Đơn vị
+                <input id="pdca-team" placeholder="Ví dụ: Tổ Khoa học Tự nhiên / Tổ Xã hội">
+              </label>
+              <label>Bộ phận / Vai trò phụ trách (RACI)
+                <input id="pdca-owner" placeholder="Ví dụ: Tổ trưởng chuyên môn và nhóm Cặp đôi số nòng cốt">
+              </label>
+              <label class="wide">Ưu tiên cải tiến trọng tâm
+                <input id="pdca-priority" placeholder="Ví dụ: 100% giáo viên tích hợp NLS/ATM vào tối thiểu 01 tiết dạy và chia sẻ học liệu số">
+              </label>
+              <label class="wide">Nguồn lực sẵn có & rào cản thực tế
+                <textarea id="pdca-resources" rows="3" placeholder="Ví dụ: Phòng máy 25 máy tính kết nối mạng, một số học sinh miền núi không có thiết bị cá nhân ở nhà"></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" id="make-pdca">Tạo Kế hoạch hành động PDCA →</button>
+              <button class="text-button" data-reset="pdca">Xóa nội dung</button>
+            </div>
+          </div>
+          <div class="output-card">
+            <div class="output-head">
+              <div>
+                <span class="eyebrow">KẾT QUẢ CỦA BẠN</span>
+                <h3>Kế hoạch PDCA 4 tuần</h3>
+              </div>
+              <span id="pdca-status" class="status-tag">CHƯA TẠO</span>
+            </div>
+            <div class="output-content placeholder" id="pdca-output">Kế hoạch PDCA 4 tuần sẽ hiển thị tại đây.</div>
+            <div class="output-actions">
+              <button class="button small primary copy-output" data-output="pdca-output">📋 Sao chép</button>
+              <button class="button small secondary download-output" data-output="pdca-output">💾 Tải .txt</button>
+              <button class="button small secondary print-output" data-output="pdca-output">🖨 In</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Thư viện Prompt 45 -->
+    <section class="section" id="prompts">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">KHO TÀI NGUYÊN THỰC HÀNH CHUẨN HÓA</span>
+          <h2>Thư viện 45 Prompt Sư phạm số THCS</h2>
+          <p>Được tinh chỉnh dựa trên tài liệu Bộ 1 (KHXH) và Bộ 2 (KHTN) của Học viện Quản lý Giáo dục. Tìm kiếm nhanh, lọc theo nhóm và sao chép dùng ngay.</p>
+        </div>
+        <span class="section-index">04 / PROMPTS</span>
+      </div>
+
+      <div class="prompt-toolbar">
+        <div class="search-box">
+          <input type="text" id="prompt-search" placeholder="🔍 Tìm kiếm theo tên môn, bài học, mã ATM, từ khóa SIFT, LaTeX, Gem...">
+        </div>
+        <div class="filter-chips" id="prompt-filters">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+
+      <div class="prompt-grid" id="prompt-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Section 5: An toàn số & Đạo đức AI -->
+    <section class="section safety-section" id="safety">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">BẢO VỆ NGƯỜI HỌC VÀ KHÔNG GIAN SỐ</span>
+          <h2>An toàn mạng ATM & Đạo đức AI</h2>
+          <p>Tuân thủ Luật An ninh mạng 116/2025/QH15, Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 và Luật Trẻ em 2016.</p>
+        </div>
+        <span class="section-index">05 / AN TOÀN</span>
+      </div>
+
+      <div class="safety-grid">
+        <!-- Quy tắc 4 KHÔNG - 3 CÓ -->
+        <div class="safety-card">
+          <div class="card-badge">QUY TẮC CỐT LÕI</div>
+          <h3>Bộ quy tắc "4 KHÔNG – 3 CÓ"</h3>
+          <p class="muted">Niêm yết tại phòng học và phòng Tin học THCS:</p>
+          <div class="rules-list">
+            <div class="rule-block danger">
+              <b>🚫 4 KHÔNG:</b>
+              <ul>
+                <li><b>1.</b> Không nhập thông tin định danh cá nhân (họ tên, CCCD, địa chỉ, ảnh chân dung, điểm số) của HS, bạn bè, thầy cô lên AI công cộng.</li>
+                <li><b>2.</b> Không sử dụng AI để gian lận, đạo văn, nộp bài hộ hoặc tạo sản phẩm sai sự thật.</li>
+                <li><b>3.</b> Không chia sẻ tin đồn, nội dung bạo lực, xúc phạm danh dự người khác trên mạng.</li>
+                <li><b>4.</b> Không bấm vào đường link lạ, quét mã QR không rõ nguồn gốc hoặc cài app ngoài kiểm duyệt.</li>
+              </ul>
+            </div>
+            <div class="rule-block success">
+              <b>✅ 3 CÓ:</b>
+              <ul>
+                <li><b>1.</b> Có kiểm chứng nguồn gốc thông tin theo quy trình SIFT trước khi tin hoặc chia sẻ.</li>
+                <li><b>2.</b> Có ghi chú minh bạch, trích dẫn nguồn gốc và quyền tác giả (kèm phần AI hỗ trợ).</li>
+                <li><b>3.</b> Có báo cáo ngay với thầy cô, phụ huynh hoặc cơ quan chức năng khi gặp sự cố mạng.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quy trình SIFT -->
+        <div class="safety-card">
+          <div class="card-badge">KIỂM CHỨNG TIN GIẢ</div>
+          <h3>Quy trình SIFT 4 bước</h3>
+          <p class="muted">Kỹ thuật tra cứu tri thức có căn cứ chống ảo giác số:</p>
+          <div class="sift-steps">
+            <div class="sift-step">
+              <span class="step-num">S</span>
+              <div>
+                <b>Stop (Dừng lại):</b> Khi gặp thông tin kích động cảm xúc, giật gân, dừng lại trước khi tin hoặc chia sẻ.
+              </div>
+            </div>
+            <div class="sift-step">
+              <span class="step-num">I</span>
+              <div>
+                <b>Investigate the source (Kiểm tra nguồn):</b> Xem tên miền (.gov.vn, .edu.vn), tác giả, động cơ xuất bản bài viết.
+              </div>
+            </div>
+            <div class="sift-step">
+              <span class="step-num">F</span>
+              <div>
+                <b>Find better coverage (Tìm nguồn tốt hơn):</b> Tra cứu các cơ quan báo chí chính thống hoặc cơ sở dữ liệu khoa học có đồng thuận cao.
+              </div>
+            </div>
+            <div class="sift-step">
+              <span class="step-num">T</span>
+              <div>
+                <b>Trace claims (Lần tìm bối cảnh gốc):</b> Lần về văn bản quy phạm gốc, công trình nghiên cứu nguyên bản để xác minh số liệu.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quy trình ứng phó sự cố 4 bước -->
+        <div class="safety-card wide">
+          <div class="card-badge">ỨNG PHÓ KHẨN CẤP</div>
+          <h3>Quy trình 4 bước xử lý sự cố An toàn mạng trong trường học</h3>
+          <div class="incident-flow">
+            <div class="flow-step">
+              <div class="flow-num">1</div>
+              <h4>DỪNG LẬP TỨC</h4>
+              <p>Ngắt kết nối mạng thiết bị bị nhiễm; đóng phiên làm việc; bảo vệ tâm lý nạn nhân và không lan truyền thông tin tiêu cực.</p>
+            </div>
+            <div class="flow-step">
+              <div class="flow-num">2</div>
+              <h4>BẢO VỆ DỮ LIỆU</h4>
+              <p>Chụp ảnh màn hình lưu bằng chứng; đổi mật khẩu tài khoản bị xâm nhập; cô lập dữ liệu chưa bị ảnh hưởng.</p>
+            </div>
+            <div class="flow-step">
+              <div class="flow-num">3</div>
+              <h4>BÁO CÁO KỊP THỜI</h4>
+              <p>Báo cáo Tổ Công nghệ thông tin, Ban Giám hiệu, liên hệ phụ huynh; nếu nghiêm trọng báo Công an địa phương theo kênh chính thống.</p>
+            </div>
+            <div class="flow-step">
+              <div class="flow-num">4</div>
+              <h4>RÚT KINH NGHIỆM</h4>
+              <p>Đánh giá nguyên nhân rò rỉ; cập nhật giải pháp phòng ngừa; đưa vào bài học truyền thông an toàn mạng cho toàn trường.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Quản trị CĐS trường học theo QĐ 4725 & 5 Trụ cột NAEM -->
+    <section class="section" id="pdca-sec">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">QUẢN TRỊ CHIẾN LƯỢC CẤP TRƯỜNG</span>
+          <h2>Bộ chỉ số CĐS trường THCS & 5 Trụ cột (NAEM 2026)</h2>
+          <p>Tự đánh giá mức độ CĐS trường THCS theo Quyết định 4725/QĐ-BGDĐT và triển khai theo 5 Trụ cột đồng bộ.</p>
+        </div>
+        <span class="section-index">06 / QUẢN TRỊ</span>
+      </div>
+
+      <div class="pdca-mgmt-grid">
+        <!-- Self-rating KPI -->
+        <div class="mgmt-card">
+          <div class="card-head-flex">
+            <h3>Tự đánh giá mức độ Chuyển đổi số trường THCS</h3>
+            <span id="kpi-summary-level" class="kpi-level level-2">Mức 2 · Đang phát triển (10/15 điểm)</span>
+          </div>
+          <p class="muted">Tích chọn mức độ thực tế của nhà trường theo 5 nhóm chỉ báo cốt lõi:</p>
+          
+          <table class="kpi-table">
+            <thead>
+              <tr>
+                <th>Trụ cột chỉ báo</th>
+                <th>Mức 1 (Khởi động - 1đ)</th>
+                <th>Mức 2 (Đang phát triển - 2đ)</th>
+                <th>Mức 3 (CĐS toàn diện - 3đ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>1. Quản trị tinh gọn</b><br><small>Sổ sách, điều hành, văn bản</small></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi1" value="1"> Vẫn in phần lớn sổ giấy</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi1" value="2" checked> Dùng VnEdu/SMAS, giảm 50% giấy</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi1" value="3"> Số hóa 100% hồ sơ, ký số</label></td>
+              </tr>
+              <tr>
+                <td><b>2. Sư phạm thích ứng</b><br><small>Tích hợp NLS, ATM, AI</small></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi2" value="1"> Dạy chiếu slide đơn thuần</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi2" value="2" checked> Tích hợp 4C, có phương án ngoại tuyến</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi2" value="3"> 100% môn có học liệu số & khảo thí số</label></td>
+              </tr>
+              <tr>
+                <td><b>3. Kết nối đồng thuận</b><br><small>Gia đình - nhà trường</small></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi3" value="1"> Thông báo qua giấy/họp kỳ</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi3" value="2" checked> Sổ liên lạc điện tử, nhóm lớp an toàn</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi3" value="3"> Cổng thông tin tương tác đa chiều minh bạch</label></td>
+              </tr>
+              <tr>
+                <td><b>4. Nhân lực nòng cốt</b><br><small>Cặp đôi số, bồi dưỡng NLS</small></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi4" value="1"> Chỉ có GV Tin học phụ trách</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi4" value="2" checked> Tổ nòng cốt, cơ chế Cặp đôi số 1-1</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi4" value="3"> 100% GV đạt chuẩn NLS TT 18/2026</label></td>
+              </tr>
+              <tr>
+                <td><b>5. Hạ tầng an toàn</b><br><small>Thiết bị, đường truyền, ATM</small></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi5" value="1"> Thiếu máy, mạng chập chờn</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi5" value="2" checked> Phòng máy ổn định, có quy chế ATM</label></td>
+                <td><label><input type="radio" class="kpi-radio" name="kpi5" value="3"> Mạng tốc độ cao, firewall an toàn dữ liệu</label></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 5 Pillars details -->
+        <div class="mgmt-card">
+          <h3>5 Trụ cột Chuyển đổi số toàn diện trường THCS</h3>
+          <p class="muted">Mô hình phát triển của Học viện Quản lý Giáo dục (NAEM 2026):</p>
+          <div class="pillars-list">
+            <div class="pillar-item">
+              <span class="pillar-icon">🏛</span>
+              <div>
+                <b>Trụ cột 1: Quản trị tinh gọn</b>
+                <p>Cắt giảm ≥ 60% sổ sách giấy, điều hành qua môi trường số Google Workspace/VnEdu, ban hành quy chế phân quyền tối thiểu.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">🎯</span>
+              <div>
+                <b>Trụ cột 2: Sư phạm số thích ứng</b>
+                <p>Tích hợp chỉ báo NLS (TC1/TC2) và ATM1-ATM8 vào đúng hoạt động của học sinh; luôn chuẩn bị Offline Kit cho vùng khó.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">🤝</span>
+              <div>
+                <b>Trụ cột 3: Kết nối đồng thuận</b>
+                <p>Gia đình và nhà trường cùng giám sát thời gian sử dụng thiết bị; truyền thông văn hóa số tích cực.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">👥</span>
+              <div>
+                <b>Trụ cột 4: Nhân lực nòng cốt & Cặp đôi số</b>
+                <p>Mỗi tổ chuyên môn duy trì các cặp đôi số (1 GV thành thạo kèm 1 GV cơ bản), sinh hoạt chuyên môn theo bài học số định kỳ.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-icon">🛡</span>
+              <div>
+                <b>Trụ cột 5: Hạ tầng an toàn & pháp lý</b>
+                <p>Bảo vệ 100% dữ liệu học sinh dưới 16 tuổi theo Luật 91/2025/QH15; tuân thủ quy trình ứng phó sự cố 4 bước.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Hệ sinh thái Google & Tài nguyên -->
+    <section class="section resource-section" id="resources">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">CÔNG CỤ THỰC HÀNH CỐT LÕI</span>
+          <h2>Hệ sinh thái Google & Học liệu số</h2>
+          <p>Tận dụng tối đa các công cụ quen thuộc trong Google Workspace for Education, kết hợp với Grounded AI NotebookLM và Gemini.</p>
+        </div>
+        <span class="section-index">07 / TÀI NGUYÊN</span>
+      </div>
+
+      <div class="resource-grid">
+        <div class="res-card">
+          <div class="res-icon">📝</div>
+          <h4>Google Forms & Sheets</h4>
+          <p>Tạo phiếu khảo sát NLS đầu vào, ngân hàng câu hỏi phân hóa, phân tích thống kê điểm số không định danh học sinh.</p>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">📁</div>
+          <h4>Google Drive & Docs</h4>
+          <p>Kho học liệu dùng chung của tổ chuyên môn, cộng tác soạn giáo án 4C, thiết lập phân quyền an toàn theo nhóm người dùng.</p>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">📊</div>
+          <h4>Google Slides & Sites</h4>
+          <p>Thiết kế slide bài giảng tương tác, xây dựng website học tập môn học cho học sinh tự học và tra cứu ngoại tuyến.</p>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">📚</div>
+          <h4>NotebookLM (Grounded AI)</h4>
+          <p>Sổ tay tri thức số: nạp văn bản chỉ đạo (TT 18, CV 3456, CV 6206) để tra cứu chính xác kèm trích dẫn gốc, chống ảo giác 100%.</p>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">🤖</div>
+          <h4>Gemini & Custom Gems</h4>
+          <p>Xây dựng trợ lý ảo chuyên biệt cho Tổ KHXH (thẩm định nguồn lịch sử, ngữ văn) và Tổ KHTN - Toán (biên soạn công thức LaTeX, đề phân hóa).</p>
+        </div>
+        <div class="res-card">
+          <div class="res-icon">🌐</div>
+          <h4>Creative Commons (OER)</h4>
+          <p>Khai thác kho học liệu mở hợp pháp, tôn trọng quyền tác giả và giáo dục học sinh văn hóa trích dẫn học thuật.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Đích đến cuối khóa / Hồ sơ nghiệm thu -->
+    <section class="section deliverables" id="deliverables">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">ĐÍCH ĐẾN KHÓA BỒI DƯỠNG</span>
+          <h2>Hồ sơ nghiệm thu 05 Sản phẩm bắt buộc</h2>
+          <p>Học viên cần hoàn thiện và nộp hồ sơ sản phẩm để được cấp chứng nhận hoàn thành khóa bồi dưỡng theo quy định của Sở GD&ĐT Nghệ An.</p>
+        </div>
+        <span class="section-index">08 / NGHIỆM THU</span>
+      </div>
+
+      <div class="deliverable-list">
+        <label class="deliverable-item">
+          <input type="checkbox" data-task="deliv_1">
+          <div class="deliv-content">
+            <div class="deliv-title"><b>Sản phẩm 1:</b> Phiếu tự đánh giá năng lực số & Sơ đồ ánh xạ NLS–ATM vào môn học</div>
+            <small>Hoàn thành qua Google Forms, sơ đồ ma trận tích hợp bộ môn hiện hành (không thêm tiết học mới).</small>
+          </div>
+          <span class="deliv-badge">Buổi 1</span>
+        </label>
+
+        <label class="deliverable-item">
+          <input type="checkbox" data-task="deliv_2">
+          <div class="deliv-content">
+            <div class="deliv-title"><b>Sản phẩm 2:</b> Sổ tay tri thức NotebookLM & Bộ quy tắc "4 KHÔNG – 3 CÓ"</div>
+            <small>Có danh mục nguồn văn bản chuẩn hóa, quy trình ứng phó sự cố ATM 4 bước và cam kết bảo vệ dữ liệu học sinh &lt; 16 tuổi.</small>
+          </div>
+          <span class="deliv-badge">Buổi 2</span>
+        </label>
+
+        <label class="deliverable-item">
+          <input type="checkbox" data-task="deliv_3">
+          <div class="deliv-content">
+            <div class="deliv-title"><b>Sản phẩm 3:</b> Ma trận 3 bài học & 01 Kế hoạch bài dạy (KHBD) 4C hoàn chỉnh</div>
+            <small>Thiết kế theo tiến trình 4C chuẩn CV 5512, phân hóa A/B/C, cơ chế Cặp đôi số và có phương án Offline Kit dự phòng.</small>
+          </div>
+          <span class="deliv-badge">Buổi 3</span>
+        </label>
+
+        <label class="deliverable-item">
+          <input type="checkbox" data-task="deliv_4">
+          <div class="deliv-content">
+            <div class="deliv-title"><b>Sản phẩm 4:</b> Hệ sinh thái học liệu đa phương tiện & Trò chơi học tập có phản hồi</div>
+            <small>Gồm Slide/Infographic, Video micro-learning 3 phút hoặc trò chơi phân nhánh, ghi chú minh bạch nguồn gốc và hỗ trợ AI.</small>
+          </div>
+          <span class="deliv-badge">Buổi 4</span>
+        </label>
+
+        <label class="deliverable-item">
+          <input type="checkbox" data-task="deliv_5">
+          <div class="deliv-content">
+            <div class="deliv-title"><b>Sản phẩm 5:</b> Bộ đề phân hóa, Rubric 4 mức & Kế hoạch hành động PDCA 4 tuần</div>
+            <small>Bộ đề trắc nghiệm/tự luận chuẩn TT 22, Rubric đánh giá năng lực số, và Kế hoạch PDCA triển khai thực tế tại trường.</small>
+          </div>
+          <span class="deliv-badge">Buổi 5–6</span>
+        </label>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      NLS <b>THCS</b> <span>NGHỆ AN · SƯ PHẠM SỐ THÍCH ỨNG</span>
+    </div>
+    <p>Chương trình bồi dưỡng Cán bộ quản lý và Giáo viên THCS tỉnh Nghệ An · Khung chuẩn hóa 2026 · Học viện Quản lý Giáo dục (NAEM).</p>
+    <p class="footer-sub">Hệ thống hỗ trợ kỹ thuật sư phạm · Không thay thế chuyên môn giảng dạy và các văn bản quy phạm pháp luật hiện hành.</p>
+    <a href="#home" class="back-to-top">Lên đầu trang ↑</a>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Prompt Modal Dialog -->
+  <div class="modal-backdrop" id="prompt-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="category" id="modal-cat">KHBD 4C</span>
+          <h3 id="modal-title">Chi tiết Prompt mẫu</h3>
+        </div>
+        <button class="modal-close" aria-label="Đóng cửa sổ">✕</button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc" class="modal-desc">Mô tả chi tiết prompt</p>
+        <pre id="modal-content" class="modal-content"></pre>
+      </div>
+      <div class="modal-footer">
+        <button class="button small secondary modal-close">Đóng</button>
+        <button class="button small primary" id="modal-copy">📋 Sao chép Prompt toàn văn</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

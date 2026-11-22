@@ -25,7 +25,7 @@ def run_tests():
 
     with open(prompts_json_path, "r", encoding="utf-8") as f:
         prompts = json.load(f)
-    check("Prompts JSON valid", len(prompts) == 36, f"Found {len(prompts)} prompts")
+    check("Prompts JSON valid", len(prompts) == 45, f"Found {len(prompts)} prompts")
 
     # Check unique prompt titles
     prompt_titles = [p.get("title") for p in prompts]
@@ -36,13 +36,13 @@ def run_tests():
     for p in prompts:
         c = p.get("cat")
         categories[c] = categories.get(c, 0) + 1
-    check("Prompt categories distribution", len(categories) >= 4, f"Categories: {categories}")
+    check("Prompt categories distribution", len(categories) == 6, f"Categories: {categories}")
 
     # Check prompt 4-card structure in prompt text
     has_card_structure = all(
         ("[Ngữ cảnh]" in p["text"] or "Ngữ cảnh" in p["text"]) for p in prompts
     )
-    check("Prompts contain structured sections", has_card_structure, "All prompts contain context/instructions")
+    check("Prompts contain structured sections", has_card_structure, "All 45 prompts contain context/instructions")
 
     # 2. Check HTML structure and DOM IDs
     with open(index_html_path, "r", encoding="utf-8") as f:
@@ -57,19 +57,26 @@ def run_tests():
     missing_ids = []
     for jid in set(js_ids):
         # some ids like panel- or output may be dynamic, but let's check static ones
-        if not re.search(r'id=["\']' + jid + r'["\']', html) and not jid.startswith("panel-") and not jid.endswith("-output"):
+        if not re.search(r'id=["\']' + jid + r'["\']', html) and not jid.startswith("panel-") and not jid.endswith("-output") and not jid.endswith("-status"):
             missing_ids.append(jid)
     check("All JS IDs exist in HTML", len(missing_ids) == 0, f"Missing: {missing_ids}")
 
     # Check required output IDs exist in HTML
-    output_ids = ['khbd-output', 'media-output', 'assessment-output', 'pdca-output']
+    output_ids = ['khbd-output', 'media-output', 'assessment-output', 'cbql-output', 'pdca-output']
     missing_outputs = [oid for oid in output_ids if f'id="{oid}"' not in html]
     check("All Output IDs exist in HTML", len(missing_outputs) == 0, f"Missing: {missing_outputs}")
 
     # Check inputs exist in HTML
-    khbd_inputs = ['subject', 'grade', 'topic', 'outcomes', 'tc', 'atm', 'devices', 'duration']
+    khbd_inputs = ['subject', 'grade', 'topic', 'outcomes', 'tc', 'atm', 'ai-strand', 'devices', 'duration']
     missing_khbd = [inp for inp in khbd_inputs if f'id="{inp}"' not in html]
     check("All KHBD inputs exist in HTML", len(missing_khbd) == 0, f"Missing: {missing_khbd}")
+
+    # Check self assessment and KPI evaluation elements
+    self_assess_ids = ['self-assess-form', 'assess-result-box', 'assess-group-badge', 'assess-group-desc', 'assess-pairing-rec']
+    missing_self_assess = [i for i in self_assess_ids if f'id="{i}"' not in html]
+    check("Self-assessment elements exist", len(missing_self_assess) == 0, f"Missing: {missing_self_assess}")
+
+    check("KPI summary element exists", 'id="kpi-summary-level"' in html, "kpi-summary-level present")
 
     # Check accessibility: aria-expanded and aria-controls on .menu-toggle
     check("Menu toggle accessibility", 'aria-expanded=' in html and 'aria-controls="nav"' in html, "aria attributes present")
@@ -82,6 +89,9 @@ def run_tests():
         css = f.read()
     check("Mobile menu backdrop-filter", "backdrop-filter" in css, "backdrop blur present")
     check("Mobile menu z-index", "z-index" in css and "nav.open" in css, "nav.open and z-index styled")
+    check("Modal dialog styling", ".modal-backdrop" in css and ".modal-dialog" in css, "Modal CSS present")
+    check("KPI level styling", ".kpi-level" in css and ".level-1" in css, "KPI CSS present")
+    check("Group badge styling", ".group-a" in css and ".group-b" in css, "Group badges CSS present")
 
     # 4. Test Logic simulation
     # A. Duration clamp logic: Math.min(180, Math.max(1, Math.round(rawDuration)))
@@ -109,7 +119,7 @@ def run_tests():
     check("Grade 6 -> TC1", get_expected_tc(6) == 'TC1 (lớp 6–7)')
     check("Grade 7 -> TC1", get_expected_tc(7) == 'TC1 (lớp 6–7)')
     check("Grade 8 -> TC2", get_expected_tc(8) == 'TC2 (lớp 8–9)')
-    check("Grade 9 -> TC2", get_expected_tc(9) == 'TC2 (lớp 8–9)')
+    check("Grade 9 -> TC2", get_expected_tc(9) == 'TC2 (lớp 8–9)' )
 
     # C. Prompt 4 template structure
     def prompt4(title, context, data, instructions, result):
@@ -120,9 +130,12 @@ def run_tests():
 
     # 5. Security & Privacy checks
     check("No external tracking scripts", "google-analytics" not in html and "facebook" not in html and "cdn." not in html, "Zero external tracking")
-    check("Disclaimer notice present", "Không nhập thông tin nhận diện học sinh" in html or "Dữ liệu ở thiết bị" in html, "Clear privacy disclaimer")
+    check("Disclaimer notice present", "Không nhập thông tin định danh" in html or "Dữ liệu ở thiết bị" in html, "Clear privacy disclaimer")
 
-    return results
+    all_passed = all(status == "PASS" for _, status, _ in results)
+    print(f"\nOVERALL STATUS: {'ALL TESTS PASSED' if all_passed else 'SOME TESTS FAILED'} ({len([r for r in results if r[1] == 'PASS'])}/{len(results)})")
+    return all_passed
 
 if __name__ == "__main__":
-    run_tests()
+    success = run_tests()
+    sys.exit(0 if success else 1)
