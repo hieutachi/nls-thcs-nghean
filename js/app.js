@@ -59,21 +59,10 @@ function navigateTo(rawHash, subTab = null, searchPrompt = null) {
   const cleanHash = (rawHash || '').replace(/^#/, '').trim();
   const targetId = ROUTE_MAP[cleanHash] || 'home';
 
-  // 1. Hide all SPA views, activate target view
-  const views = $$('.spa-view');
-  let found = false;
-  views.forEach(v => {
-    if (v.id === targetId) {
-      v.classList.add('active');
-      found = true;
-    } else {
-      v.classList.remove('active');
-    }
+  // 1. Highlight active view
+  $$('.spa-view').forEach(v => {
+    v.classList.toggle('active', v.id === targetId);
   });
-
-  if (!found && views.length > 0) {
-    views[0].classList.add('active');
-  }
 
   // 2. Update Topbar Navigation Active State
   $$('#nav a').forEach(a => {
@@ -103,13 +92,57 @@ function navigateTo(rawHash, subTab = null, searchPrompt = null) {
     }
   }
 
-  // 6. Smooth scroll to top of view
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // 6. Smooth scroll to target element with header offset
+  const targetEl = document.getElementById(targetId);
+  if (targetEl) {
+    if (targetId === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const headerOffset = 135;
+      const elementPosition = targetEl.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: Math.max(0, offsetPosition), behavior: 'smooth' });
+    }
+  }
 
   // 7. Update browser history hash without reload
   if (window.location.hash !== '#' + cleanHash && cleanHash !== '') {
     history.pushState(null, '', '#' + cleanHash);
   }
+}
+
+function setupScrollSpy() {
+  const sectionIds = ['home', 'path', 'self-assess-sec', 'workbench', 'prompts', 'safety', 'pdca-sec', 'deliverables'];
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+  let isTicking = false;
+  window.addEventListener('scroll', () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        const scrollPos = window.scrollY + 160;
+        let currentSectionId = 'home';
+
+        for (const sec of sections) {
+          if (sec.offsetTop <= scrollPos) {
+            currentSectionId = sec.id;
+          }
+        }
+
+        $$('#nav a').forEach(a => {
+          const aRoute = (a.getAttribute('href') || '').replace(/^#/, '');
+          a.classList.toggle('active', ROUTE_MAP[aRoute] === currentSectionId);
+        });
+
+        $$('.flow-step').forEach(btn => {
+          const btnRoute = btn.dataset.route || '';
+          btn.classList.toggle('active', ROUTE_MAP[btnRoute] === currentSectionId);
+        });
+
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  }, { passive: true });
 }
 
 function setupRouter() {
@@ -1142,6 +1175,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderLessons();
   renderPrompts();
   setupRouter();
+  setupScrollSpy();
   setupCaseStudies();
   setupWorkbench();
   setupGenerators();
