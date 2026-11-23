@@ -35,7 +35,45 @@
 
   
   <!-- Sticky SPA Flow Stepper Navigation -->
-  <aside class="spa-stepper-wrap" id="spa-stepper" aria-label="Tiến trình học tập khóa bồi dưỡng">
+  
+  <!-- ========================================== -->
+  <!-- ROLE SWITCHER DOCK (LEARNER VS INSTRUCTOR) -->
+  <!-- ========================================== -->
+  <aside class="role-switcher-banner" id="role-switcher-bar">
+    <div class="role-switcher-inner">
+      <div class="role-switcher-intro">
+        <span class="role-switcher-tag"><span class="pulse-dot"></span> KHÔNG GIAN BỒI DƯỠNG NLS THCS NGHỆ AN 2026</span>
+        <h2 class="role-switcher-heading">Chọn Góc nhìn Trải nghiệm theo Vai trò Tác nghiệp</h2>
+        <p class="role-switcher-sub">
+          Hệ thống phân tách luồng nghiệp vụ độc lập giữa <strong>Người dạy (Báo cáo viên / Giảng viên)</strong> và <strong>Người học (Học viên: Giáo viên & Cán bộ Quản lý)</strong>
+        </p>
+      </div>
+      <div class="role-switcher-tabs" role="tablist">
+        <button type="button" class="role-tab-btn active" id="tab-btn-learner" data-role-mode="learner" role="tab" aria-selected="true" aria-controls="role-view-learner">
+          <span class="role-icon">🎓</span>
+          <div class="role-info">
+            <div class="role-title-row">
+              <strong class="role-title">DÀNH CHO NGƯỜI HỌC (HỌC VIÊN: GV & CBQL)</strong>
+              <span class="role-badge active">Đang chọn</span>
+            </div>
+            <p class="role-desc"><strong>Học viên học gì, làm gì, nộp gì?</strong> 6 Nhiệm vụ bắt buộc có bộ lọc · Khảo sát NLS TT 18 · Studio Thực hành 5 Tab · 45 Prompts Master · Hồ sơ nghiệm thu</p>
+          </div>
+        </button>
+
+        <button type="button" class="role-tab-btn" id="tab-btn-instructor" data-role-mode="instructor" role="tab" aria-selected="false" aria-controls="role-view-instructor">
+          <span class="role-icon">👨‍🏫</span>
+          <div class="role-info">
+            <div class="role-title-row">
+              <strong class="role-title">DÀNH CHO NGƯỜI DẠY (BÁO CÁO VIÊN & GIẢNG VIÊN)</strong>
+              <span class="role-badge">Chuyển sang</span>
+            </div>
+            <p class="role-desc"><strong>Báo cáo viên dạy gì, điều phối gì?</strong> Giáo án 6 buổi · Chỉ đạo KHTN (Bộ 2) & KHXH (Bộ 1) · Kịch bản 4 bước · Cẩm nang Offline Kit · Rubric chấm điểm 100đ</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </aside>
+<aside class="spa-stepper-wrap" id="spa-stepper" aria-label="Tiến trình học tập khóa bồi dưỡng">
     <div class="spa-stepper-track">
       <button type="button" class="flow-step active" data-route="home" title="Chặng 0: Tổng quan & Khung chỉ đạo 2026">
         <span class="step-num">0</span>
@@ -90,9 +128,23 @@
 
 
   <main class="spa-container">
+    <!-- ROLE VIEW: LEARNER (HỌC VIÊN: GIÁO VIÊN & CBQL) -->
+    <div id="role-view-learner" class="role-view-panel active">
+
     <section class="spa-view active" id="home">
       <!-- Hero Section -->
-    <section class="hero">
+    
+        <!-- Role Callout Banner for Learners -->
+        <div class="inst-jump-box" style="margin-bottom: 2rem;">
+          <div class="inst-jump-text">
+            <strong>👨‍🏫 Bạn là Báo cáo viên hoặc Cán bộ quản lý muốn xem Giáo án & Chỉ đạo chuyên biệt?</strong>
+            <span>Xem kịch bản điều phối 4 bước của 6 buổi, hướng dẫn chỉ đạo KHTN (Bộ 2) và KHXH (Bộ 1), cẩm nang offline kit và rubric chấm điểm.</span>
+          </div>
+          <button type="button" class="button secondary small" data-switch-role="instructor">
+            👨‍🏫 Xem Chế độ Người dạy →
+          </button>
+        </div>
+<section class="hero">
       <div class="hero-copy">
         <span class="eyebrow">CHƯƠNG TRÌNH CHUẨN HÓA 03 NGÀY · 06 BUỔI (NAEM 2026)</span>
         <h1>Phát triển Năng lực số &<br><em>Sư phạm số thích ứng THCS</em></h1>
@@ -1480,7 +1532,932 @@
       </div>
 
     </section>
-  </main>
+  
+    </div>
+
+    <!-- ========================================== -->
+    <!-- ROLE VIEW: INSTRUCTOR (BÁO CÁO VIÊN & GIẢNG VIÊN) -->
+    <!-- ========================================== -->
+    <div id="role-view-instructor" class="role-view-panel" style="display: none;">
+      
+      <!-- Instructor Command Center Hero -->
+      <section class="instructor-hero">
+        <div class="instructor-hero-badge">
+          <span class="pulse-dot"></span> BỘ TÀI LIỆU CHUẨN HÓA NAEM 2026 · HỌC VIỆN QUẢN LÝ GIÁO DỤC
+        </div>
+        <h1 class="instructor-hero-title">
+          Cẩm nang & Kịch bản Giảng dạy<br>
+          <em>Dành cho Báo cáo viên & Giảng viên Tập huấn</em>
+        </h1>
+        <p class="instructor-hero-sub">
+          Khung bồi dưỡng Sư phạm số thích ứng 03 ngày (06 buổi) cấp THCS tỉnh Nghệ An · Tích hợp chỉ đạo chuyên biệt 
+          <strong>Khối Khoa học Tự nhiên (Bộ 2)</strong> và <strong>Khối Khoa học Xã hội (Bộ 1)</strong>
+        </p>
+
+        <!-- Instructor Core Pillars Grid -->
+        <div class="instructor-pillars-grid">
+          <div class="inst-pillar-card">
+            <div class="pillar-icon">⚖️</div>
+            <h4>Tỷ lệ Vàng 30 / 70</h4>
+            <p>30% thời lượng định hướng khung pháp lý & thị phạm chuẩn; 70% dành trọn cho học viên thực hành cá nhân và theo cặp trên máy tính.</p>
+          </div>
+          <div class="inst-pillar-card">
+            <div class="pillar-icon">🤝</div>
+            <h4>Chiến thuật "Cặp đôi số"</h4>
+            <p>Phân luồng A (Cơ bản) - B (Thành thạo) - C (Nâng cao). Bắt buộc ghép 1 thành viên nhóm C/B ngồi kèm 1 thành viên nhóm A trong suốt khóa học.</p>
+          </div>
+          <div class="inst-pillar-card">
+            <div class="pillar-icon">🎒</div>
+            <h4>Phương án Nghệ An Offline Kit</h4>
+            <p>100% kịch bản bài giảng có phương án ngoại tuyến (USB tài liệu, bộ thẻ bài Flashcard in sẵn, tệp mô phỏng cục bộ) sẵn sàng khi mất mạng tại vùng cao.</p>
+          </div>
+          <div class="inst-pillar-card">
+            <div class="pillar-icon">🎯</div>
+            <h4>Nghiệm thu trên Sản phẩm thật</h4>
+            <p>Không thi lý thuyết trắc nghiệm hình thức. Nghiệm thu khóa học dựa trên 5 sản phẩm sư phạm thực hành theo bảng Rubric định lượng 100 điểm.</p>
+          </div>
+        </div>
+
+        <!-- Cross Role Jump CTA -->
+        <div class="inst-jump-box">
+          <div class="inst-jump-text">
+            <strong>💡 Bạn muốn đối chiếu góc nhìn của Học viên?</strong>
+            <span>Xem trực tiếp hệ thống bài tập, bàn thực hành 5 tab, 45 prompt mẫu và giao diện nộp sản phẩm mà học viên đang thao tác.</span>
+          </div>
+          <button type="button" class="button primary inst-switch-to-learner-btn" data-switch-role="learner">
+            🎓 Chuyển sang Giao diện Học viên →
+          </button>
+        </div>
+      </section>
+
+      <!-- Sticky Instructor Sub-Navigation Dock -->
+      <nav class="inst-subnav" id="inst-subnav" aria-label="Điều hướng nghiệp vụ Giảng viên">
+        <a href="#inst-sec-lessons" class="inst-subnav-btn active" data-inst-tab="lessons">
+          <span class="subnav-icon">📋</span> Kịch bản 6 Buổi
+        </a>
+        <a href="#inst-sec-khtn" class="inst-subnav-btn" data-inst-tab="khtn">
+          <span class="subnav-icon">🔬</span> Chỉ đạo Khối KHTN (Bộ 2)
+        </a>
+        <a href="#inst-sec-khxh" class="inst-subnav-btn" data-inst-tab="khxh">
+          <span class="subnav-icon">📚</span> Chỉ đạo Khối KHXH (Bộ 1)
+        </a>
+        <a href="#inst-sec-offline" class="inst-subnav-btn" data-inst-tab="offline">
+          <span class="subnav-icon">🛡️</span> Cẩm nang & Offline Kit
+        </a>
+        <a href="#inst-sec-rubric" class="inst-subnav-btn" data-inst-tab="rubric">
+          <span class="subnav-icon">📊</span> Rubric Chấm điểm
+        </a>
+        <a href="#inst-sec-raci" class="inst-subnav-btn" data-inst-tab="raci">
+          <span class="subnav-icon">👥</span> Ma trận RACI
+        </a>
+      </nav>
+
+      <!-- ==================================================== -->
+      <!-- SECTION 1: GIÁO ÁN 6 BUỔI TẬP HUẤN & KỊCH BẢN 4 BƯỚC -->
+      <!-- ==================================================== -->
+      <section class="inst-section active" id="inst-sec-lessons">
+        <div class="section-head">
+          <span class="section-index">GIẢNG VIÊN 01 / GIÁO ÁN 6 BUỔI</span>
+          <h2>Kịch bản Điều phối Sư phạm 4 bước trong từng Buổi học</h2>
+          <p class="section-desc">
+            Mỗi buổi tập huấn kéo dài 4 tiết (180 phút), cấu trúc nghiêm ngặt theo tiến trình sư phạm thích ứng: 
+            Khởi động (15') → Thị phạm (35') → Thực hành phân hóa & Cặp đôi số (90') → Đánh giá & Rút kinh nghiệm (40').
+          </p>
+        </div>
+
+        <div class="inst-lessons-list">
+
+          <!-- Buổi 1 -->
+          <article class="inst-lesson-card">
+            <div class="inst-lesson-header">
+              <div class="inst-lesson-badge">NGÀY 01 · BUỔI 01 · SÁNG (4 TIẾT)</div>
+              <h3 class="inst-lesson-title">Cơ sở pháp lý, Chuyển đổi số & Khung năng lực số THCS</h3>
+              <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Giúp 100% học viên nhận diện đúng vị trí NLS cá nhân theo TT 18/2026/TT-BGDĐT; xác lập mạng lưới "Cặp đôi số" và hoàn thành sơ đồ ánh xạ tích hợp CTGDPT 2018.</p>
+            </div>
+
+            <div class="inst-steps-timeline">
+              <div class="inst-step-item">
+                <div class="step-clock">15 phút</div>
+                <div class="step-badge">Bước 1: Khởi động & Nêu vấn đề</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Trình chiếu bài toán thực tế: "Tại sao ứng dụng CNTT 10 năm qua vẫn nặng về trình chiếu bài giảng mà chưa phát triển được năng lực số thích ứng cho học sinh?". Khảo sát nhanh qua Mentimeter / biểu quyết giơ tay về những rào cản lớn nhất tại địa phương.</p>
+                  <p><strong>Dụng cụ / Kỹ thuật:</strong> Câu hỏi tương tác gợi mở, không khí thoải mái, tránh phán xét.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">35 phút</div>
+                <div class="step-badge">Bước 2: Thị phạm & Chốt quy chuẩn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Phân tích cấu trúc liên thông: Khung 6 miền NLS GV (TT 18/2026) ↔ Chuẩn NLS HS (TC1 lớp 6-7, TC2 lớp 8-9 theo CV 3456) ↔ 4 mạch AI (QĐ 2422) ↔ 8 nhóm An toàn mạng (CV 6206). Trực tiếp thị phạm cách làm bài Tự khảo sát 18 câu và đọc kết quả phân nhóm.</p>
+                  <p><strong>Thông điệp then chốt:</strong> "Tích hợp NLS là lồng ghép vào hoạt động môn học sẵn có theo CTGDPT 2018, tuyệt đối KHÔNG làm phát sinh tiết học mới".</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">90 phút</div>
+                <div class="step-badge">Bước 3: Hướng dẫn thực hành phân hóa</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Điều phối học viên hoàn thành Khảo sát NLS trực tuyến. Quan sát bảng kết quả: Tự động xếp học viên vào 3 nhóm A/B/C. Kích hoạt cơ chế "Cặp đôi số": Ghép 1 học viên nhóm C hoặc B ngồi cạnh 1 học viên nhóm A. Yêu cầu các cặp đôi hoàn thành Sơ đồ ma trận tích hợp NLS vào 01 chủ đề môn học.</p>
+                  <p><strong>Hỗ trợ thích ứng:</strong> Báo cáo viên và trợ giảng kỹ thuật liên tục di chuyển đến bàn nhóm A để hỗ trợ thao tác máy tính.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">40 phút</div>
+                <div class="step-badge">Bước 4: Nghiệm thu & Rút kinh nghiệm</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Chiếu 02 sơ đồ ma trận của 01 trường đồng bằng và 01 trường miền núi lên màn hình lớn. Phân tích điểm sáng và điểm cần hoàn thiện theo tiêu chí CV 3456. Chốt danh sách phân công Cặp đôi số của từng đơn vị trường.</p>
+                  <p><strong>Sản phẩm thu nhận:</strong> Bảng phân nhóm A/B/C; Danh sách Cặp đôi số; Bản đồ ma trận tích hợp của tổ.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inst-lesson-footer">
+              <span class="inst-tool-tag">🛠️ Công cụ sử dụng: Google Forms, Bàn khảo sát NLS TT18, Mindmap</span>
+              <a href="#path" class="button outline small inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="path">
+                👉 Xem Nhiệm vụ 1 & Khảo sát của Người học
+              </a>
+            </div>
+          </article>
+
+          <!-- Buổi 2 -->
+          <article class="inst-lesson-card">
+            <div class="inst-lesson-header">
+              <div class="inst-lesson-badge">NGÀY 01 · BUỔI 02 · CHIỀU (4 TIẾT)</div>
+              <h3 class="inst-lesson-title">An toàn mạng ATM, Đạo đức AI & Tra cứu tri thức có căn cứ</h3>
+              <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Hướng dẫn học viên làm chủ công cụ Grounded AI (NotebookLM) để tra cứu quy phạm chống ảo giác; nắm vững Luật 91/2025/QH15 và thành thạo kịch bản diễn tập an toàn mạng học đường.</p>
+            </div>
+
+            <div class="inst-steps-timeline">
+              <div class="inst-step-item">
+                <div class="step-clock">15 phút</div>
+                <div class="step-badge">Bước 1: Khởi động & Nêu vấn đề</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Nêu tình huống kịch tính: "Một phụ huynh phát hiện hình ảnh con mình bị cắt ghép chế giễu trong nhóm Zalo lớp và điểm kiểm tra của cả lớp bị rò rỉ lên mạng". Đặt câu hỏi: Ai chịu trách nhiệm pháp lý theo Luật 91/2025/QH15?</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">35 phút</div>
+                <div class="step-badge">Bước 2: Thị phạm & Chốt quy chuẩn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Thị phạm trực tiếp cách tạo một "Sổ tay tri thức số" trên NotebookLM: Tải lên 5 tệp PDF chính thống (TT 18, CV 3456, QĐ 2422, CV 6206, Luật 91/2025). Thử đặt các câu hỏi hóc búa để học viên thấy rõ AI trích dẫn số trang chính xác, hoàn toàn không bị ảo giác bịa đặt.</p>
+                  <p><strong>Quy tắc truyền tải:</strong> Giới thiệu Khung An toàn mạng "4 KHÔNG - 3 CÓ" và quy trình SIFT 4 bước kiểm chứng tin tức.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">90 phút</div>
+                <div class="step-badge">Bước 3: Hướng dẫn thực hành phân hóa</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Cho các tổ thực hành: (1) Nhóm A: Tạo NotebookLM cá nhân và thực hành tra cứu 3 câu hỏi định mức; (2) Nhóm B: Thiết kế Poster thông điệp "4 KHÔNG - 3 CÓ" cho bảng tin trường; (3) Nhóm C: Soạn thảo Quy trình 4 bước ứng phó sự cố lộ lọt thông tin học sinh cấp trường.</p>
+                  <p><strong>Hỗ trợ thích ứng:</strong> Hướng dẫn cách chuẩn bị file PDF dung lượng nhẹ để tải lên mượt mà khi mạng chậm.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">40 phút</div>
+                <div class="step-badge">Bước 4: Nghiệm thu & Rút kinh nghiệm</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Tổ chức diễn tập kịch bản tình huống: 1 cặp học viên đóng vai GV chủ nhiệm và phụ huynh xử lý vụ việc rò rỉ dữ liệu. Báo cáo viên nhận xét căn cứ theo quy định của Luật Trẻ em 2016 và CV 6206.</p>
+                  <p><strong>Sản phẩm thu nhận:</strong> Đường link NotebookLM chuyên môn; Poster quy tắc 4 KHÔNG - 3 CÓ; Kịch bản ứng phó sự cố.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inst-lesson-footer">
+              <span class="inst-tool-tag">🛠️ Công cụ sử dụng: NotebookLM, Canva/Google Slides, Cẩm nang ATM 8 miền</span>
+              <a href="#safety" class="button outline small inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="safety">
+                👉 Xem Cẩm nang ATM & Nhiệm vụ 2 của Người học
+              </a>
+            </div>
+          </article>
+
+          <!-- Buổi 3 -->
+          <article class="inst-lesson-card">
+            <div class="inst-lesson-header">
+              <div class="inst-lesson-badge">NGÀY 02 · BUỔI 03 · SÁNG (4 TIẾT)</div>
+              <h3 class="inst-lesson-title">Sư phạm số thích ứng & Thiết kế KHBD tích hợp theo mô hình 4C</h3>
+              <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Giúp học viên làm chủ kỹ thuật Prompt 4 thẻ chuẩn hóa; sử dụng Bàn thực hành số để sinh Kế hoạch bài dạy chuẩn CV 5512 theo mô hình 4C (Context - Challenge - Concept - Conclusion) có phân hóa A/B/C và phương án Offline Kit.</p>
+            </div>
+
+            <div class="inst-steps-timeline">
+              <div class="inst-step-item">
+                <div class="step-clock">15 phút</div>
+                <div class="step-badge">Bước 1: Khởi động & Nêu vấn đề</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> So sánh 2 bản giáo án: Bản 1 dùng AI chung chung (lời văn bay bổng nhưng thiếu thực tế, không có phân hóa); Bản 2 dùng Prompt 4 thẻ chuẩn mực (phân rõ hoạt động nhóm A/B/C, quy định rõ thiết bị, có kịch bản khi mất mạng). Hỏi học viên: "Điều gì tạo nên sự khác biệt?".</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">35 phút</div>
+                <div class="step-badge">Bước 2: Thị phạm & Chốt quy chuẩn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Mở Bàn thực hành Sư phạm số (Tab KHBD 4C). Thị phạm chọn 1 Case Study mẫu (Môn KHTN 7 hoặc Ngữ văn 8). Bấm "Nạp Dữ liệu Mẫu", giải thích ý nghĩa của 4 thẻ: <strong>Ngữ cảnh</strong> (Trường lớp, thiết bị Nghệ An) · <strong>Vai trò</strong> (Chuyên gia sư phạm số) · <strong>Nhiệm vụ</strong> (4 hoạt động chuẩn CV 5512) · <strong>Định dạng</strong> (Bảng phân hóa A/B/C, phiếu Offline Kit). Bấm sinh KHBD và phân tích kết quả.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">90 phút</div>
+                <div class="step-badge">Bước 3: Hướng dẫn thực hành phân hóa</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Yêu cầu mỗi học viên chọn 01 bài học cụ thể trong chương trình đang giảng dạy tuần tới. Sử dụng Bàn thực hành số để tạo prompt, tinh chỉnh trên Gemini/ChatGPT/Claude và xuất ra file KHBD hoàn chỉnh. Bắt buộc cặp đôi số kiểm tra chéo: "Bài dạy đã có phương án dự phòng khi mất mạng chưa?".</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">40 phút</div>
+                <div class="step-badge">Bước 4: Nghiệm thu & Rút kinh nghiệm</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Sử dụng Rubric 4 tiêu chí đánh giá tại chỗ 02 bản KHBD đại diện cho khối Tự nhiên và Xã hội. Chấm điểm trực tiếp, chỉ ra các lỗi thường gặp: Quá phụ thuộc vào máy chiếu, không có hoạt động tay chân cho học sinh nhóm A.</p>
+                  <p><strong>Sản phẩm thu nhận:</strong> 01 KHBD 5512 hoàn chỉnh tích hợp NLS TC1/TC2, ATM kèm Phiếu học tập Offline Kit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inst-lesson-footer">
+              <span class="inst-tool-tag">🛠️ Công cụ sử dụng: Bàn thực hành KHBD 4C, Gemini, Bộ 45 Master Prompts</span>
+              <a href="#workbench" class="button outline small inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="workbench">
+                👉 Xem Bàn thực hành KHBD 4C & Nhiệm vụ 3
+              </a>
+            </div>
+          </article>
+
+          <!-- Buổi 4 -->
+          <article class="inst-lesson-card">
+            <div class="inst-lesson-header">
+              <div class="inst-lesson-badge">NGÀY 02 · BUỔI 04 · CHIỀU (4 TIẾT)</div>
+              <h3 class="inst-lesson-title">Hệ sinh thái học liệu đa phương tiện & Trò chơi hóa (Gamification)</h3>
+              <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Hướng dẫn học viên sáng tạo học liệu số bản quyền bằng AI (hình ảnh 3D mô phỏng, bài hát tóm tắt công thức, podcast audio) và thiết kế trò chơi học tập có phản hồi sư phạm.</p>
+            </div>
+
+            <div class="inst-steps-timeline">
+              <div class="inst-step-item">
+                <div class="step-clock">15 phút</div>
+                <div class="step-badge">Bước 1: Khởi động & Nêu vấn đề</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Cho cả lớp tham gia 1 mini-game 3 phút về nhận diện các di tích lịch sử Nghệ An hoặc phân biệt các hợp chất hóa học. Tạo không khí hào hứng và phân tích: "Làm thế nào để tạo được trò chơi này chỉ trong 5 phút nhờ AI?".</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">35 phút</div>
+                <div class="step-badge">Bước 2: Thị phạm & Chốt quy chuẩn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Mở Tab Studio Học liệu Đa phương tiện. Thị phạm: (1) Tạo ảnh minh họa bài học bản quyền bằng Prompt hình ảnh phong cách Ukiyo-e hoặc 3D isometric; (2) Tạo bài hát vần điệu học tập bằng Suno/Udio; (3) Tạo mã nhúng trò chơi Quizizz/Kahoot/Wordwall kèm câu hỏi phản hồi khi học sinh chọn sai.</p>
+                  <p><strong>Lưu ý bản quyền:</strong> Nhắc nhở quy định ghi rõ giấy phép Creative Commons (CC-BY) và nguồn AI tạo sinh.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">90 phút</div>
+                <div class="step-badge">Bước 3: Hướng dẫn thực hành phân hóa</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Giao nhiệm vụ cho các cặp đôi: Xây dựng 01 bộ học liệu số gồm: 01 Infographic bài giảng, 01 link trò chơi tương tác có ít nhất 10 câu hỏi, 01 tệp âm thanh hoặc video micro-learning 3 phút. Nhóm C hỗ trợ nhóm A tải và biên tập tài nguyên.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">40 phút</div>
+                <div class="step-badge">Bước 4: Nghiệm thu & Rút kinh nghiệm</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Tổ chức "Phòng trưng bày Triển lãm số": Học viên dán mã QR hoặc gửi link bài tập lên không gian chung. Bình chọn 3 bộ học liệu xuất sắc nhất để trao quà động viên và đưa vào Kho học liệu chung tỉnh Nghệ An.</p>
+                  <p><strong>Sản phẩm thu nhận:</strong> Bộ học liệu số đa phương tiện đầy đủ minh chứng bản quyền mở.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inst-lesson-footer">
+              <span class="inst-tool-tag">🛠️ Công cụ sử dụng: Studio Học liệu AI, Quizizz, Wordwall, Suno, Canva</span>
+              <a href="#workbench" class="button outline small inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="workbench">
+                👉 Xem Studio Học liệu Đa phương tiện & Nhiệm vụ 4
+              </a>
+            </div>
+          </article>
+
+          <!-- Buổi 5 -->
+          <article class="inst-lesson-card">
+            <div class="inst-lesson-header">
+              <div class="inst-lesson-badge">NGÀY 03 · BUỔI 05 · SÁNG (4 TIẾT)</div>
+              <h3 class="inst-lesson-title">Đánh giá theo TT 22, Khảo thí số, Chuẩn hóa mã LaTeX/Overleaf</h3>
+              <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Giúp giáo viên chuẩn hóa quy trình biên soạn đề kiểm tra trắc nghiệm kết hợp tự luận theo 4 mức độ; làm chủ kỹ thuật số hóa công thức Toán/KHTN sang mã LaTeX Overleaf và thiết lập bài kiểm tra trực tuyến tự động chấm.</p>
+            </div>
+
+            <div class="inst-steps-timeline">
+              <div class="inst-step-item">
+                <div class="step-clock">15 phút</div>
+                <div class="step-badge">Bước 1: Khởi động & Nêu vấn đề</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Nêu thực trạng: GV mất quá nhiều thời gian căn chỉnh lề, gõ công thức Toán/Hóa bị lỗi font, mất hàng giờ chấm bài trắc nghiệm giấy nhưng không có số liệu phân tích điểm yếu học sinh. Làm sao AI và khảo thí số giải quyết triệt để?</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">35 phút</div>
+                <div class="step-badge">Bước 2: Thị phạm & Chốt quy chuẩn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Mở Tab Khảo thí số & LaTeX. Thị phạm: (1) Nhập ma trận đề kiểm tra 4 mức độ theo Thông tư 22/2021; (2) Dùng AI sinh bản đặc tả câu hỏi; (3) Xuất mã nguồn LaTeX chuẩn Overleaf cho công thức toán và phương trình hóa học; (4) Chuyển thành link Google Forms / Azota tự động chấm kèm phản hồi sư phạm khi học sinh chọn sai.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">90 phút</div>
+                <div class="step-badge">Bước 3: Hướng dẫn thực hành phân hóa</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Học viên thực hành: Soạn thảo 01 đề kiểm tra định kỳ 45 phút cho môn mình phụ trách gồm 70% trắc nghiệm (có ma trận và bản đặc tả) + 30% tự luận. Khối KHTN bắt buộc thực hành xuất mã LaTeX. Khối KHXH thực hành thiết kế câu hỏi tự luận mở gắn với bối cảnh địa phương Nghệ An.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">40 phút</div>
+                <div class="step-badge">Bước 4: Nghiệm thu & Rút kinh nghiệm</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Kiểm tra tính hợp lệ của mã LaTeX trên Overleaf. Rút kinh nghiệm về việc tránh ra câu hỏi trắc nghiệm chỉ đo lường mức độ nhớ máy móc; hướng dẫn cách kiểm soát độ tin cậy của đề thi số.</p>
+                  <p><strong>Sản phẩm thu nhận:</strong> 01 đề kiểm tra kèm Ma trận - Bản đặc tả chuẩn TT 22, mã LaTeX và link biểu mẫu khảo thí trực tuyến.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inst-lesson-footer">
+              <span class="inst-tool-tag">🛠️ Công cụ sử dụng: Bàn Khảo thí số & LaTeX, Overleaf, Google Forms, Azota</span>
+              <a href="#workbench" class="button outline small inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="workbench">
+                👉 Xem Khảo thí số & LaTeX & Nhiệm vụ 5
+              </a>
+            </div>
+          </article>
+
+          <!-- Buổi 6 -->
+          <article class="inst-lesson-card">
+            <div class="inst-lesson-header">
+              <div class="inst-lesson-badge">NGÀY 03 · BUỔI 06 · CHIỀU (4 TIẾT)</div>
+              <h3 class="inst-lesson-title">Quản trị CĐS theo 5 Trụ cột & Chu trình PDCA · Nghiệm thu Sản phẩm</h3>
+              <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Hướng dẫn CBQL và Tổ trưởng chuyên môn xây dựng Kế hoạch hành động CĐS cấp trường 4 tuần; tổ chức đánh giá nghiệm thu toàn diện 5 sản phẩm đầu ra của học viên theo Rubric chuẩn.</p>
+            </div>
+
+            <div class="inst-steps-timeline">
+              <div class="inst-step-item">
+                <div class="step-clock">15 phút</div>
+                <div class="step-badge">Bước 1: Khởi động & Nêu vấn đề</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Khái quát bài toán chuyển giao: "Làm thế nào để sau 3 ngày tập huấn trở về trường, các thầy cô lan tỏa được cho toàn bộ đồng nghiệp trong trường mà không bị đứt gãy?". Giới thiệu Chu trình PDCA (Plan - Do - Check - Act) và 5 Trụ cột CĐS trường học.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">35 phút</div>
+                <div class="step-badge">Bước 2: Thị phạm & Chốt quy chuẩn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Thị phạm Bàn Kế hoạch Quản trị CBQL: Cách phân bổ nguồn lực hạ tầng, chỉ đạo tổ chuyên môn sinh hoạt nghiên cứu bài học số, cơ chế bảo mật dữ liệu học sinh theo Luật 91/2025/QH15 và cách giám sát tiến độ qua biểu đồ Gantt số.</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">90 phút</div>
+                <div class="step-badge">Bước 3: Hướng dẫn thực hành phân hóa</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Phân chia nhóm tác nghiệp: (1) Cán bộ Quản lý (Hiệu trưởng/Phó HT): Xây dựng bản Kế hoạch hành động CĐS 4 tuần của trường mình; (2) Giáo viên: Rà soát, đóng gói trọn bộ 5 sản phẩm vào Thư mục Hồ sơ Nghiệm thu số cá nhân (Google Drive).</p>
+                </div>
+              </div>
+
+              <div class="inst-step-item">
+                <div class="step-clock">40 phút</div>
+                <div class="step-badge">Bước 4: Nghiệm thu & Bế mạc khóa tập huấn</div>
+                <div class="step-content">
+                  <p><strong>Hoạt động Báo cáo viên:</strong> Báo cáo viên cùng Hội đồng đánh giá tiến hành chấm điểm ngẫu nhiên và nghiệm thu 100% hồ sơ học viên theo Bảng Rubric 5 tiêu chí. Công bố bảng tổng hợp kết quả, vinh danh các cặp đôi số xuất sắc và trao chứng nhận điện tử hoàn thành khóa học.</p>
+                  <p><strong>Sản phẩm thu nhận:</strong> Bản Kế hoạch CĐS cấp trường; 100% Hồ sơ nghiệm thu 5 sản phẩm hợp lệ.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="inst-lesson-footer">
+              <span class="inst-tool-tag">🛠️ Công cụ sử dụng: Bàn Quản trị PDCA, Google Drive, Bảng Rubric Nghiệm thu</span>
+              <a href="#pdca-sec" class="button outline small inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="pdca-sec">
+                👉 Xem Quản trị 5 Trụ cột & Nghiệm thu của Người học
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ==================================================== -->
+      <!-- SECTION 2: CHỈ ĐẠO CHUYÊN BIỆT KHỐI KHTN (BỘ 2)      -->
+      <!-- ==================================================== -->
+      <section class="inst-section" id="inst-sec-khtn">
+        <div class="section-head">
+          <span class="section-index">GIẢNG VIÊN 02 / KHỐI KHTN (BỘ 2)</span>
+          <h2>Chỉ đạo Chuyên biệt dành cho CBQL & Giáo viên Khối KHTN</h2>
+          <p class="section-desc">
+            Trích xuất chuyên sâu từ Bộ tài liệu 2 (117 trang - NAEM 2026): Hướng dẫn Hiệu trưởng, Phó Hiệu trưởng và Tổ trưởng chuyên môn
+            các môn <strong>Toán học, Khoa học Tự nhiên (Vật lí, Hóa học, Sinh học), Tin học, Công nghệ</strong>.
+          </p>
+        </div>
+
+        <div class="inst-cbql-grid">
+          
+          <!-- Card KHTN 1 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill">CBQL · PHÊ DUYỆT KHBD</span>
+              <h4>1. Quy chuẩn Phê duyệt Kế hoạch Bài dạy KHTN theo CV 5512 & TT 22</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Khi phê duyệt Kế hoạch bài dạy môn KHTN và Toán học, CBQL cần kiểm tra 4 điểm bắt buộc:</p>
+              <ul class="cbql-check-list">
+                <li><strong>Địa chỉ Năng lực số rõ ràng:</strong> Phải ghi rõ mã TC1 (lớp 6-7) hoặc TC2 (lớp 8-9) theo CV 3456/BGDĐT-GDPT.</li>
+                <li><strong>Không chiếm quá 50% thời lượng:</strong> Hoạt động tương tác màn hình không được vượt quá 20-25 phút/tiết để bảo đảm thời gian tương tác thực tế và rèn luyện kỹ năng thực hành vận động.</li>
+                <li><strong>Phân hóa 3 tầng A/B/C:</strong> Phải có phiếu học tập phân hóa: Nhóm A (quan sát, ghi nhận hiện tượng); Nhóm B (giải thích, tính toán số liệu); Nhóm C (mô hình hóa, đề xuất giải pháp mở rộng).</li>
+                <li><strong>Phương án Offline Kit dự phòng:</strong> Luôn có kịch bản khi phòng máy mất điện hoặc rớt mạng Internet.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card KHTN 2 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill">CHUYÊN MÔN · MÔ PHỎNG SỐ</span>
+              <h4>2. Tích hợp Mô phỏng Thí nghiệm Số (PhET, GeoGebra) vs Thí nghiệm Thật</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>CBQL chỉ đạo giáo viên phân định rạch ròi phạm vi ứng dụng:</p>
+              <div class="cbql-compare-box">
+                <div class="compare-col sim">
+                  <strong>✅ KHI NÀO DÙNG MÔ PHỎNG SỐ:</strong>
+                  <ul>
+                    <li>Hiện tượng vi mô không thể nhìn bằng mắt: Cấu trúc nguyên tử, chuyển động electron, phân bào, từ trường Trái Đất.</li>
+                    <li>Thí nghiệm độc hại, nguy hiểm, dễ cháy nổ: Kim loại kiềm tác dụng với nước, điều chế khí Clo, axit đặc.</li>
+                    <li>Bài toán hình học không gian động (GeoGebra 3D), hàm số biến thiên liên tục (Desmos).</li>
+                  </ul>
+                </div>
+                <div class="compare-col real">
+                  <strong>⚠️ BẮT BUỘC DÙNG THÍ NGHIỆM THẬT:</strong>
+                  <ul>
+                    <li>Hình thành kỹ năng thao tác cơ bản: Cầm ống nghiệm, nhỏ giọt bằng ống hút bóp, cân điện tử, đun đèn cồn.</li>
+                    <li>Rèn luyện kỹ năng an toàn phòng thí nghiệm và xử lý sự cố tràn hóa chất thực tế.</li>
+                    <li>Tuyệt đối KHÔNG dùng mô phỏng để triệt tiêu kỹ năng vận động thực tế của học sinh.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card KHTN 3 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill">CÔNG NGHỆ · LATEX & OVERLEAF</span>
+              <h4>3. Chuẩn hóa Mã Công thức Toán/Hóa qua LaTeX & Overleaf</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Chấm dứt hoàn toàn tình trạng cắt dán ảnh công thức mờ nhòe hoặc dùng Equation Word dễ vỡ khung:</p>
+              <ul class="cbql-check-list">
+                <li><strong>Số hóa đề thi sang LaTeX:</strong> Hướng dẫn tổ Toán - KHTN dùng Prompt AI chuyển đổi ảnh chụp đề kiểm tra viết tay sang mã nguồn LaTeX trong 30 giây.</li>
+                <li><strong>Biên soạn trên Overleaf:</strong> Xuất bản đề kiểm tra chất lượng cao định dạng PDF phục vụ in ấn chuẩn mực theo Thông tư 22/2021.</li>
+                <li><strong>Kho mã nguồn dùng chung:</strong> Xây dựng ngân hàng câu hỏi định dạng văn bản mở, dễ dàng hoán vị và tái sử dụng qua các năm học.</li>
+              </ul>
+              <div class="prompt-mini-box">
+                <code>Prompt chuyển đổi: "Chuyển toàn bộ công thức toán và phản ứng hóa học sau sang mã LaTeX chuẩn tương thích Overleaf: [Dán nội dung]"</code>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card KHTN 4 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill">CHIẾN LƯỢC · 4 MẠCH AI & STEM</span>
+              <h4>4. Chỉ đạo Triển khai 4 Mạch Trí tuệ Nhân tạo (QĐ 2422) & Dự án STEM</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Định hướng các tổ chuyên môn KHTN lồng ghép 4 mạch AI vào các chủ đề giáo dục STEM gắn liền địa phương Nghệ An:</p>
+              <ul class="cbql-check-list">
+                <li><strong>Mạch NLa (Tư duy dữ liệu & logic):</strong> Dạy học sinh phân tích biểu đồ khí hậu, lượng mưa miền Tây Nghệ An bằng bảng tính số.</li>
+                <li><strong>Mạch NLb (Đạo đức AI):</strong> Yêu cầu học sinh ghi rõ nguồn trích dẫn khi dùng AI hỗ trợ làm bài tập dự án.</li>
+                <li><strong>Mạch NLc (Mô hình hóa số):</strong> Sử dụng phần mềm mô phỏng hệ thống tưới nhỏ giọt tự động cho vùng đất cát Nghi Lộc, Cửa Lò.</li>
+                <li><strong>Mạch NLd (Dự án STEM giải quyết bài toán địa phương):</strong> Dự án lọc nước lũ sinh hoạt bằng vật liệu địa phương (than hoạt tính, cát thạch anh); Mô hình cảnh báo sạt lở đất vùng cao Kỳ Sơn.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cbql-action-bar">
+          <a href="#workbench" class="button primary inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="workbench">
+            ⚡ Xem Bàn thực hành Khảo thí & LaTeX của Học viên →
+          </a>
+        </div>
+      </section>
+
+      <!-- ==================================================== -->
+      <!-- SECTION 3: CHỈ ĐẠO CHUYÊN BIỆT KHỐI KHXH (BỘ 1)      -->
+      <!-- ==================================================== -->
+      <section class="inst-section" id="inst-sec-khxh">
+        <div class="section-head">
+          <span class="section-index">GIẢNG VIÊN 03 / KHỐI KHXH (BỘ 1)</span>
+          <h2>Chỉ đạo Chuyên biệt dành cho CBQL & Giáo viên Khối KHXH</h2>
+          <p class="section-desc">
+            Trích xuất chuyên sâu từ Bộ tài liệu 1 (110 trang - NAEM 2026): Hướng dẫn Hiệu trưởng, Phó Hiệu trưởng và Tổ trưởng chuyên môn
+            các môn <strong>Ngữ văn, Lịch sử và Địa lí, Giáo dục công dân, Nghệ thuật, HĐTN-HN</strong>.
+          </p>
+        </div>
+
+        <div class="inst-cbql-grid">
+          
+          <!-- Card KHXH 1 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill alert">CHỦ QUYỀN QUỐC GIA · TT 17/2025</span>
+              <h4>1. Thẩm định Tính Chuẩn mực Bản đồ Số & Nguồn Sử liệu Số</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Nguyên tắc sống còn trong quản trị chuyên môn môn Lịch sử & Địa lí cấp THCS:</p>
+              <ul class="cbql-check-list">
+                <li><strong>Kiểm soát Chủ quyền Biển Đảo:</strong> Nghiêm cấm tuyệt đối việc sử dụng bản đồ trực tuyến không rõ nguồn gốc có "đường lưỡi bò" phi pháp hoặc thiếu hai quần đảo Hoàng Sa, Trường Sa. Chỉ sử dụng bản đồ số đã được thẩm định theo Thông tư 17/2025/TT-BGDĐT hoặc Cục Đo đạc, Bản đồ và Thông tin địa lý Việt Nam.</li>
+                <li><strong>Thẩm định Nguồn sử liệu:</strong> Chỉ cho phép học sinh dẫn nguồn từ Cổng thông tin Đảng Cộng sản, Báo Nhân Dân, Báo Quân đội Nhân dân, Tỉnh ủy Nghệ An, Bảo tàng Xô Viết Nghệ Tĩnh. Tuyệt đối không trích dẫn blog cá nhân hay mạng xã hội không kiểm chứng.</li>
+                <li><strong>Quy trình kiểm tra 3 bước của Tổ trưởng:</strong> Rà soát link tư liệu → Kiểm tra chứng nhận bản quyền số → Đối chiếu niên đại lịch sử trước khi phê duyệt giáo án.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card KHXH 2 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill alert">PHÁP LÝ · BẢO VỆ DỮ LIỆU HS</span>
+              <h4>2. Tuân thủ Nghiêm ngặt Luật Bảo vệ Dữ liệu Cá nhân 91/2025 & Luật Trẻ em 2016</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Học sinh THCS là trẻ em dưới 16 tuổi. CBQL phải ban hành Quy chế bảo mật dữ liệu học đường:</p>
+              <ul class="cbql-check-list">
+                <li><strong>3 KHÔNG đối với Hình ảnh & Điểm số:</strong>
+                  <br>• KHÔNG đăng ảnh chân dung cận mặt học sinh lên Facebook, TikTok trường khi chưa có giấy đồng thuận của cha mẹ.
+                  <br>• KHÔNG công khai bảng điểm chi tiết kèm họ tên đầy đủ lên nhóm Zalo phụ huynh chung.
+                  <br>• KHÔNG nạp danh sách học sinh (kèm ngày sinh, số điện thoại, địa chỉ nhà) vào các phần mềm AI đám mây nước ngoài.
+                </li>
+                <li><strong>Ẩn danh hóa Dữ liệu:</strong> Khi làm bài tập thực hành AI hoặc nghiên cứu sư phạm, phải thay tên học sinh bằng mã số (HS01, HS02).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card KHXH 3 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill">VĂN HÓA SỐ · DI SẢN XỨ NGHỆ</span>
+              <h4>3. Khai thác Tài nguyên Mở (OER) & Phát huy Giá trị Di sản Xứ Nghệ</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Số hóa không gian văn hóa truyền thống phục vụ bài giảng Ngữ văn và Lịch sử địa phương:</p>
+              <ul class="cbql-check-list">
+                <li><strong>Sổ tay Tri thức NotebookLM Xứ Nghệ:</strong> Hướng dẫn tổ chuyên môn nạp tuyển tập tư liệu: Dân ca Ví, Giặm Nghệ Tĩnh (Di sản UNESCO); Khu di tích Quốc gia đặc biệt Kim Liên (Nam Đàn); Khu di tích lịch sử Truông Bồn (Đô Lương); Lịch sử phong trào Xô Viết Nghệ Tĩnh 1930–1931.</li>
+                <li><strong>Trải nghiệm Thực tế ảo VR360:</strong> Tận dụng các chuyến tham quan ảo tại bảo tàng số để học sinh vùng sâu Kỳ Sơn, Tương Dương được "đến thăm" quê Bác ngay tại lớp học.</li>
+                <li><strong>Sử dụng AI có phản biện:</strong> Cho học sinh dùng AI vẽ bối cảnh truyện dân gian hoặc nhân vật văn học, sau đó yêu cầu học sinh viết bài so sánh điểm giống và khác với nguyên tác.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card KHXH 4 -->
+          <div class="cbql-spec-card">
+            <div class="cbql-card-head">
+              <span class="cbql-role-pill">KỸ NĂNG SỐ · CHỐNG TIN GIẢ</span>
+              <h4>4. Phòng chống Tin giả, Bạo lực Học đường & Quy trình SIFT</h4>
+            </div>
+            <div class="cbql-card-body">
+              <p>Chỉ đạo giáo viên GDCD và GV Chủ nhiệm rèn luyện văn hóa ứng xử văn minh trên không gian mạng:</p>
+              <ul class="cbql-check-list">
+                <li><strong>Huấn luyện Quy trình SIFT 4 bước:</strong> S (Stop - Dừng lại) → I (Investigate source - Điều tra nguồn) → F (Find coverage - Tìm nguồn uy tín hơn) → T (Trace context - Truy vết ngữ cảnh).</li>
+                <li><strong>Quy tắc "4 KHÔNG - 3 CÓ" trên mạng xã hội:</strong> Không chia sẻ tin giật gân, Không bình luận miệt thị, Không cung cấp mật khẩu, Không kết bạn người lạ; Có tư duy phản biện, Có trích dẫn nguồn, Có báo cáo khi thấy sự cố.</li>
+                <li><strong>Quy trình xử lý Cyberbullying cấp trường:</strong> Tiếp nhận thông tin trong 30 phút → Lưu giữ bằng chứng ảnh chụp → Cách ly học sinh liên quan → Tư vấn tâm lý sư phạm, tuyệt đối không bêu tên trước toàn trường.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cbql-action-bar">
+          <a href="#safety" class="button primary inst-switch-to-learner-btn" data-switch-role="learner" data-target-route="safety">
+            🛡️ Xem Cẩm nang ATM 8 miền & SIFT của Học viên →
+          </a>
+        </div>
+      </section>
+
+      <!-- ==================================================== -->
+      <!-- SECTION 4: CẨM NANG BÁO CÁO VIÊN & NGHỆ AN OFFLINE KIT -->
+      <!-- ==================================================== -->
+      <section class="inst-section" id="inst-sec-offline">
+        <div class="section-head">
+          <span class="section-index">GIẢNG VIÊN 04 / CẨM NANG & OFFLINE KIT</span>
+          <h2>Cẩm nang Điều phối Báo cáo viên & Kịch bản Thích ứng Nghệ An</h2>
+          <p class="section-desc">
+            Xử lý linh hoạt đặc thù địa bàn 21 huyện, thị, thành tỉnh Nghệ An: Từ điểm trường hiện đại tại TP Vinh, Cửa Lò 
+            đến các điểm trường vùng cao biên giới thường xuyên gặp khó khăn về hạ tầng đường truyền mạng và thiết bị.
+          </p>
+        </div>
+
+        <div class="inst-playbook-grid">
+          
+          <div class="playbook-card">
+            <h4>🔴 Tình huống 1: Mất mạng Internet toàn bộ Hội trường</h4>
+            <div class="playbook-solution">
+              <p><strong>Hành động tức thì của Báo cáo viên:</strong></p>
+              <ol>
+                <li>Không bối rối, thông báo chuyển ngay sang <em>"Chế độ Ngoại tuyến Thích ứng (Offline Mode)"</em>.</li>
+                <li>Bật trạm phát Wi-Fi 4G di động của ban tổ chức để kết nối máy tính Báo cáo viên.</li>
+                <li>Phát 02 USB chứa sẵn: Toàn bộ thư mục HTML website bồi dưỡng, bộ cài PhET Offline, tập tin Word KHBD mẫu, danh sách 45 Prompts định dạng file văn bản (.txt).</li>
+                <li>Yêu cầu học viên làm việc nhóm: Thảo luận trên giấy A3, sử dụng "Bộ khung Thẻ bài Prompt 4 thẻ" viết tay để hoàn thiện tư duy sư phạm trước khi thao tác trên máy.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="playbook-card">
+            <h4>⚡ Tình huống 2: Mất điện đột ngột tại Điểm cầu</h4>
+            <div class="playbook-solution">
+              <p><strong>Hành động tức thì của Báo cáo viên:</strong></p>
+              <ol>
+                <li>Khai thác tối đa tài liệu in sẵn (Tập hồ sơ bồi dưỡng phát đầu khóa).</li>
+                <li>Chuyển từ thực hành máy tính sang <em>"Hoạt động Sân khấu hóa & Diễn tập Tình huống"</em>: Cho 2 nhóm học viên đóng vai xử lý khủng hoảng an toàn mạng hoặc phản biện một kế hoạch bài dạy in sẵn.</li>
+                <li>Tận dụng thời gian pin dự phòng của laptop báo cáo viên để tiếp tục hướng dẫn nếu cần.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="playbook-card">
+            <h4>🤝 Tình huống 3: Học viên Nhóm A (Lớn tuổi, Ngại công nghệ)</h4>
+            <div class="playbook-solution">
+              <p><strong>Hành động tức thì của Báo cáo viên:</strong></p>
+              <ol>
+                <li>Áp dụng nguyên tắc <em>"Pha loãng áp lực"</em>: Tuyệt đối không ép buộc học viên nhóm A phải tự gõ lệnh phức tạp trong 30 phút đầu.</li>
+                <li>Kích hoạt cơ chế "Cặp đôi số": Đổi chỗ ngồi để 1 đồng chí giáo viên trẻ nhóm C ngồi kèm 1 đồng chí lớn tuổi nhóm A.</li>
+                <li>Phân vai trong cặp: Đồng chí lớn tuổi là "Chuyên gia Sư phạm" chịu trách nhiệm về nội dung bài dạy; Đồng chí trẻ là "Trợ lý Công nghệ" hỗ trợ gõ prompt và điều khiển AI. Kết quả là cả hai cùng học hỏi lẫn nhau.</li>
+              </ol>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Checklist 10 Điểm -->
+        <div class="inst-checklist-box">
+          <h3 class="checklist-title">📋 Checklist 10 Điểm Báo cáo viên Rà soát trước mỗi Buổi Lên lớp</h3>
+          <div class="checklist-grid-2">
+            <label class="inst-check-item"><input type="checkbox" checked> 1. Kiểm tra máy chiếu, cổng kết nối HDMI/VGA và đường truyền Internet phòng máy.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 2. Đã tải sẵn bản offline của toàn bộ slide, video và tài liệu về máy tính cá nhân.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 3. Chuẩn bị sẵn 02 USB cứu hộ chứa tài liệu và bộ công cụ cài đặt offline.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 4. In sẵn 30 bộ Phiếu học tập, Bảng ma trận tích hợp và Bảng Rubric chấm điểm khổ A4/A3.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 5. Mở sẵn tài khoản AI (Gemini, ChatGPT, NotebookLM) và kiểm tra hạn mức sử dụng.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 6. Bố trí bàn ghế theo cụm nhóm 4–6 người để thuận tiện thực hành cặp đôi số.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 7. Phân công trợ giảng kỹ thuật phụ trách hỗ trợ trực tiếp từng dãy bàn học viên.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 8. Nắm vững danh sách học viên theo khối môn (KHTN, KHXH) để phân nhóm cân bằng.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 9. Kiểm tra cổng tiếp nhận sản phẩm (Google Drive chung) và phân quyền truy cập.</label>
+            <label class="inst-check-item"><input type="checkbox" checked> 10. Dán mã QR quét nhanh tài liệu khóa học tại các góc phòng để học viên tiện truy cập.</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================== -->
+      <!-- SECTION 5: TIÊU CHUẨN & RUBRIC CHẤM ĐIỂM CỦA GIẢNG VIÊN -->
+      <!-- ==================================================== -->
+      <section class="inst-section" id="inst-sec-rubric">
+        <div class="section-head">
+          <span class="section-index">GIẢNG VIÊN 05 / RUBRIC ĐÁNH GIÁ</span>
+          <h2>Tiêu chuẩn Nghiệm thu & Bảng Rubric Đánh giá 100 điểm</h2>
+          <p class="section-desc">
+            Khung đánh giá định lượng 5 tiêu chí (mỗi tiêu chí 20 điểm) dùng cho Báo cáo viên và Hội đồng chuyên môn 
+            khi nghiệm thu 5 sản phẩm đầu ra của Cán bộ Quản lý và Giáo viên THCS.
+          </p>
+        </div>
+
+        <!-- 5 Tiêu chí Rubric -->
+        <div class="rubric-table-wrapper">
+          <table class="rubric-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Tiêu chí Đánh giá (20đ/TC)</th>
+                <th style="width: 25%;">Mức Xuất sắc (18–20đ)</th>
+                <th style="width: 25%;">Mức Khá / Đạt (12–17đ)</th>
+                <th style="width: 25%;">Cần Hoàn thiện (<12đ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>TC1: Tính Chuẩn mực Sư phạm & Pháp lý</strong><br><small>CV 5512, TT 18, TT 22, QĐ 2422</small></td>
+                <td>Tiến trình bài dạy 4 bước chuẩn 5512 rõ nét; tích hợp mục tiêu NLS và ATM chính xác; xác lập chuẩn đánh giá minh bạch.</td>
+                <td>Đủ cấu trúc 4 bước theo CV 5512; mục tiêu NLS có đề cập nhưng chưa đo lường định lượng được cụ thể.</td>
+                <td>Cấu trúc bài dạy sơ sài; không ghi rõ địa chỉ tích hợp NLS hoặc đưa vào hình thức đối phó.</td>
+              </tr>
+              <tr>
+                <td><strong>TC2: Mức độ Tích hợp Năng lực số & ATM</strong><br><small>TC1/TC2, ATM1-8, 4 mạch AI</small></td>
+                <td>Tích hợp tự nhiên, nhuần nhuyễn vào hoạt động bộ môn; không làm phát sinh tiết mới; học sinh làm chủ công cụ số.</td>
+                <td>Có sử dụng công nghệ nhưng chủ yếu ở khâu giáo viên trình chiếu; học sinh ít có cơ hội thao tác trực tiếp.</td>
+                <td>Lạm dụng công nghệ quá 50% thời lượng hoặc chỉ dùng máy tính thay thế bảng đen thông thường.</td>
+              </tr>
+              <tr>
+                <td><strong>TC3: Tính Thích ứng & Phân hóa A/B/C</strong><br><small>Kèm phương án Offline Kit dự phòng</small></td>
+                <td>Phân định rõ nhiệm vụ cho nhóm A, B, C; có phương án Offline Kit đầy đủ (phiếu in sẵn, mô phỏng chạy cục bộ) khi mất mạng.</td>
+                <td>Có phân hóa nhưng ranh giới nhiệm vụ chưa rõ ràng; phương án ngoại tuyến còn sơ sài.</td>
+                <td>Dạy cào bằng một mức độ cho toàn bộ học sinh; không có bất kỳ kịch bản dự phòng nào khi mất mạng.</td>
+              </tr>
+              <tr>
+                <td><strong>TC4: Ứng dụng AI Minh bạch & Đạo đức</strong><br><small>Luật 91/2025/QH15 & Bản quyền mở</small></td>
+                <td>Prompt 4 thẻ chuẩn hóa; kết quả AI được biên tập, kiểm chứng nghiêm ngặt; minh bạch nguồn gốc và bảo vệ dữ liệu học sinh tuyệt đối.</td>
+                <td>Có dùng AI nhưng chưa tối ưu prompt; còn giữ lại một số câu từ chung chung của AI; có trích dẫn nguồn.</td>
+                <td>Sao chép nguyên văn sản phẩm của AI mà không thẩm định sư phạm; để lộ lọt thông tin cá nhân của học sinh.</td>
+              </tr>
+              <tr>
+                <td><strong>TC5: Tính Khả thi & Chuyển giao Đồng nghiệp</strong><br><small>Khả năng nhân rộng & Cặp đôi số</small></td>
+                <td>Sản phẩm hoàn thiện, áp dụng được ngay vào tuần dạy tiếp theo; có khả năng chia sẻ làm mẫu cho tổ chuyên môn và trường.</td>
+                <td>Áp dụng được vào thực tế nhưng cần chỉnh sửa thêm một số chi tiết kỹ thuật nhỏ trước khi dạy.</td>
+                <td>Mang tính chất biểu diễn, phức tạp quá mức cần thiết, khó triển khai tại điều kiện phòng máy của trường.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Interactive Rubric Calculator for Instructors -->
+        <div class="rubric-calculator-card">
+          <div class="calc-header">
+            <h3>🧮 Công cụ Chấm điểm & Xếp loại Trực tuyến dành cho Giảng viên</h3>
+            <p>Chọn mức điểm từng tiêu chí để tự động tính tổng điểm, xếp loại và tạo nhận xét mẫu nghiệm thu:</p>
+          </div>
+
+          <div class="calc-grid-5">
+            <div class="calc-item">
+              <label for="calc-tc1">TC1: Sư phạm & Pháp lý</label>
+              <select id="calc-tc1" class="calc-select">
+                <option value="20">Xuất sắc (20 điểm)</option>
+                <option value="18" selected>Khá giỏi (18 điểm)</option>
+                <option value="14">Đạt (14 điểm)</option>
+                <option value="8">Cần sửa (8 điểm)</option>
+              </select>
+            </div>
+            <div class="calc-item">
+              <label for="calc-tc2">TC2: Tích hợp NLS & ATM</label>
+              <select id="calc-tc2" class="calc-select">
+                <option value="20">Xuất sắc (20 điểm)</option>
+                <option value="18" selected>Khá giỏi (18 điểm)</option>
+                <option value="14">Đạt (14 điểm)</option>
+                <option value="8">Cần sửa (8 điểm)</option>
+              </select>
+            </div>
+            <div class="calc-item">
+              <label for="calc-tc3">TC3: Phân hóa & Offline Kit</label>
+              <select id="calc-tc3" class="calc-select">
+                <option value="20">Xuất sắc (20 điểm)</option>
+                <option value="17" selected>Khá giỏi (17 điểm)</option>
+                <option value="13">Đạt (13 điểm)</option>
+                <option value="7">Cần sửa (7 điểm)</option>
+              </select>
+            </div>
+            <div class="calc-item">
+              <label for="calc-tc4">TC4: Đạo đức AI & Minh bạch</label>
+              <select id="calc-tc4" class="calc-select">
+                <option value="20">Xuất sắc (20 điểm)</option>
+                <option value="19" selected>Khá giỏi (19 điểm)</option>
+                <option value="15">Đạt (15 điểm)</option>
+                <option value="8">Cần sửa (8 điểm)</option>
+              </select>
+            </div>
+            <div class="calc-item">
+              <label for="calc-tc5">TC5: Khả thi & Chuyển giao</label>
+              <select id="calc-tc5" class="calc-select">
+                <option value="20">Xuất sắc (20 điểm)</option>
+                <option value="18" selected>Khá giỏi (18 điểm)</option>
+                <option value="14">Đạt (14 điểm)</option>
+                <option value="8">Cần sửa (8 điểm)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-result-row">
+            <div class="calc-total-box">
+              <span>TỔNG ĐIỂM:</span>
+              <strong id="calc-total-score">90 / 100</strong>
+            </div>
+            <div class="calc-grade-box">
+              <span>XẾP LOẠI NGHIỆM THU:</span>
+              <span class="badge success" id="calc-total-grade">XUẤT SẮC (ĐẠT CHUẨN NLS THCS)</span>
+            </div>
+            <button type="button" class="button primary" id="btn-copy-eval-report">
+              📋 Sao chép Nhận xét Nghiệm thu Mẫu
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ==================================================== -->
+      <!-- SECTION 6: MA TRẬN PHÂN CÔNG TRÁCH NHIỆM RACI        -->
+      <!-- ==================================================== -->
+      <section class="inst-section" id="inst-sec-raci">
+        <div class="section-head">
+          <span class="section-index">GIẢNG VIÊN 06 / MA TRẬN RACI</span>
+          <h2>Ma trận Phân công Trách nhiệm RACI trong Bồi dưỡng</h2>
+          <p class="section-desc">
+            Phân định rõ ràng trách nhiệm trong chu trình 3 ngày tập huấn và 4 tuần chuyển giao tại cơ sở:
+            <strong>R</strong> (Responsible - Thực hiện) · <strong>A</strong> (Accountable - Phê duyệt) · 
+            <strong>C</strong> (Consulted - Tham vấn) · <strong>I</strong> (Informed - Thông báo).
+          </p>
+        </div>
+
+        <div class="raci-table-wrapper">
+          <table class="raci-table">
+            <thead>
+              <tr>
+                <th style="width: 32%;">Hạng mục Hoạt động Bồi dưỡng</th>
+                <th style="width: 11%;">Ban Chỉ đạo Sở/Phòng</th>
+                <th style="width: 11%;">Báo cáo viên chính</th>
+                <th style="width: 11%;">Trợ giảng Kỹ thuật</th>
+                <th style="width: 11%;">CBQL Nhà trường</th>
+                <th style="width: 12%;">Tổ trưởng Chuyên môn</th>
+                <th style="width: 12%;">Học viên Cặp đôi số</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Khảo sát NLS đầu vào & Phân luồng A/B/C</strong></td>
+                <td class="raci-i">I</td>
+                <td class="raci-a">A</td>
+                <td class="raci-r">R</td>
+                <td class="raci-c">C</td>
+                <td class="raci-c">C</td>
+                <td class="raci-r">R</td>
+              </tr>
+              <tr>
+                <td><strong>2. Thành lập & Điều phối mạng lưới Cặp đôi số</strong></td>
+                <td class="raci-i">I</td>
+                <td class="raci-c">C</td>
+                <td class="raci-i">I</td>
+                <td class="raci-a">A</td>
+                <td class="raci-r">R</td>
+                <td class="raci-r">R</td>
+              </tr>
+              <tr>
+                <td><strong>3. Thị phạm công cụ & Hướng dẫn Prompt 4 thẻ</strong></td>
+                <td class="raci-i">I</td>
+                <td class="raci-a">A/R</td>
+                <td class="raci-r">R</td>
+                <td class="raci-i">I</td>
+                <td class="raci-c">C</td>
+                <td class="raci-i">I</td>
+              </tr>
+              <tr>
+                <td><strong>4. Biên soạn Kế hoạch bài dạy 4C chuẩn 5512</strong></td>
+                <td class="raci-i">I</td>
+                <td class="raci-c">C</td>
+                <td class="raci-i">I</td>
+                <td class="raci-i">I</td>
+                <td class="raci-c">C</td>
+                <td class="raci-r">R</td>
+              </tr>
+              <tr>
+                <td><strong>5. Xây dựng Kho học liệu số & Đề thi LaTeX TT 22</strong></td>
+                <td class="raci-i">I</td>
+                <td class="raci-c">C</td>
+                <td class="raci-r">R</td>
+                <td class="raci-i">I</td>
+                <td class="raci-c">C</td>
+                <td class="raci-r">R</td>
+              </tr>
+              <tr>
+                <td><strong>6. Lập Kế hoạch Chuyển đổi số cấp trường (PDCA)</strong></td>
+                <td class="raci-c">C</td>
+                <td class="raci-c">C</td>
+                <td class="raci-i">I</td>
+                <td class="raci-a">A/R</td>
+                <td class="raci-r">R</td>
+                <td class="raci-c">C</td>
+              </tr>
+              <tr>
+                <td><strong>7. Đánh giá & Nghiệm thu 5 sản phẩm theo Rubric</strong></td>
+                <td class="raci-a">A</td>
+                <td class="raci-r">R</td>
+                <td class="raci-r">R</td>
+                <td class="raci-c">C</td>
+                <td class="raci-c">C</td>
+                <td class="raci-i">I</td>
+              </tr>
+              <tr>
+                <td><strong>8. Theo dõi chuyển giao & Cấp chứng nhận bồi dưỡng</strong></td>
+                <td class="raci-a">A</td>
+                <td class="raci-c">C</td>
+                <td class="raci-i">I</td>
+                <td class="raci-r">R</td>
+                <td class="raci-r">R</td>
+                <td class="raci-i">I</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="raci-legend">
+          <span><strong class="raci-r">R</strong> (Responsible): Người trực tiếp thực hiện nhiệm vụ</span>
+          <span><strong class="raci-a">A</strong> (Accountable): Người chịu trách nhiệm phê duyệt cao nhất</span>
+          <span><strong class="raci-c">C</strong> (Consulted): Người được tham vấn chuyên môn</span>
+          <span><strong class="raci-i">I</strong> (Informed): Người được thông báo kết quả</span>
+        </div>
+
+      </section>
+
+    </div>
+    <!-- END ROLE VIEW: INSTRUCTOR -->
+    </main>
 
   <!-- Footer -->
   <footer>

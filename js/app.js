@@ -59,6 +59,31 @@ function navigateTo(rawHash, subTab = null, searchPrompt = null) {
   const cleanHash = (rawHash || '').replace(/^#/, '').trim();
   const targetId = ROUTE_MAP[cleanHash] || 'home';
 
+  // Ensure learner panel is active if navigating to a learner route
+  const instPanel = $('#role-view-instructor');
+  if (instPanel && instPanel.style.display === 'block') {
+    const learnerBtn = $('#tab-btn-learner');
+    const instBtn = $('#tab-btn-instructor');
+    const learnerPanel = $('#role-view-learner');
+    const spaStepper = $('#spa-stepper');
+    if (instBtn) {
+      instBtn.classList.remove('active');
+      instBtn.setAttribute('aria-selected', 'false');
+      const b = instBtn.querySelector('.role-badge');
+      if (b) b.textContent = 'Chuyển sang';
+    }
+    if (learnerBtn) {
+      learnerBtn.classList.add('active');
+      learnerBtn.setAttribute('aria-selected', 'true');
+      const b = learnerBtn.querySelector('.role-badge');
+      if (b) b.textContent = 'Đang chọn';
+    }
+    instPanel.style.display = 'none';
+    if (learnerPanel) learnerPanel.style.display = 'block';
+    if (spaStepper) spaStepper.style.display = '';
+    localStorage.setItem('nls_role_mode', 'learner');
+  }
+
   // 1. Highlight active view
   $$('.spa-view').forEach(v => {
     v.classList.toggle('active', v.id === targetId);
@@ -1184,6 +1209,7 @@ function setupActionButtons() {
 // ==========================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  setupRoleSwitcher();
   renderLessons();
   renderPrompts();
   setupRouter();
@@ -1196,3 +1222,183 @@ document.addEventListener('DOMContentLoaded', () => {
   setupKpiEvaluation();
   setupMissionCheckboxes();
 });
+
+
+// ==========================================
+// 10. DUAL ROLES SYSTEM & INSTRUCTOR VIEW
+// ==========================================
+
+function switchRoleMode(mode, targetRoute = null) {
+  const learnerBtn = $('#tab-btn-learner');
+  const instBtn = $('#tab-btn-instructor');
+  const learnerPanel = $('#role-view-learner');
+  const instPanel = $('#role-view-instructor');
+  const spaStepper = $('#spa-stepper');
+
+  if (mode === 'instructor') {
+    if (learnerBtn) {
+      learnerBtn.classList.remove('active');
+      learnerBtn.setAttribute('aria-selected', 'false');
+      const b = learnerBtn.querySelector('.role-badge');
+      if (b) b.textContent = 'Chuyển sang';
+    }
+    if (instBtn) {
+      instBtn.classList.add('active');
+      instBtn.setAttribute('aria-selected', 'true');
+      const b = instBtn.querySelector('.role-badge');
+      if (b) b.textContent = 'Đang chọn';
+    }
+    if (learnerPanel) learnerPanel.style.display = 'none';
+    if (instPanel) instPanel.style.display = 'block';
+    if (spaStepper) spaStepper.style.display = 'none'; // Hide step navigation in instructor view
+
+    localStorage.setItem('nls_role_mode', 'instructor');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    toast('Đã chuyển sang Chế độ Người dạy (Báo cáo viên & Giảng viên)');
+  } else {
+    if (instBtn) {
+      instBtn.classList.remove('active');
+      instBtn.setAttribute('aria-selected', 'false');
+      const b = instBtn.querySelector('.role-badge');
+      if (b) b.textContent = 'Chuyển sang';
+    }
+    if (learnerBtn) {
+      learnerBtn.classList.add('active');
+      learnerBtn.setAttribute('aria-selected', 'true');
+      const b = learnerBtn.querySelector('.role-badge');
+      if (b) b.textContent = 'Đang chọn';
+    }
+    if (instPanel) instPanel.style.display = 'none';
+    if (learnerPanel) learnerPanel.style.display = 'block';
+    if (spaStepper) spaStepper.style.display = '';
+
+    localStorage.setItem('nls_role_mode', 'learner');
+    
+    if (targetRoute) {
+      navigateTo(targetRoute);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    toast('Đã chuyển sang Chế độ Người học (Học viên: GV & CBQL)');
+  }
+}
+
+function setupRoleSwitcher() {
+  const learnerBtn = $('#tab-btn-learner');
+  const instBtn = $('#tab-btn-instructor');
+
+  if (learnerBtn) {
+    learnerBtn.addEventListener('click', () => switchRoleMode('learner'));
+  }
+  if (instBtn) {
+    instBtn.addEventListener('click', () => switchRoleMode('instructor'));
+  }
+
+  // Handle all cross-role switch buttons
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('[data-switch-role]');
+    if (!btn) return;
+    const role = btn.dataset.switchRole;
+    const targetRoute = btn.dataset.targetRoute || null;
+    switchRoleMode(role, targetRoute);
+  });
+
+  // Instructor Subnav smooth scrolling
+  const subnavBtns = $$('.inst-subnav-btn');
+  subnavBtns.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      subnavBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const targetId = btn.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Rubric Calculator
+  setupRubricCalculator();
+
+  // Restore saved role mode if any
+  const savedMode = localStorage.getItem('nls_role_mode');
+  if (savedMode === 'instructor') {
+    switchRoleMode('instructor');
+  }
+}
+
+function setupRubricCalculator() {
+  const tc1 = $('#calc-tc1');
+  const tc2 = $('#calc-tc2');
+  const tc3 = $('#calc-tc3');
+  const tc4 = $('#calc-tc4');
+  const tc5 = $('#calc-tc5');
+  const totalScoreEl = $('#calc-total-score');
+  const totalGradeEl = $('#calc-total-grade');
+  const copyBtn = $('#btn-copy-eval-report');
+
+  if (!tc1 || !tc2 || !tc3 || !tc4 || !tc5) return;
+
+  function calculateScore() {
+    const s1 = Number(tc1.value) || 0;
+    const s2 = Number(tc2.value) || 0;
+    const s3 = Number(tc3.value) || 0;
+    const s4 = Number(tc4.value) || 0;
+    const s5 = Number(tc5.value) || 0;
+    const total = s1 + s2 + s3 + s4 + s5;
+
+    if (totalScoreEl) totalScoreEl.textContent = `${total} / 100`;
+
+    let grade = 'CHƯA ĐẠT';
+    let gradeClass = 'danger';
+
+    if (total >= 90) {
+      grade = 'XUẤT SẮC (ĐẠT CHUẨN NLS THCS)';
+      gradeClass = 'success';
+    } else if (total >= 80) {
+      grade = 'GIỎI (ĐẠT CHUẨN NLS THCS)';
+      gradeClass = 'success';
+    } else if (total >= 65) {
+      grade = 'KHÁ (ĐẠT YÊU CẦU BỒI DƯỠNG)';
+      gradeClass = 'primary';
+    } else if (total >= 50) {
+      grade = 'TRUNG BÌNH (CẦN HOÀN THIỆN THÊM)';
+      gradeClass = 'warning';
+    }
+
+    if (totalGradeEl) {
+      totalGradeEl.textContent = grade;
+      totalGradeEl.className = `badge ${gradeClass}`;
+    }
+
+    return { total, grade, s1, s2, s3, s4, s5 };
+  }
+
+  [tc1, tc2, tc3, tc4, tc5].forEach(select => {
+    select.addEventListener('change', calculateScore);
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const res = calculateScore();
+      const reportText = `BIÊN BẢN ĐÁNH GIÁ & NGHIỆM THU SẢN PHẨM SƯ PHẠM SỐ THCS (NAEM 2026)
+---------------------------------------------------------------
+1. Tính Chuẩn mực Sư phạm & Pháp lý (CV 5512, TT 18, TT 22): ${res.s1}/20 điểm
+2. Mức độ Tích hợp Năng lực số & ATM (TC1/TC2, ATM1-8): ${res.s2}/20 điểm
+3. Tính Thích ứng & Phân hóa A/B/C + Phương án Offline Kit: ${res.s3}/20 điểm
+4. Ứng dụng AI Minh bạch & Đạo đức Dữ liệu (Luật 91/2025): ${res.s4}/20 điểm
+5. Tính Khả thi & Khả năng Chuyển giao Đồng nghiệp: ${res.s5}/20 điểm
+---------------------------------------------------------------
+TỔNG ĐIỂM: ${res.total}/100 ĐIỂM
+XẾP LOẠI: ${res.grade}
+HỘI ĐỒNG BÁO CÁO VIÊN: Đạt yêu cầu cấp chứng nhận hoàn thành khóa bồi dưỡng.`;
+
+      navigator.clipboard?.writeText(reportText).then(() => {
+        toast('Đã sao chép Biên bản Đánh giá Nghiệm thu mẫu thành công!');
+      }).catch(() => {
+        toast('Đã tính điểm: ' + res.total + '/100');
+      });
+    });
+  }
+}
