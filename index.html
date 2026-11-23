@@ -360,6 +360,9 @@
       </div>
 
       <div class="mission-actions">
+        <button type="button" class="button secondary btn-watch-video" id="btn-watch-video-m1" onclick="openIntroVideoModal('buoi1')">
+          🎬 Xem Video Intro Buổi 1 (22s)
+        </button>
         <a class="button primary" href="#self-assess-sec" data-route="self-assess-sec">
           Làm Khảo sát NLS cá nhân ngay →
         </a>
@@ -1633,6 +1636,27 @@
               <div class="inst-lesson-badge">NGÀY 01 · BUỔI 01 · SÁNG (4 TIẾT)</div>
               <h3 class="inst-lesson-title">Cơ sở pháp lý, Chuyển đổi số & Khung năng lực số THCS</h3>
               <p class="inst-lesson-target"><strong>Mục tiêu Giảng viên:</strong> Giúp 100% học viên nhận diện đúng vị trí NLS cá nhân theo TT 18/2026/TT-BGDĐT; xác lập mạng lưới "Cặp đôi số" và hoàn thành sơ đồ ánh xạ tích hợp CTGDPT 2018.</p>
+              
+              <!-- Video Intro Player Buổi 1 -->
+              <div class="inst-video-preview-box">
+                <div class="video-preview-header">
+                  <span class="video-pill-badge">🎬 VIDEO ĐẶT VẤN ĐỀ (PROBLEM-HOOK)</span>
+                  <span class="video-duration-tag">⏱️ 22s · 1080p Full HD</span>
+                </div>
+                <div class="video-player-wrapper">
+                  <video id="video-intro-buoi1" controls preload="metadata" poster="assets/video/intro_buoi1_thumb.jpg">
+                    <source src="assets/video/intro_buoi1.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+                  </video>
+                </div>
+                <div class="video-preview-caption">
+                  <span>💡 <em>Kịch bản thị phạm: Nghịch lý 10 năm máy chiếu vs Thế hệ công dân số thích ứng tại Nghệ An.</em></span>
+                  <div class="video-caption-actions">
+                    <button type="button" class="button small secondary" onclick="openIntroVideoModal('buoi1')">⛶ Xem Phóng to</button>
+                    <a href="assets/video/intro_buoi1.mp4" download="Video_Intro_Buoi1_NLS_NgheAn.mp4" class="button small outline">⬇ Tải MP4 (0.73MB)</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="inst-steps-timeline">
@@ -2490,6 +2514,40 @@
       <div class="modal-footer">
         <button class="button small secondary modal-close">Đóng</button>
         <button class="button small primary" id="modal-copy">📋 Sao chép Prompt toàn văn</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Intro Modal Dialog -->
+  <div class="modal-backdrop" id="video-intro-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <div class="modal-dialog modal-video-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="category" id="video-modal-cat">🎬 VIDEO ĐẶT VẤN ĐỀ · THỊ PHẠM SƯ PHẠM</span>
+          <h3 id="video-modal-title">Buổi 1: Nghịch lý 10 năm & Chuyển đổi số thích ứng tại Nghệ An</h3>
+        </div>
+        <button class="modal-close" id="video-modal-close" aria-label="Đóng cửa sổ">✕</button>
+      </div>
+      <div class="modal-body modal-video-body">
+        <div class="modal-video-container">
+          <video id="video-modal-player" controls preload="metadata" poster="assets/video/intro_buoi1_thumb.jpg">
+            <source src="assets/video/intro_buoi1.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+          </video>
+        </div>
+        <div class="modal-video-info">
+          <p><strong>Kịch bản sư phạm 4 chặng:</strong></p>
+          <ul style="margin: 6px 0 12px 18px; font-size: 13px; line-height: 1.6;">
+            <li><strong>Chặng 1 (0–5.5s):</strong> <em>Nghịch lý 10 năm</em> — Đã trang bị máy chiếu, TV thông minh nhưng vì sao học sinh vẫn chưa hình thành năng lực số tự chủ?</li>
+            <li><strong>Chặng 2 (5.5–11s):</strong> <em>Bối cảnh THCS</em> — Trẻ vị thành niên đối mặt với rò rỉ dữ liệu cá nhân, tin giả, bạo lực mạng và ảo giác AI.</li>
+            <li><strong>Chặng 3 (11–16.5s):</strong> <em>Khung chuẩn hóa TT 18 & Cặp đôi số</em> — 6 miền năng lực số giáo viên, phân luồng A/B/C thích ứng và mô hình 1-kèm-1.</li>
+            <li><strong>Chặng 4 (16.5–22s):</strong> <em>Nguyên tắc Vàng</em> — Tích hợp không tăng tiết, giải pháp Offline Kit khắc phục đứt gãy hạ tầng vùng cao Nghệ An.</li>
+          </ul>
+          <div class="video-modal-actions">
+            <a href="assets/video/intro_buoi1.mp4" download="Video_Intro_Buoi1_NLS_NgheAn.mp4" class="button small primary">⬇ Tải Video MP4 Full HD (0.73 MB)</a>
+            <span style="font-size: 12px; color: var(--text-muted); align-self: center;">Độ phân giải: 1920x1080 · Giọng đọc AI Nam Minh Neural · Chuẩn NAEM 2026</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

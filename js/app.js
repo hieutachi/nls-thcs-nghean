@@ -1402,3 +1402,45 @@ HỘI ĐỒNG BÁO CÁO VIÊN: Đạt yêu cầu cấp chứng nhận hoàn thà
     });
   }
 }
+
+
+// ==========================================
+// VIDEO INTRO MODAL HANDLER
+// ==========================================
+window.openIntroVideoModal = function(buoiId = 'buoi1') {
+  const modal = $('#video-intro-modal');
+  if (!modal) return;
+  modal.classList.add('show');
+  const player = $('#video-modal-player');
+  if (player) {
+    player.currentTime = 0;
+    player.play().catch(() => {});
+  }
+};
+
+window.closeIntroVideoModal = function() {
+  const modal = $('#video-intro-modal');
+  if (!modal) return;
+  modal.classList.remove('show');
+  const player = $('#video-modal-player');
+  if (player) {
+    player.pause();
+  }
+};
+
+(function initVideoModal() {
+  const modal = $('#video-intro-modal');
+  if (!modal) return;
+
+  modal.addEventListener('click', e => {
+    if (e.target === modal || e.target.closest('.modal-close') || e.target.id === 'video-modal-close') {
+      window.closeIntroVideoModal();
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      window.closeIntroVideoModal();
+    }
+  });
+})();
